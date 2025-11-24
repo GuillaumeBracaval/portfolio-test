@@ -33,4 +33,36 @@ document.addEventListener('DOMContentLoaded', () => {
       closeModal();
     }
   });
+
+  // =========================================
+  // SCROLL REVEAL ANIMATIONS
+  // =========================================
+
+  // Check for reduced motion preference
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (!prefersReducedMotion) {
+    // Create IntersectionObserver
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('reveal-visible');
+          revealObserver.unobserve(entry.target); // Stop observing after reveal
+        }
+      });
+    }, {
+      threshold: 0.15,
+      rootMargin: '0px 0px -50px 0px'
+    });
+
+    // Observe all elements with .reveal class
+    document.querySelectorAll('.reveal').forEach(el => {
+      revealObserver.observe(el);
+    });
+  } else {
+    // If reduced motion is preferred, show all elements immediately
+    document.querySelectorAll('.reveal').forEach(el => {
+      el.classList.add('reveal-visible');
+    });
+  }
 });
