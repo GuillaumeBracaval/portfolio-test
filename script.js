@@ -71,4 +71,25 @@ document.addEventListener('DOMContentLoaded', () => {
       el.classList.add('reveal-visible');
     });
   }
+
+  // =========================================
+  // THEME TOGGLE
+  // =========================================
+
+  const themeToggle = document.getElementById('themeToggle');
+  const body = document.body;
+
+  // Check for saved theme preference or default to 'dark'
+  const currentTheme = localStorage.getItem('theme') || 'dark';
+  body.setAttribute('data-theme', currentTheme);
+
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      const theme = body.getAttribute('data-theme');
+      const newTheme = theme === 'dark' ? 'light' : 'dark';
+
+      body.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    });
+  }
 });

@@ -1,0 +1,135 @@
+/* =========================================
+   LIGHT MODE THEME VARIABLES
+   ========================================= */
+
+/* Light Mode Colors */
+body[data-theme="light"] {
+    --bg-color: #FAFAFA;
+    --surface-card: rgba(0, 0, 0, 0.02);
+    --surface-hover: rgba(0, 0, 0, 0.04);
+    --text-primary: #0B0B0C;
+    --text-secondary: #4A4A4A;
+    --text-tertiary: #999999;
+    --accent-color: #00A896;
+    --border-subtle: rgba(0, 0, 0, 0.08);
+    --border-highlight: rgba(0, 0, 0, 0.15);
+    --glow-subtle: 0 0 40px rgba(0, 168, 150, 0.05);
+
+    /* Additional variables for light mode */
+    --nav-contact-text: #000;
+    --modal-title-color: #0B0B0C;
+    --modal-backdrop-bg: rgba(0, 0, 0, 0.6);
+    --modal-panel-bg: #FFFFFF;
+    --modal-panel-shadow: 0 24px 48px rgba(0, 0, 0, 0.15);
+    --input-bg: rgba(0, 0, 0, 0.04);
+    --input-border: rgba(0, 0, 0, 0.12);
+    --input-color: #0B0B0C;
+    --input-focus-bg: rgba(0, 0, 0, 0.06);
+    --label-color: #6B7280;
+    --label-bg: #FAFAFA;
+    --submit-bg: var(--accent-color);
+    --submit-color: #0B0B0C;
+    --submit-hover-bg: #3BBFAF;
+    --shadow-accent: rgba(75, 208, 192, 0.3);
+    --shadow-dark: rgba(0, 0, 0, 0.15);
+    --accent-hover: #3BBFAF;
+
+    /* Card Backgrounds */
+    --card-bg-subtle: rgba(0, 0, 0, 0.02);
+    --card-bg-default: rgba(0, 0, 0, 0.03);
+    --card-bg-hover: rgba(0, 0, 0, 0.05);
+
+    /* Shadows */
+    --shadow-card: 0 12px 24px rgba(0, 0, 0, 0.08);
+    --shadow-medium: 0 8px 16px rgba(0, 0, 0, 0.06);
+    --shadow-light: 0 4px 8px rgba(0, 0, 0, 0.04);
+
+    /* Accent Backgrounds */
+    --accent-bg-subtle: rgba(0, 168, 150, 0.1);
+    --accent-bg-medium: rgba(0, 168, 150, 0.15);
+    --accent-bg-hover: rgba(0, 168, 150, 0.05);
+
+    /* Additional Backgrounds & Borders */
+    --nav-hover-bg: rgba(0, 0, 0, 0.02);
+    --border-tag: rgba(0, 0, 0, 0.2);
+    --modal-panel-bg-alt: #FFFFFF;
+    --shadow-heavy: 0 24px 48px rgba(0, 0, 0, 0.2);
+    --shadow-project: 0 24px 48px rgba(0, 0, 0, 0.1);
+}
+
+/* Smooth transition for theme changes */
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* =========================================
+   THEME TOGGLE BUTTON
+   ========================================= */
+
+.theme-toggle {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: var(--surface-card);
+    border: 1px solid var(--border-subtle);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s cubic-bezier(0.2, 1, 0.2, 1);
+    z-index: 999;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.theme-toggle:hover {
+    transform: translateY(-4px);
+    background-color: var(--surface-hover);
+    border-color: var(--border-highlight);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.theme-toggle svg {
+    width: 24px;
+    height: 24px;
+    color: var(--text-primary);
+    transition: transform 0.3s ease;
+}
+
+.theme-toggle:hover svg {
+    transform: rotate(20deg);
+}
+
+/* Hide/show icons based on theme */
+.theme-toggle .sun-icon {
+    display: none;
+}
+
+.theme-toggle .moon-icon {
+    display: block;
+}
+
+body[data-theme="light"] .theme-toggle .sun-icon {
+    display: block;
+}
+
+body[data-theme="light"] .theme-toggle .moon-icon {
+    display: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .theme-toggle {
+        bottom: 1.5rem;
+        right: 1.5rem;
+        width: 48px;
+        height: 48px;
+    }
+
+    .theme-toggle svg {
+        width: 20px;
+        height: 20px;
+    }
+}
