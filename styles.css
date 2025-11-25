@@ -175,6 +175,11 @@ video {
   height: auto;
 }
 
+strong {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
 /* =========================================
    SCROLL REVEAL ANIMATIONS
    ========================================= */
@@ -219,7 +224,7 @@ video {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: var(--space-24);
+  margin-bottom: var(--space-8);
 }
 
 /* Profile Badge (Header) */
