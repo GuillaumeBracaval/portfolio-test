@@ -905,41 +905,6 @@ blockquote {
   transition: transform 0.2s ease;
 }
 
-#contactForm .submit-btn:hover .send-icon {
-  transform: translateX(2px);
-}
-
-/* =========================================
-   SCROLL REVEAL ANIMATIONS - QUIET LUXURY
-   ========================================= */
-
-/* Hidden State */
-.reveal {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 500ms cubic-bezier(0.20, 0.6, 0.35, 1),
-    transform 500ms cubic-bezier(0.20, 0.6, 0.35, 1);
-}
-
-/* Visible State */
-.reveal-visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Reduced Motion Support */
-@media (prefers-reduced-motion: reduce) {
-  .reveal {
-    opacity: 1;
-    transform: none;
-    transition: none;
-  }
-}
-
-/* =========================================
-   PROJECT PAGES - PREMIUM CASE STUDY
-   ========================================= */
-
 /* Project Hero Header */
 .project-hero {
   padding: var(--space-24) 0 var(--space-16);
@@ -1400,5 +1365,31 @@ blockquote {
 @media (max-width: 768px) {
   .projects-carousel {
     grid-template-columns: 1fr;
+  }
+}
+/* =========================================
+   SCROLL REVEAL ANIMATIONS - QUIET LUXURY
+   ========================================= */
+
+/* Hidden State */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.45s cubic-bezier(0.20, 0.60, 0.35, 1),
+    transform 0.45s cubic-bezier(0.20, 0.60, 0.35, 1) !important;
+}
+
+/* Visible State */
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none !important;
   }
 }

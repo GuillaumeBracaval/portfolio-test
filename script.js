@@ -5,11 +5,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const contactForm = document.getElementById('contactForm');
 
   // Open Modal
-  openBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    modal.classList.add('is-visible');
-    document.body.style.overflow = 'hidden'; // Prevent background scrolling
-  });
+  if (openBtn) {
+    openBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      modal.classList.add('is-visible');
+      document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    });
+  }
 
   // Close Modal Function
   const closeModal = () => {
@@ -18,18 +20,22 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   // Close on X button
-  closeBtn.addEventListener('click', closeModal);
+  if (closeBtn) {
+    closeBtn.addEventListener('click', closeModal);
+  }
 
   // Close on Backdrop click
-  modal.addEventListener('click', (e) => {
-    if (e.target === modal) {
-      closeModal();
-    }
-  });
+  if (modal) {
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+  }
 
   // Close on Esc key
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && modal.classList.contains('is-visible')) {
+    if (e.key === 'Escape' && modal && modal.classList.contains('is-visible')) {
       closeModal();
     }
   });
@@ -51,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
     }, {
-      threshold: 0.15,
+      threshold: 0.1,
       rootMargin: '0px 0px -50px 0px'
     });
 
