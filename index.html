@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="theme-toggle.css">
+  <link rel="stylesheet" href="cursor.css">
 </head>
 
 <body>
@@ -21,7 +22,8 @@
     <header class="site-header">
       <div class="brand">Guillaume Bracaval</div>
       <nav>
-        <a href="#" id="openContact" class="nav-contact">Me contacter</a>
+        <a href="#" id="openContact" class="btn-accent"
+          onclick="document.getElementById('contactModal').classList.add('is-visible')">Me contacter</a>
       </nav>
     </header>
 
@@ -307,7 +309,7 @@
         </div>
 
         <div class="form-actions">
-          <button type="submit" class="submit-btn">
+          <button type="submit" class="btn-accent">
             <span>Envoyer</span>
             <svg class="send-icon" width="20" height="20" viewBox="0 0 24 24">
               <path fill="currentColor" d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
@@ -330,6 +332,7 @@
     </svg>
   </button>
 
+  <script src="cursor.js"></script>
   <script src="script.js"></script>
 </body>
 

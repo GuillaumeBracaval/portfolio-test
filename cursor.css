@@ -1,0 +1,77 @@
+/* =========================================
+   CUSTOM CURSOR (Desktop Only)
+   ========================================= */
+
+/* Hide default cursor on desktop */
+@media (hover: hover) and (pointer: fine) {
+
+    body,
+    a,
+    button,
+    input,
+    textarea {
+        cursor: none;
+    }
+
+    /* Custom cursor elements */
+    .custom-cursor {
+        position: fixed;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        z-index: 9999;
+    }
+
+    .cursor-dot {
+        width: 6px;
+        height: 6px;
+        background-color: var(--text-primary);
+        border-radius: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        transition: width 0.2s ease, height 0.2s ease, background-color 0.2s ease;
+    }
+
+    .cursor-outline {
+        width: 32px;
+        height: 32px;
+        border: 2px solid var(--text-primary);
+        border-radius: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        transition: width 0.3s cubic-bezier(0.2, 1, 0.2, 1),
+            height 0.3s cubic-bezier(0.2, 1, 0.2, 1),
+            border-color 0.2s ease;
+    }
+
+    /* Hover state - expand cursor */
+    body.cursor-hover .cursor-outline {
+        width: 48px;
+        height: 48px;
+        border-color: var(--accent-color);
+    }
+
+    body.cursor-hover .cursor-dot {
+        width: 8px;
+        height: 8px;
+        background-color: var(--accent-color);
+    }
+
+    /* Click state - shrink cursor */
+    body.cursor-click .cursor-outline {
+        width: 24px;
+        height: 24px;
+    }
+
+    body.cursor-click .cursor-dot {
+        width: 4px;
+        height: 4px;
+    }
+}
+
+/* Ensure cursor is hidden on mobile/touch devices */
+@media (hover: none) or (pointer: coarse) {
+    .custom-cursor {
+        display: none !important;
+    }
+}

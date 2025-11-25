@@ -11,16 +11,24 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="theme-toggle.css">
+    <link rel="stylesheet" href="cursor.css">
 </head>
 
 <body>
     <div class="wrapper">
         <header class="site-header">
-            <div class="brand">Guillaume Bracaval</div>
+            <a href="index.html" class="brand">Guillaume Bracaval</a>
             <nav>
-                <a href="index.html" class="nav-contact">← Retour aux projets</a>
+                <a href="#" id="openContact" class="btn-accent"
+                    onclick="document.getElementById('contactModal').classList.add('is-visible')">Me contacter</a>
             </nav>
         </header>
+
+        <nav class="breadcrumb">
+            <a href="index.html">Projets</a>
+            <span class="breadcrumb-separator">/</span>
+            <span>Ovact</span>
+        </nav>
 
         <section class="project-hero reveal">
             <span class="section-subtitle">AI • Product & Brand Design</span>
@@ -313,8 +321,7 @@
         <section class="case-cta reveal">
             <h3>Intéressé par une collaboration ?</h3>
             <div class="case-cta-buttons">
-                <a href="index.html" class="btn-accent"
-                    style="background: rgba(255,255,255,0.05); color: var(--text-primary);">
+                <a href="index.html" class="btn-secondary">
                     ← Back to projects
                 </a>
                 <a href="#" id="openContact" class="btn-accent"
@@ -351,7 +358,7 @@
                 </div>
                 <div class="form-group"><textarea name="message" placeholder=" "
                         required></textarea><label>Message</label></div>
-                <div class="form-actions"><button type="submit" class="submit-btn"><span>Envoyer</span><svg
+                <div class="form-actions"><button type="submit" class="btn-accent"><span>Envoyer</span><svg
                             class="send-icon" width="20" height="20" viewBox="0 0 24 24">
                             <path fill="currentColor" d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
                         </svg></button></div>
@@ -371,6 +378,7 @@
         </svg>
     </button>
 
+    <script src="cursor.js"></script>
     <script src="script.js"></script>
 </body>
 

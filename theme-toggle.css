@@ -55,6 +55,16 @@ body[data-theme="light"] {
     --modal-panel-bg-alt: #FFFFFF;
     --shadow-heavy: 0 24px 48px rgba(0, 0, 0, 0.2);
     --shadow-project: 0 24px 48px rgba(0, 0, 0, 0.1);
+
+    /* Secondary Button (Light Mode) */
+    --btn-secondary-bg: rgba(0, 0, 0, 0.05);
+    --btn-secondary-text: #0B0B0C;
+    --btn-secondary-hover: rgba(0, 0, 0, 0.1);
+
+    /* Accent Button (Light Mode) */
+    --btn-accent-bg: #00A896;
+    --btn-accent-text: #FFFFFF;
+    --btn-accent-hover: #008C7A;
 }
 
 /* Smooth transition for theme changes */
