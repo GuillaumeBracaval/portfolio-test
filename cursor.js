@@ -72,7 +72,7 @@
     });
 
     // Add hover effect for interactive elements
-    const interactiveElements = document.querySelectorAll('a, button, input, textarea, .project-card, .skill-tag, .tool-item');
+    const interactiveElements = document.querySelectorAll('a, button, input, textarea, .project-card');
 
     interactiveElements.forEach(el => {
         el.addEventListener('mouseenter', () => {

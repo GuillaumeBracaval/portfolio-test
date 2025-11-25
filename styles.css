@@ -285,6 +285,7 @@ video {
   color: var(--text-primary);
   transition: color 0.2s ease, opacity 0.2s ease;
   opacity: 0.8;
+  cursor: pointer;
 }
 
 .breadcrumb a:hover {
