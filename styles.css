@@ -2166,18 +2166,6 @@ blockquote {
   overflow: hidden;
 }
 
-.summary-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 4px;
-  height: 100%;
-  background: var(--accent-color);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
 .summary-card:hover {
   border-color: var(--accent-color);
   background: linear-gradient(135deg, rgba(75, 208, 192, 0.05) 0%, rgba(75, 208, 192, 0.02) 100%);
