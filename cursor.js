@@ -19,17 +19,34 @@
     cursor.appendChild(outline);
     document.body.appendChild(cursor);
 
+    // Hide cursor initially
+    cursor.style.opacity = '0';
+
     let mouseX = 0;
     let mouseY = 0;
     let dotX = 0;
     let dotY = 0;
     let outlineX = 0;
     let outlineY = 0;
+    let hasMovedMouse = false;
 
     // Track mouse position
-    document.addEventListener('mousemove', (e) => {
-        mouseX = e.clientX;
-        mouseY = e.clientY;
+    document.addEventListener('DOMContentLoaded', () => {
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+
+            // Show cursor on first mouse movement
+            if (!hasMovedMouse) {
+                hasMovedMouse = true;
+                cursor.style.opacity = '1';
+                // Initialize positions to current mouse position
+                dotX = mouseX;
+                dotY = mouseY;
+                outlineX = mouseX;
+                outlineY = mouseY;
+            }
+        });
     });
 
     // Smooth animation loop
@@ -50,7 +67,9 @@
         requestAnimationFrame(animate);
     }
 
-    animate();
+    document.addEventListener('DOMContentLoaded', () => {
+        animate();
+    });
 
     // Add hover effect for interactive elements
     const interactiveElements = document.querySelectorAll('a, button, input, textarea, .project-card, .skill-tag, .tool-item');
@@ -76,10 +95,15 @@
 
     // Hide cursor when leaving window
     document.addEventListener('mouseleave', () => {
-        cursor.style.opacity = '0';
+        if (hasMovedMouse) {
+            cursor.style.opacity = '0';
+        }
     });
 
     document.addEventListener('mouseenter', () => {
-        cursor.style.opacity = '1';
+        if (hasMovedMouse) {
+            cursor.style.opacity = '1';
+        }
     });
 })();
+

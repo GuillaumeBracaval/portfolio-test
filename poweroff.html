@@ -17,7 +17,16 @@
 <body>
     <div class="wrapper">
         <header class="site-header">
-            <a href="index.html" class="brand">Guillaume Bracaval</a>
+            <a href="index.html" class="profile-badge">
+                <div class="profile-avatar">
+                    <img src="https://scontent-cdg4-2.cdninstagram.com/v/t51.2885-19/584374050_17847138195604623_5951908127845131870_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-cdg4-2.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2QGVVx_cC4v_BBP_NV3CLmEAPnwyqtmNk2D4DOD8esVLhhWI9UXM8I0Iz0H4wnSr4Yo&_nc_ohc=IWmrYKtG9ioQ7kNvwHAb6IF&_nc_gid=tKdsGLtm-yri8RYd5BR5Hg&edm=ALGbJPMBAAAA&ccb=7-5&oh=00_Afjq18hd6Etrq9GTqUFiiUbptK2tTfV_itpG9pKh8NNsZA&oe=692BA226&_nc_sid=7d3ac5"
+                        alt="Guillaume Bracaval">
+                </div>
+                <div class="profile-info">
+                    <span class="profile-name">Guillaume Bracaval</span>
+                    <span class="profile-role">Designing since 2018</span>
+                </div>
+            </a>
             <nav>
                 <a href="#" id="openContact" class="btn-accent"
                     onclick="document.getElementById('contactModal').classList.add('is-visible')">Me contacter</a>
@@ -32,7 +41,7 @@
 
         <section class="project-hero reveal">
             <span class="section-subtitle">Software • UX/UI Design</span>
-            <h1 class="section-title-large">PowerOFF</h1>
+            <h1 class="hero-title">PowerOFF</h1>
             <div class="project-meta-grid">
                 <div class="meta-item">
                     <span class="meta-label">Rôle</span>
@@ -244,7 +253,7 @@
                 <a href="index.html" class="btn-secondary">
                     ← Back to projects
                 </a>
-                <a href="#" id="openContact" class="btn-accent"
+                <a href="javascript:void(0)" id="openContact" class="btn-accent"
                     onclick="document.getElementById('contactModal').classList.add('is-visible')">
                     Contact me ↗
                 </a>
@@ -265,9 +274,7 @@
                     <line x1="18" y1="6" x2="6" y2="18"></line>
                     <line x1="6" y1="6" x2="18" y2="18"></line>
                 </svg></button>
-            <h3
-                style="font-size: var(--text-xl); font-weight: 600; margin-bottom: var(--space-8); color: var(--text-primary);">
-                Contact</h3>
+            <h3 class="section-subtitle-small element-spacing">Contact</h3>
             <form id="contactForm" action="https://formsubmit.co/contact@bracaval.fr" method="POST">
                 <input type="hidden" name="_subject" value="New message from portfolio">
                 <input type="hidden" name="_captcha" value="false">
