@@ -384,7 +384,7 @@ video {
    ========================================= */
 .hero-section {
   padding-bottom: var(--space-32);
-  border-bottom: 1px solid var(--border-subtle);
+  position: relative;
 }
 
 .hero-kicker {
@@ -438,6 +438,72 @@ video {
   font-size: var(--text-sm);
   font-weight: 500;
   color: var(--text-secondary);
+}
+
+/* Scroll Indicator */
+.scroll-indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%) translateY(50%);
+  opacity: 1;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  z-index: 10;
+}
+
+.scroll-indicator.hidden {
+  opacity: 0;
+  transform: translateX(-50%) translateY(30%);
+  pointer-events: none;
+}
+
+.scroll-icon {
+  width: 24px;
+  height: 36px;
+  border: 2px solid var(--border-subtle);
+  border-radius: 12px;
+  position: relative;
+  animation: bounce 2s infinite;
+  background: var(--bg-color);
+}
+
+.scroll-wheel {
+  width: 4px;
+  height: 8px;
+  background: var(--accent-color);
+  border-radius: 2px;
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: scroll-wheel 2s infinite;
+}
+
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(8px);
+  }
+}
+
+@keyframes scroll-wheel {
+  0% {
+    opacity: 1;
+    top: 6px;
+  }
+
+  100% {
+    opacity: 0;
+    top: 20px;
+  }
 }
 
 /* =========================================

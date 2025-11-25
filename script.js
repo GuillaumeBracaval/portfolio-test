@@ -73,6 +73,22 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // =========================================
+  // SCROLL INDICATOR (Hide on scroll)
+  // =========================================
+
+  const scrollIndicator = document.getElementById('scrollIndicator');
+
+  if (scrollIndicator) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        scrollIndicator.classList.add('hidden');
+      } else {
+        scrollIndicator.classList.remove('hidden');
+      }
+    });
+  }
+
+  // =========================================
   // THEME TOGGLE
   // =========================================
 
