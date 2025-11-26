@@ -139,6 +139,21 @@
   --modal-panel-bg-alt: #111111;
   --shadow-heavy: 0 24px 48px rgba(0, 0, 0, 0.4);
   --shadow-project: 0 24px 48px rgba(0, 0, 0, 0.2);
+
+  /* --- Ovact Project Variables (Dark Mode) --- */
+  --ovact-text: #C0D4E6;
+  --ovact-title: #E0F2F2;
+  --ovact-cta-bg: #5ca3f0;
+  --ovact-cta-text: #0a1929;
+}
+
+/* Light Mode Overrides */
+[data-theme="light"] {
+  /* --- Ovact Project Variables (Light Mode) --- */
+  --ovact-text: #2A3A3D;
+  --ovact-title: #1A5F9E;
+  --ovact-cta-bg: #1A5F9E;
+  --ovact-cta-text: #FFFFFF;
 }
 
 /* =========================================
@@ -2018,10 +2033,6 @@ blockquote {
   width: 100%;
   height: auto;
   object-fit: contain;
-  opacity: 0;
-  /* Commence invisible pour le fade-in */
-  animation: none;
-  /* Pas d'animation par défaut */
 }
 
 /* Images suivantes : positionnées en absolu par-dessus */
@@ -2032,70 +2043,6 @@ blockquote {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  opacity: 0;
-  animation: none;
-  /* Pas d'animation par défaut */
-}
-
-/* Animation activée uniquement quand la section parent est révélée */
-.reveal-visible .ui-card-image.carousel img:first-child {
-  animation: uiCardCarousel 16s infinite;
-  animation-delay: 0s;
-}
-
-.reveal-visible .ui-card-image.carousel img:not(:first-child) {
-  animation: uiCardCarousel 16s infinite;
-}
-
-/* Délais d'affichage pour jusqu'à 7 images */
-.reveal-visible .ui-card-image.carousel img:nth-child(2) {
-  animation-delay: 4s;
-}
-
-.reveal-visible .ui-card-image.carousel img:nth-child(3) {
-  animation-delay: 8s;
-}
-
-.reveal-visible .ui-card-image.carousel img:nth-child(4) {
-  animation-delay: 12s;
-}
-
-.reveal-visible .ui-card-image.carousel img:nth-child(5) {
-  animation-delay: 16s;
-}
-
-.reveal-visible .ui-card-image.carousel img:nth-child(6) {
-  animation-delay: 20s;
-}
-
-.reveal-visible .ui-card-image.carousel img:nth-child(7) {
-  animation-delay: 24s;
-}
-
-/* Animation : crossfade fluide sans clignotement */
-@keyframes uiCardCarousel {
-  0% {
-    opacity: 0;
-  }
-
-  8% {
-    opacity: 1;
-    /* Fade in plus lent et smooth */
-  }
-
-  20% {
-    opacity: 1;
-    /* Reste visible */
-  }
-
-  28% {
-    opacity: 0;
-    /* Fade out plus lent et smooth */
-  }
-
-  100% {
-    opacity: 0;
-  }
 }
 
 /* =========================================
@@ -2693,6 +2640,20 @@ blockquote {
   }
 }
 
+/* Project Grid 3 Columns (Full Width) */
+.project-grid-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: var(--space-6);
+  margin-top: var(--space-8);
+}
+
+@media (max-width: 768px) {
+  .project-grid-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Section Subtitle Small (for Design System subsections) */
 .section-subtitle-small {
   font-size: var(--text-xl);
@@ -2779,6 +2740,65 @@ blockquote {
 
 /* --- Responsive Adjustments --- */
 @media (max-width: 768px) {
+
+  /* Reduce section spacing on case study pages */
+  .case-section {
+    margin-top: var(--space-12);
+    margin-bottom: var(--space-12);
+  }
+
+  /* Reduce executive summary spacing */
+  .executive-summary {
+    padding: var(--space-12) 0;
+    margin: var(--space-8) 0;
+  }
+
+  /* Reduce project timeline spacing */
+  .project-timeline {
+    margin: var(--space-12) auto;
+  }
+
+  /* Reduce section intro spacing */
+  .section-intro {
+    margin: 0 auto var(--space-8);
+  }
+
+  /* Reduce hero frame spacing */
+  .hero-frame {
+    margin: var(--space-8) 0 var(--space-12);
+  }
+
+  /* Match project list vertical gap to row-split horizontal gap */
+  .project-list {
+    gap: var(--space-6);
+  }
+
+  /* --- Unify Section Spacing (Mobile) --- */
+  /* Remove internal margins at section boundaries to let .case-section padding control spacing */
+  .case-section>*:first-child {
+    margin-top: 0 !important;
+  }
+
+  .case-section>*:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  /* Reduce internal layout margins on mobile */
+  .two-col,
+  .overview-grid,
+  .principles-flow,
+  .results-bento,
+  .flow-frame-container {
+    margin-top: var(--space-6) !important;
+    margin-bottom: var(--space-6) !important;
+  }
+
+  /* Remove bottom margin from the last item in a stack to avoid double spacing */
+  .two-col>*:last-child,
+  .highlight-card {
+    margin-bottom: 0 !important;
+  }
+
   .project-meta-inline {
     flex-direction: column;
     gap: var(--space-4);
@@ -2788,8 +2808,8 @@ blockquote {
     display: flex;
     flex-direction: column-reverse;
     gap: var(--space-6);
-    margin-bottom: var(--space-24);
-    padding-bottom: var(--space-24);
+    margin-bottom: var(--space-12);
+    padding-bottom: var(--space-12);
     border-bottom: 1px solid var(--border-subtle);
   }
 
@@ -3136,4 +3156,43 @@ blockquote {
     font-size: var(--text-2xl);
     opacity: 1;
   }
+}
+
+/* --- Ovact Project Specific Styles --- */
+
+/* Interface Finale Cards */
+.interface-card {
+  background: var(--surface-card);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border-subtle);
+}
+
+.interface-card-media {
+  aspect-ratio: 16/9;
+  background: #000;
+}
+
+.interface-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.interface-card-content {
+  padding: var(--space-4);
+}
+
+.interface-card-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--ovact-title);
+  margin-bottom: 4px;
+}
+
+.interface-card-desc {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 14px;
+  color: var(--text-secondary);
 }
