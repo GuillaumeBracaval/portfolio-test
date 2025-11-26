@@ -389,8 +389,8 @@ strong {
    5. HERO SECTION (Iconic)
    ========================================= */
 .hero-section {
-  padding-bottom: var(--space-32);
   position: relative;
+  height: calc(100dvh - 112px);
 }
 
 .hero-kicker {
@@ -452,7 +452,7 @@ strong {
   flex-direction: column;
   align-items: center;
   position: absolute;
-  bottom: 16px;
+  bottom: 4.5dvh;
   left: 50%;
   transform: translateX(-50%) translateY(50%);
   opacity: 1;
