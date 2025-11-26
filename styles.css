@@ -3196,3 +3196,11 @@ blockquote {
   font-size: 14px;
   color: var(--text-secondary);
 }
+
+/* =========================================
+   10. GLOBAL UTILITIES
+   ========================================= */
+/* Ensure last element in section has no bottom margin to prevent double spacing */
+section>div:last-child {
+  margin-bottom: 0;
+}
