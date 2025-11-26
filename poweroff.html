@@ -4,7 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PowerOFF – Guillaume Bracaval</title>
+
+    <!-- Primary Meta Tags -->
+    <title>PowerOFF – Utilitaire Windows Open Source | Guillaume Bracaval</title>
+    <meta name="title" content="PowerOFF – Utilitaire Windows Open Source | Guillaume Bracaval">
+    <meta name="description"
+        content="Étude de cas : Design UI d'un utilitaire Windows open-source pour programmer l'arrêt d'un PC. Interface minimaliste, landing page HTML/CSS/JS.">
+    <meta name="keywords"
+        content="PowerOFF, Software Design, UI Design, Windows Utility, Open Source, WinUI, Guillaume Bracaval">
+    <meta name="author" content="Guillaume Bracaval">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://bracaval.fr/poweroff.html">
+    <meta property="og:title" content="PowerOFF – Utilitaire Windows Open Source">
+    <meta property="og:description"
+        content="Interface d'un utilitaire Windows open-source pour programmer l'arrêt d'un PC. Design minimaliste et efficace.">
+    <meta property="og:image" content="https://zupimages.net/up/25/22/emrb.png">
+    <meta property="og:locale" content="fr_FR">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://bracaval.fr/poweroff.html">
+    <meta property="twitter:title" content="PowerOFF – Utilitaire Windows Open Source">
+    <meta property="twitter:description"
+        content="Interface d'un utilitaire Windows open-source pour programmer l'arrêt d'un PC.">
+    <meta property="twitter:image" content="https://zupimages.net/up/25/22/emrb.png">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://bracaval.fr/poweroff.html">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -19,12 +48,11 @@
         <header class="site-header">
             <a href="index.html" class="profile-badge">
                 <div class="profile-avatar">
-                    <img src="https://scontent-cdg4-2.cdninstagram.com/v/t51.2885-19/584374050_17847138195604623_5951908127845131870_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-cdg4-2.cdninstagram.com&_nc_cat=103&_nc_oc=Q6cZ2QGVVx_cC4v_BBP_NV3CLmEAPnwyqtmNk2D4DOD8esVLhhWI9UXM8I0Iz0H4wnSr4Yo&_nc_ohc=IWmrYKtG9ioQ7kNvwHAb6IF&_nc_gid=tKdsGLtm-yri8RYd5BR5Hg&edm=ALGbJPMBAAAA&ccb=7-5&oh=00_Afjq18hd6Etrq9GTqUFiiUbptK2tTfV_itpG9pKh8NNsZA&oe=692BA226&_nc_sid=7d3ac5"
-                        alt="Guillaume Bracaval">
+                    <img src="https://zupimages.net/up/25/48/to9t.png" alt="Guillaume Bracaval">
                 </div>
                 <div class="profile-info">
                     <span class="profile-name">Guillaume Bracaval</span>
-                    <span class="profile-role">Designing since 2018</span>
+                    <span class="profile-role">Designer depuis 2021</span>
                 </div>
             </a>
             <nav>
@@ -39,10 +67,10 @@
             <span>PowerOFF</span>
         </nav>
 
-        <section class="project-hero reveal">
+        <section class="project-hero-compact reveal">
             <span class="section-subtitle">Software • UX/UI Design</span>
             <h1 class="hero-title">PowerOFF</h1>
-            <div class="project-meta-grid">
+            <div class="project-meta-inline">
                 <div class="meta-item">
                     <span class="meta-label">Rôle</span>
                     <span class="meta-value">UI Designer</span>
@@ -53,16 +81,20 @@
                 </div>
                 <div class="meta-item">
                     <span class="meta-label">Livrables</span>
-                    <span class="meta-value">UI Design, Prototyping</span>
+                    <span class="meta-value">UI Design, Landing Page (HTML/CSS/JS)</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Collaborateurs</span>
+                    <span class="meta-value">Thomas .P (Développeur)</span>
                 </div>
             </div>
             <div class="skill-pills">
-                <span class="skill-pill">Windows App</span>
+                <span class="skill-pill">UI Design</span>
+                <span class="skill-pill">HTML/CSS/JS</span>
                 <span class="skill-pill">Minimalism</span>
-                <span class="skill-pill">Dark Mode</span>
                 <span class="skill-pill">Open Source</span>
             </div>
-            <div style="margin-top: var(--space-8);">
+            <div style="margin-top: var(--space-6);">
                 <a href="https://tpodgro.github.io/poweroff/" target="_blank" class="btn-accent">
                     Voir le site ↗
                 </a>
@@ -73,13 +105,41 @@
             <img src="https://zupimages.net/up/25/22/emrb.png" alt="PowerOFF Interface">
         </div>
 
+        <section class="executive-summary reveal">
+            <div class="summary-content">
+                <div class="summary-card">
+                    <div class="summary-icon">⚠️</div>
+                    <span class="summary-label">Le Problème</span>
+                    <p>Les solutions existantes sont <strong>trop complexes</strong>, encombrées de publicités ou
+                        difficiles à configurer pour une tâche aussi simple.</p>
+                </div>
+
+                <div class="summary-card">
+                    <div class="summary-icon">💡</div>
+                    <span class="summary-label">L'Approche</span>
+                    <p>Créer l'outil le plus <strong>simple et efficace</strong> possible. Gratuit, open source, sans
+                        publicités.
+                    </p>
+                </div>
+
+                <div class="summary-card">
+                    <div class="summary-icon">🎯</div>
+                    <span class="summary-label">L'Impact</span>
+                    <p>Interface <strong>minimaliste</strong> et moderne. Zéro friction, zéro distraction, 100%
+                        efficace.</p>
+                </div>
+            </div>
+        </section>
+
         <section class="section-intro reveal">
-            <p>
-                PowerOFF est un utilitaire léger et open source qui permet aux utilisateurs de programmer facilement un
-                arrêt automatique sous Windows. <strong>Avec une interface épurée et sans distractions
-                    inutiles</strong>,
-                PowerOFF se concentre sur une seule tâche et la réalise parfaitement, loin des usines à gaz habituelles.
-            </p>
+            <div class="content-readable">
+                <p>
+                    PowerOFF est un utilitaire <strong>gratuit et open source</strong> qui permet de programmer
+                    facilement un arrêt automatique sous Windows. <strong>Sans publicités, sans fonctionnalités
+                        superflues, sans distractions</strong> — juste ce dont vous avez besoin. Une interface épurée
+                    qui fait exactement ce qu'elle doit faire, parfaitement.
+                </p>
+            </div>
         </section>
 
         <div class="overview-grid reveal">
@@ -96,23 +156,59 @@
             </div>
             <div class="fact-card">
                 <span class="kicker">My Role</span>
-                <h4>UI Design</h4>
-                <p>Conception d'une interface minimaliste respectant les codes Windows tout en apportant une touche
-                    moderne.</p>
+                <h4>UI Design & Front-end</h4>
+                <p>Conception de l'interface de l'application .NET et développement de la landing page en HTML/CSS/JS.
+                    Collaboration avec un développeur .NET pour l'application open source.</p>
             </div>
             <div class="fact-card">
                 <span class="kicker">Timeline</span>
                 <h4>Sprint d'une semaine</h4>
-                <p>Projet rapide réalisé en collaboration avec un développeur .NET pour une implémentation immédiate.
+                <p>Projet rapide réalisé en collaboration pour une implémentation immédiate.
                 </p>
             </div>
         </div>
 
-        <section class="case-section">
+        <section class="project-timeline reveal">
+            <div class="timeline-header">
+                <span class="section-subtitle">Processus</span>
+                <h2 class="section-title-large">Timeline du projet (1 semaine)</h2>
+            </div>
+            <div class="timeline-steps">
+                <div class="timeline-step">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Jour 1-2</span>
+                        <h4 class="timeline-title">Research & Benchmark</h4>
+                        <p class="timeline-desc">Analyse des solutions existantes, identification des frictions
+                            utilisateurs.</p>
+                    </div>
+                </div>
+                <div class="timeline-step">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Jour 3-4</span>
+                        <h4 class="timeline-title">UI Design & Prototyping</h4>
+                        <p class="timeline-desc">Conception de l'interface minimaliste, choix des composants Windows.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-step">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Jour 5-7</span>
+                        <h4 class="timeline-title">Landing Page & Collaboration</h4>
+                        <p class="timeline-desc">Développement de la landing page (HTML/CSS/JS), collaboration avec le
+                            développeur .NET pour l'application.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="case-section reveal">
             <div class="two-col reveal">
                 <div class="content-max">
-                    <span class="section-subtitle">The Challenge</span>
-                    <h2 class="section-title-large">Problématique</h2>
+                    <span class="section-subtitle">Le défi</span>
+                    <h2 class="section-title-large">Problématique utilisateur</h2>
                     <p>
                         De nombreux utilisateurs ont besoin de programmer l'arrêt de leur PC (fin de téléchargement,
                         rendu vidéo, musique avant de dormir), mais doivent passer par des lignes de commande ou des
@@ -122,174 +218,351 @@
                 <div class="highlight-card">
                     <h4>La Solution</h4>
                     <p>
-                        Une application "Zero-Friction" : pas d'installation complexe, pas de configuration, juste une
-                        minuterie et un bouton. L'interface doit être immédiatement compréhensible.
+                        Une application "Zero-Friction" : <strong>gratuite, sans publicités, open source</strong>. Pas
+                        d'installation complexe, pas de configuration superflue. Juste une minuterie et un bouton.
+                        L'interface doit être immédiatement compréhensible.
                     </p>
                 </div>
             </div>
         </section>
 
-        <section class="case-section">
+        <section class="case-section reveal">
             <div class="content-max reveal">
-                <span class="section-subtitle">Design Approach</span>
-                <h2 class="section-title-large">Minimalisme & Efficacité</h2>
+                <span class="section-subtitle">Discovery</span>
+                <h2 class="section-title-large">Research & Insights</h2>
                 <p>
-                    L'approche design s'est concentrée sur la réduction de la charge cognitive. Chaque élément superflu
-                    a été supprimé.
+                    L'analyse concurrentielle a révélé trois frictions majeures qui structurent la stratégie produit.
                 </p>
             </div>
             <div class="overview-grid reveal" style="margin-top: var(--space-12);">
                 <div class="insight-card">
-                    <h5>1. Focus Unique</h5>
-                    <p>L'écran principal ne propose que l'action principale : choisir l'heure ou le délai.</p>
+                    <h5>1. Complexité inutile</h5>
+                    <p>Les solutions existantes sont souvent surchargées de fonctionnalités inutiles.</p>
                 </div>
                 <div class="insight-card">
-                    <h5>2. Feedback Clair</h5>
-                    <p>Un compte à rebours géant confirme que l'action est prise en compte. Pas de doute possible.</p>
-                </div>
-                <div class="insight-card">
-                    <h5>3. Dark Mode Natif</h5>
-                    <p>Conçu pour s'intégrer parfaitement à l'environnement Windows moderne et pour une utilisation
-                        nocturne.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="case-section">
-            <div class="content-max reveal">
-                <span class="section-subtitle">Interface</span>
-                <h2 class="section-title-large">Galerie UI</h2>
-                <p>
-                    Une interface sombre, élégante et fonctionnelle.
-                </p>
-            </div>
-            <div class="ui-grid reveal">
-                <div class="ui-card">
-                    <div class="ui-card-image">
-                        <img src="https://zupimages.net/up/25/22/8zg3.png" alt="Interface Principale">
-                    </div>
-                    <div class="ui-card-content">
-                        <h5>Interface Principale</h5>
-                        <p>Sélection simple de l'action à effectuer</p>
-                    </div>
-                </div>
-                <div class="ui-card">
-                    <div class="ui-card-image">
-                        <img src="https://zupimages.net/up/25/22/oiso.png" alt="Sélection Timer">
-                    </div>
-                    <div class="ui-card-content">
-                        <h5>Configuration</h5>
-                        <p>Réglage précis du minuteur ou de l'heure</p>
-                    </div>
-                </div>
-                <div class="ui-card">
-                    <div class="ui-card-image">
-                        <img src="https://zupimages.net/up/25/22/711j.png" alt="Compte à rebours">
-                    </div>
-                    <div class="ui-card-content">
-                        <h5>Actif</h5>
-                        <p>Feedback visuel clair avec compte à rebours</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="case-section">
-            <div class="content-max reveal">
-                <div class="project-quote">
-                    <p>
-                        J’ai abordé PowerOFF en cherchant à transformer une action technique et peu intuitive en une
-                        interface simple et immédiatement compréhensible.
+                    <h5>2. Publicités & bloatware</h5>
+                    <p>Les utilitaires "gratuits" sont envahis de publicités, de trackers et de logiciels indésirables.
                     </p>
                 </div>
+                <div class="insight-card">
+                    <h5>3. Manque de clarté</h5>
+                    <p>L'utilisateur ne sait pas si l'action a été prise en compte ou non.</p>
+                </div>
             </div>
         </section>
 
-        <section class="related-projects reveal">
-            <h3>Explore More Projects</h3>
-            <div class="projects-carousel">
-                <a href="revive.html" class="carousel-card">
-                    <div class="carousel-card-image">
-                        <img src="https://zupimages.net/up/25/21/9b3h.png" alt="Revive">
+        <section class="case-section reveal">
+            <div class="content-max reveal">
+                <span class="section-subtitle">Approche</span>
+                <h2 class="section-title-large">Stratégie : Minimalisme radical</h2>
+                <p>
+                    Trois principes directeurs transforment les faiblesses du marché en forces différenciantes :
+                    simplicité, clarté, et intégration native.
+                </p>
+            </div>
+            <div class="principles-card reveal">
+                <div class="principles-flow">
+                    <div class="principle-item">
+                        <div class="principle-number">01</div>
+                        <div class="principle-content">
+                            <h5>Simple à utiliser</h5>
+                            <p>Définissez l'heure d'arrêt en quelques clics. Interface intuitive et épurée, sans
+                                friction.
+                            </p>
+                        </div>
                     </div>
-                    <div class="carousel-card-content">
-                        <span class="carousel-card-kicker">Mobile App · UX/UI Design</span>
-                        <h4 class="carousel-card-title">Revive</h4>
-                        <p class="carousel-card-desc">Marketplace de smartphones reconditionnés axée sur la transparence
-                            et l'écoconception.</p>
-                        <span class="carousel-card-cta">View case study →</span>
+                    <div class="principle-item">
+                        <div class="principle-number">02</div>
+                        <div class="principle-content">
+                            <h5>Léger et rapide</h5>
+                            <p>Conçu pour être minimaliste et consommer un minimum de ressources. Démarrage instantané.
+                            </p>
+                        </div>
                     </div>
-                </a>
-                <a href="ovact.html" class="carousel-card">
-                    <div class="carousel-card-image">
-                        <img src="https://zupimages.net/up/25/14/a8mj.png" alt="Ovact">
+                    <div class="principle-item">
+                        <div class="principle-number">03</div>
+                        <div class="principle-content">
+                            <h5>Sans distractions</h5>
+                            <p>Pas de fonctionnalités superflues, pas de publicités, pas de notifications. Juste ce dont
+                                vous avez besoin.</p>
+                        </div>
                     </div>
-                    <div class="carousel-card-content">
-                        <span class="carousel-card-kicker">AI · Product & Brand Design</span>
-                        <h4 class="carousel-card-title">Ovact</h4>
-                        <p class="carousel-card-desc">Plateforme IA en santé mentale, orientée design system et
-                            visualisation de données.</p>
-                        <span class="carousel-card-cta">View case study →</span>
-                    </div>
-                </a>
-                <a href="kerat.html" class="carousel-card">
-                    <div class="carousel-card-image">
-                        <img src="https://zupimages.net/up/25/14/qzcz.png" alt="Kerat">
-                    </div>
-                    <div class="carousel-card-content">
-                        <span class="carousel-card-kicker">Art Direction · Packaging</span>
-                        <h4 class="carousel-card-title">Kerat</h4>
-                        <p class="carousel-card-desc">Direction artistique et packagings pour une gamme de soins
-                            capillaires.</p>
-                        <span class="carousel-card-cta">View case study →</span>
-                    </div>
-                </a>
+                </div>
             </div>
         </section>
+
+        <section class="case-section reveal">
+            <div class="content-max reveal">
+                <span class="section-subtitle">Interface utilisateur</span>
+                <h2 class="section-title-large">UI Kit</h2>
+                <p>
+                    L'interface utilise un thème sombre moderne avec des accents cyan vibrants. Minimaliste,
+                    fonctionnel, et visuellement cohérent.
+                </p>
+            </div>
+
+            <!-- 2-Column Grid: Palette | Typography -->
+            <div class="two-col reveal" style="margin-top: var(--space-16);">
+                <!-- Column 1: Palette -->
+                <div>
+                    <h3 class="section-subtitle-small element-spacing">Palette de couleurs</h3>
+                    <div class="color-palette">
+                        <div class="color-swatch">
+                            <div class="swatch-color" style="background: #0a0a0a;"></div>
+                            <div class="swatch-info">
+                                <div class="swatch-header">
+                                    <span class="swatch-name">Background</span>
+                                    <span class="swatch-hex">#0a0a0a</span>
+                                </div>
+                                <span class="swatch-usage">Main Background</span>
+                            </div>
+                        </div>
+
+                        <div class="color-swatch">
+                            <div class="swatch-color" style="background: #1a1a1a;"></div>
+                            <div class="swatch-info">
+                                <div class="swatch-header">
+                                    <span class="swatch-name">Surface</span>
+                                    <span class="swatch-hex">#1a1a1a</span>
+                                </div>
+                                <span class="swatch-usage">Cards / Panels</span>
+                            </div>
+                        </div>
+
+                        <div class="color-swatch">
+                            <div class="swatch-color" style="background: #00d4ff;"></div>
+                            <div class="swatch-info">
+                                <div class="swatch-header">
+                                    <span class="swatch-name">Cyan Blue</span>
+                                    <span class="swatch-hex">#00d4ff</span>
+                                </div>
+                                <span class="swatch-usage">Primary / CTA / Accents</span>
+                            </div>
+                        </div>
+
+                        <div class="color-swatch">
+                            <div class="swatch-color" style="background: #ffffff;"></div>
+                            <div class="swatch-info">
+                                <div class="swatch-header">
+                                    <span class="swatch-name">White</span>
+                                    <span class="swatch-hex">#ffffff</span>
+                                </div>
+                                <span class="swatch-usage">Text / Icons</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2: Typography -->
+                <div>
+                    <h3 class="section-subtitle-small element-spacing">Typographie</h3>
+                    <div class="typo-table">
+                        <div class="typo-table-header">
+                            <div class="typo-col-style">Style</div>
+                            <div class="typo-col-usage">Usage</div>
+                            <div class="typo-col-specs">Specs</div>
+                            <div class="typo-col-preview">Preview</div>
+                        </div>
+
+                        <div class="typo-table-row">
+                            <div class="typo-col-style">
+                                <span class="typo-name">H1</span>
+                                <span class="typo-label">Titre</span>
+                            </div>
+                            <div class="typo-col-usage">Titre principal</div>
+                            <div class="typo-col-specs">
+                                <span>32 / 40</span>
+                                <span>Segoe UI</span>
+                            </div>
+                            <div class="typo-col-preview" style="font-size: 32px; font-weight: 600; line-height: 1.25;">
+                                PowerOFF
+                            </div>
+                        </div>
+
+                        <div class="typo-table-row">
+                            <div class="typo-col-style">
+                                <span class="typo-name">Body</span>
+                                <span class="typo-label">Texte</span>
+                            </div>
+                            <div class="typo-col-usage">Texte principal</div>
+                            <div class="typo-col-specs">
+                                <span>14 / 20</span>
+                                <span>Segoe UI</span>
+                            </div>
+                            <div class="typo-col-preview" style="font-size: 14px; font-weight: 400; line-height: 1.43;">
+                                Arrêt programmé
+                            </div>
+                        </div>
+
+                        <div class="typo-table-row">
+                            <div class="typo-col-style">
+                                <span class="typo-name">Timer</span>
+                                <span class="typo-label">Compte à rebours</span>
+                            </div>
+                            <div class="typo-col-usage">Affichage temps</div>
+                            <div class="typo-col-specs">
+                                <span>48 / 56</span>
+                                <span>Segoe UI Light</span>
+                            </div>
+                            <div class="typo-col-preview" style="font-size: 24px; font-weight: 300; line-height: 1.17;">
+                                01:30:00
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="case-section reveal">
+            <div class="content-max reveal">
+                <span class="section-subtitle">Implémentation</span>
+                <h2 class="section-title-large">Solution & justification UX</h2>
+                <p>
+                    Chaque écran maximise la clarté et guide naturellement l'utilisateur vers l'action souhaitée.
+                </p>
+            </div>
+
+            <!-- Alternating layout blocks -->
+            <div class="solution-block reveal">
+                <div class="solution-image">
+                    <div class="ui-card-image carousel">
+                        <img src="https://zupimages.net/up/25/22/8zg3.png" alt="Interface Principale">
+                        <img src="https://zupimages.net/up/25/22/oiso.png" alt="Sélection Timer">
+                    </div>
+                </div>
+                <div class="solution-content">
+                    <h5>Interface Principale</h5>
+                    <p>Sélection simple et rapide. L'utilisateur choisit l'action souhaitée (Arrêt, Redémarrage, Mise
+                        en veille) et définit l'heure en quelques clics. Interface épurée, zéro friction.</p>
+                </div>
+            </div>
+
+            <div class="solution-block solution-block-right reveal">
+                <div class="solution-image">
+                    <div class="ui-card-image carousel">
+                        <img src="https://zupimages.net/up/25/22/711j.png" alt="Compte à rebours">
+                    </div>
+                </div>
+                <div class="solution-content">
+                    <h5>Feedback Clair</h5>
+                    <p>Un compte à rebours géant confirme que l'action est programmée. Feedback visuel immédiat,
+                        annulation possible à tout moment. Pas de doute, pas de confusion.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="case-section reveal">
+            <div class="content-max reveal">
+                <span class="section-subtitle">Résultats</span>
+                <h2 class="section-title-large">Impact & apprentissages</h2>
+            </div>
+            <div class="results-bento reveal">
+                <div class="bento-card bento-large">
+                    <div class="bento-accent"></div>
+                    <span class="bento-tag">Impact Principal</span>
+                    <h3>Simplicité & efficacité</h3>
+                    <p>Une interface qui fait exactement ce qu'elle doit faire. Gratuite, sans publicités, open source.
+                        Zéro friction.</p>
+                    <div class="bento-stat">100%</div>
+                </div>
+                <div class="bento-card bento-medium">
+                    <div class="bento-accent"></div>
+                    <span class="bento-tag">UX</span>
+                    <h3>Expérience fluide</h3>
+                    <p>Interface intuitive, feedback immédiat, aucune courbe d'apprentissage. Utilisable instantanément.
+                    </p>
+                </div>
+                <div class="bento-card bento-medium">
+                    <div class="bento-accent"></div>
+                    <span class="bento-tag">Technique</span>
+                    <h3>Léger & performant</h3>
+                    <p>Application .NET minimaliste. Consommation minimale de ressources, démarrage instantané.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="case-section reveal">
+            <div class="content-max reveal">
+                <blockquote style="margin-bottom: 0;">
+                    "Dans un monde de logiciels surchargés et envahis de publicités, la simplicité radicale devient un
+                    avantage concurrentiel."
+                </blockquote>
+            </div>
+        </section>
+
+        <nav class="project-navigation reveal">
+            <a href="kerat.html" class="nav-prev">
+                <span class="nav-label">← Projet précédent</span>
+                <span class="nav-title">Kerat</span>
+            </a>
+
+            <a href="index.html#projects" class="nav-home">
+                Tous les projets
+            </a>
+
+            <a href="revive.html" class="nav-next">
+                <span class="nav-label">Projet suivant →</span>
+                <span class="nav-title">Revive</span>
+            </a>
+        </nav>
 
         <section class="case-cta reveal">
-            <h3>Intéressé par une collaboration ?</h3>
+            <h3 style="margin-bottom: var(--space-8);">Intéressé pour travailler ensemble ?</h3>
             <div class="case-cta-buttons">
                 <a href="index.html" class="btn-secondary">
-                    ← Back to projects
+                    ← Retour aux projets
                 </a>
                 <a href="javascript:void(0)" id="openContact" class="btn-accent"
                     onclick="document.getElementById('contactModal').classList.add('is-visible')">
-                    Contact me ↗
+                    Me contacter ↗
                 </a>
             </div>
         </section>
 
         <footer class="site-footer reveal">
             <div>© 2025 Guillaume Bracaval</div>
-            <div>Designed with precision</div>
+            <div>Conçu avec précision</div>
         </footer>
 
     </div>
 
     <div id="contactModal" class="modal-backdrop">
         <div class="modal-panel">
-            <button id="closeModal" class="modal-close"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <button id="closeModal" class="modal-close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
                     <line x1="18" y1="6" x2="6" y2="18"></line>
                     <line x1="6" y1="6" x2="18" y2="18"></line>
-                </svg></button>
-            <h3 class="section-subtitle-small element-spacing">Contact</h3>
+                </svg>
+            </button>
+            <h3
+                style="font-size: var(--text-xl); font-weight: 600; margin-bottom: var(--space-8); color: var(--text-primary);">
+                Contact</h3>
             <form id="contactForm" action="https://formsubmit.co/contact@bracaval.fr" method="POST">
                 <input type="hidden" name="_subject" value="New message from portfolio">
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_next" value="https://bracaval.fr/thank-you.html">
                 <input type="hidden" name="_template" value="table">
-                <div class="form-group"><input type="text" name="name" placeholder=" " required><label>Nom &
-                        Prénom</label></div>
-                <div class="form-group"><input type="email" name="email" placeholder=" " required><label>Email</label>
+                <div class="form-group">
+                    <input type="text" name="name" placeholder=" " required>
+                    <label>Nom & Prénom</label>
                 </div>
-                <div class="form-group"><textarea name="message" placeholder=" "
-                        required></textarea><label>Message</label></div>
-                <div class="form-actions"><button type="submit" class="btn-accent"><span>Envoyer</span><svg
-                            class="send-icon" width="20" height="20" viewBox="0 0 24 24">
+                <div class="form-group">
+                    <input type="email" name="email" placeholder=" " required>
+                    <label>Email</label>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder=" " required></textarea>
+                    <label>Message</label>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn-accent">
+                        <span>Envoyer</span>
+                        <svg class="send-icon" width="20" height="20" viewBox="0 0 24 24">
                             <path fill="currentColor" d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
-                        </svg></button></div>
+                        </svg>
+                    </button>
+                </div>
             </form>
         </div>
     </div>
@@ -308,6 +581,7 @@
 
     <script src="cursor.js"></script>
     <script src="script.js"></script>
+    <script src="carousel.js"></script>
 </body>
 
 </html>

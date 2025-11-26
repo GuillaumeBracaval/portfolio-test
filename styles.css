@@ -122,6 +122,8 @@
   --card-bg-subtle: rgba(255, 255, 255, 0.02);
   --card-bg-default: rgba(255, 255, 255, 0.03);
   --card-bg-hover: rgba(255, 255, 255, 0.05);
+  --card-bg-solid: #101011;
+  /* Solid version of card-bg-subtle for non-transparent needs */
 
   /* --- Shadows --- */
   --shadow-card: 0 12px 24px rgba(0, 0, 0, 0.2);
@@ -149,6 +151,10 @@
 
 /* Light Mode Overrides */
 [data-theme="light"] {
+  /* --- Card Backgrounds --- */
+  --card-bg-solid: #FAFAFA;
+  /* Solid version for light mode */
+
   /* --- Ovact Project Variables (Light Mode) --- */
   --ovact-text: #2A3A3D;
   --ovact-title: #1A5F9E;
@@ -225,6 +231,7 @@ strong {
   max-width: var(--container-max);
   margin: 0 auto;
   padding: 0 var(--container-padding);
+  margin-top: 97px;
 }
 
 .section-gap {
@@ -232,14 +239,35 @@ strong {
 }
 
 /* =========================================
-   4. HEADER (Minimalist)
+   4. HEADER (Fixed with Auto-Hide)
    ========================================= */
 .site-header {
-  padding: var(--space-8) 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: var(--space-6) var(--container-padding);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: var(--space-8);
+  background: rgba(var(--bg-color-rgb), 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-subtle);
+  z-index: 1000;
+  transition: transform 0.3s var(--ease-editorial), opacity 0.3s ease;
+  max-width: var(--container-max);
+  margin: 0 auto;
+}
+
+.site-header.header-hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+/* Add padding to body to compensate for fixed header */
+body {
+  padding-top: 80px;
 }
 
 /* Profile Badge (Header) */
@@ -298,7 +326,6 @@ strong {
   font-weight: 500;
   color: var(--text-secondary);
   margin-bottom: var(--space-12);
-  padding-top: var(--space-8);
 }
 
 .breadcrumb a {
@@ -405,7 +432,7 @@ strong {
    ========================================= */
 .hero-section {
   position: relative;
-  height: calc(100dvh - 112px);
+  height: calc(100dvh - 97px);
 }
 
 .hero-kicker {
@@ -440,11 +467,11 @@ strong {
 
 .hero-meta {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: var(--space-8);
   padding-top: var(--space-8);
   border-top: 1px solid var(--border-subtle);
-  max-width: 800px;
+  max-width: 1000px;
 }
 
 .meta-block h4 {
@@ -467,7 +494,7 @@ strong {
   flex-direction: column;
   align-items: center;
   position: absolute;
-  bottom: 4.5dvh;
+  bottom: 9.5dvh;
   left: 50%;
   transform: translateX(-50%) translateY(50%);
   opacity: 1;
@@ -1766,10 +1793,32 @@ blockquote {
    PRINCIPLES FLOW (Connected Layout)
    ========================================= */
 
+/* Principles Card Wrapper - Left Border Accent */
+.principles-card {
+  background: var(--card-bg-subtle);
+  border-left: 3px solid var(--accent-color);
+  padding: var(--space-12) var(--space-12) var(--space-12) var(--space-16);
+  margin-top: var(--space-12);
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+/* Subtle glow effect on the left border */
+.principles-card::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--accent-color);
+  filter: blur(8px);
+  opacity: 0.3;
+}
+
 .principles-flow {
   position: relative;
-  max-width: 800px;
-  margin: 0 auto;
   padding-left: 80px;
 }
 
@@ -1811,7 +1860,7 @@ blockquote {
   font-size: var(--text-xl);
   font-weight: 700;
   color: var(--accent-color);
-  background: var(--bg-color);
+  background: var(--card-bg-solid);
   border: 2px solid var(--accent-color);
   border-radius: 50%;
   z-index: 1;
@@ -3195,6 +3244,36 @@ blockquote {
   font-family: 'Source Sans 3', sans-serif;
   font-size: 14px;
   color: var(--text-secondary);
+}
+
+/* Project Meta Inline (4 columns) */
+.project-meta-inline {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-8);
+  padding-top: var(--space-8);
+  border-top: 1px solid var(--border-subtle);
+  max-width: 1000px;
+  margin-top: var(--space-8);
+}
+
+.project-meta-inline .meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+@media (max-width: 768px) {
+  .project-meta-inline {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-6);
+  }
+}
+
+@media (max-width: 480px) {
+  .project-meta-inline {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* =========================================

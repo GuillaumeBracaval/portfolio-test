@@ -89,6 +89,38 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // =========================================
+  // HEADER AUTO-HIDE (Show on scroll up, hide on scroll down)
+  // =========================================
+
+  const siteHeader = document.querySelector('.site-header');
+  let lastScrollY = window.scrollY;
+  let ticking = false;
+
+  if (siteHeader) {
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          const currentScrollY = window.scrollY;
+
+          // Show header when scrolling up or at top
+          if (currentScrollY < lastScrollY || currentScrollY < 100) {
+            siteHeader.classList.remove('header-hidden');
+          }
+          // Hide header when scrolling down and past threshold
+          else if (currentScrollY > lastScrollY && currentScrollY > 100) {
+            siteHeader.classList.add('header-hidden');
+          }
+
+          lastScrollY = currentScrollY;
+          ticking = false;
+        });
+
+        ticking = true;
+      }
+    });
+  }
+
+  // =========================================
   // THEME TOGGLE
   // =========================================
 
