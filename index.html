@@ -2,44 +2,88 @@
 <html lang="fr">
 
 <head>
+  <!-- Google tag (gtag.js) - Deferred for performance -->
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-9MMGMXQ2Y2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-9MMGMXQ2Y2');
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Primary Meta Tags -->
-  <title>Guillaume Bracaval – Product Designer</title>
-  <meta name="title" content="Guillaume Bracaval – Product Designer">
+  <title>Guillaume Bracaval – Tech Product Designer</title>
+  <meta name="title" content="Guillaume Bracaval – Tech Product Designer">
   <meta name="description"
-    content="Product Designer spécialisé en UI/UX, Design Systems et Branding. Je transforme les idées complexes en interfaces claires et intuitives qui apportent de la valeur.">
+    content="Je résous des problèmes avec du design. Tech Product Designer qui livre vite : apps, landing pages, design systems. J'utilise l'IA pour accélérer, je collabore avec les devs, je mets en production sans friction.">
   <meta name="keywords"
     content="Product Designer, UI Designer, UX Designer, Design Systems, Branding, Interface Design, Guillaume Bracaval, Portfolio Design">
   <meta name="author" content="Guillaume Bracaval">
   <meta name="language" content="French">
+  <meta name="google-site-verification" content="BO143Sd9SfOH4TRvLxOh3pYc4_Z34bExGUhautlTO6I">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://bracaval.fr/">
-  <meta property="og:title" content="Guillaume Bracaval – Product Designer">
+  <meta property="og:title" content="Guillaume Bracaval – Tech Product Designer">
   <meta property="og:description"
-    content="Product Designer spécialisé en UI/UX, Design Systems et Branding. Je transforme les idées complexes en interfaces claires et intuitives.">
-  <meta property="og:image" content="https://bracaval.fr/og-image.jpg">
+    content="Je résous des problèmes avec du design. Tech Product Designer qui livre vite avec l'IA. Apps, landing pages, design systems.">
+  <meta property="og:image" content="https://bracaval.fr/og-image.png">
   <meta property="og:locale" content="fr_FR">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://bracaval.fr/">
-  <meta property="twitter:title" content="Guillaume Bracaval – Product Designer">
+  <meta property="twitter:title" content="Guillaume Bracaval – Tech Product Designer">
   <meta property="twitter:description"
-    content="Product Designer spécialisé en UI/UX, Design Systems et Branding. Je transforme les idées complexes en interfaces claires et intuitives.">
-  <meta property="twitter:image" content="https://bracaval.fr/og-image.jpg">
+    content="Je résous des problèmes avec du design. Tech Product Designer qui livre vite avec l'IA. Apps, landing pages, design systems.">
+  <meta property="twitter:image" content="https://bracaval.fr/og-image.png">
 
   <!-- Canonical -->
   <link rel="canonical" href="https://bracaval.fr/">
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="16x16" href="/16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/240.png">
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Guillaume Bracaval",
+    "jobTitle": "Tech Product Designer",
+    "url": "https://bracaval.fr",
+    "image": "https://zupimages.net/up/25/48/to9t.png",
+    "sameAs": [
+      "https://www.linkedin.com/in/guillaume-bracaval-4507391b2/"
+    ],
+    "knowsAbout": [
+      "UI Design",
+      "Product Design",
+      "Design Systems",
+      "UX Strategy",
+      "AI-Assisted Design",
+      "Branding"
+    ],
+    "description": "Tech Product Designer qui livre vite avec l'IA. Je résous des problèmes avec du design.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Lille",
+      "addressCountry": "FR"
+    }
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.min.css">
   <link rel="stylesheet" href="theme-toggle.css">
   <link rel="stylesheet" href="cursor.css">
 </head>
@@ -52,7 +96,11 @@
     <header class="site-header">
       <a href="index.html" class="profile-badge">
         <div class="profile-avatar">
-          <img src="https://zupimages.net/up/25/48/to9t.png" alt="Guillaume Bracaval">
+          <picture>
+            <source media="(min-width: 1024px)" srcset="images/to9t-desktop.webp">
+            <source media="(min-width: 768px)" srcset="images/to9t-tablet.webp"><img src="images/to9t-mobile.webp"
+              alt="Guillaume Bracaval">
+          </picture>
         </div>
         <div class="profile-info">
           <span class="profile-name">Guillaume Bracaval</span>
@@ -66,253 +114,297 @@
     </header>
 
     <!-- HERO SECTION -->
-    <section class="hero-section reveal">
-      <span class="hero-kicker">Digital Product Designer</span>
-      <h1 class="hero-headline reveal">
-        Créer du sens<br>
-        où tout semble<br>
-        complexe.
-      </h1>
-      <p class="hero-subtext reveal">
-        Je transforme les idées en interfaces claires et intuitives pour apporter de la valeur
-      </p>
+    <main id="main-content">
+      <section class="hero-section reveal">
+        <span class="hero-kicker">Tech Product Designer</span>
+        <h1 class="hero-headline reveal">
+          Je résous des problèmes<br>
+          avec du design.
+        </h1>
+        <p class="hero-subtext reveal">
+          Je sors des projets rapidement en itérant vite : landing pages, portfolios, prototypes. J'utilise l'IA pour
+          accélérer, mais les décisions et la qualité viennent de moi. Je collabore étroitement avec les devs et je mets
+          en production sans friction.
+        </p>
 
-      <div class="hero-meta reveal">
-        <div class="meta-block">
-          <h4>Localisation</h4>
-          <p>Lille <--> Paris, France</p>
+        <div class="hero-meta reveal">
+          <div class="meta-block">
+            <p class="meta-title">Localisation</p>
+            <p>Lille &lt;--&gt; Paris, France</p>
+          </div>
+          <div class="meta-block">
+            <p class="meta-title">Spécialités</p>
+            <p>UI, Produit, IA, Design Systems</p>
+          </div>
+          <div class="meta-block">
+            <p class="meta-title">Disponibilité</p>
+            <p>Ouvert aux projets</p>
+          </div>
         </div>
-        <div class="meta-block">
-          <h4>Spécialités</h4>
-          <p>UI Design, Design Systems, Branding</p>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator" id="scrollIndicator">
+          <div class="scroll-icon">
+            <div class="scroll-wheel"></div>
+          </div>
         </div>
-        <div class="meta-block">
-          <h4>Disponibilité</h4>
-          <p>Ouvert aux projets</p>
-        </div>
-      </div>
+      </section>
 
-      <!-- Scroll Indicator -->
-      <div class="scroll-indicator" id="scrollIndicator">
-        <div class="scroll-icon">
-          <div class="scroll-wheel"></div>
-        </div>
-      </div>
-    </section>
+      <!-- PROJECTS INTRO -->
+      <section class="projects-intro">
+        <h2 class="section-title reveal">Projets sélectionnés</h2>
+      </section>
 
-    <!-- PROJECTS INTRO -->
-    <section class="projects-intro">
-      <h2 class="section-title reveal">Projets sélectionnés</h2>
-    </section>
+      <!-- PROJECT LIST (Editorial Rhythm) -->
+      <section class="project-list">
 
-    <!-- PROJECT LIST (Editorial Rhythm) -->
-    <section class="project-list">
-
-      <!-- ROW 1: HERO CARD (Wide) -->
-      <div class="project-row row-full">
-        <a href="revive.html" class="project-card card-wide reveal">
-          <div class="card-content">
-            <span class="card-kicker">Mobile Product · Strategy & UX</span>
-            <h3 class="card-title">Revive</h3>
-            <p class="card-desc">Expérience mobile pour redonner confiance dans l'achat de smartphones reconditionnés.
-            </p>
-            <div class="card-tags">
-              <span class="tag-pill">Product Design</span>
-              <span class="tag-pill">Strategy</span>
-              <span class="tag-pill">Mobile App</span>
-            </div>
-            <span class="card-cta">Voir l'étude de cas ↗</span>
-          </div>
-          <div class="card-image-wrapper">
-            <img src="https://zupimages.net/up/25/21/9b3h.png" alt="Revive App">
-          </div>
-        </a>
-      </div>
-
-      <!-- ROW 2: SPLIT GRID -->
-      <div class="project-row row-split">
-        <!-- PowerOFF -->
-        <a href="poweroff.html" class="project-card card-compact reveal">
-          <div class="card-image-wrapper">
-            <img src="https://zupimages.net/up/25/22/emrb.png" alt="PowerOFF Interface">
-          </div>
-          <div class="card-content">
-            <div>
-              <span class="card-kicker">Software · UX/UI Design</span>
-              <h3 class="card-title">PowerOFF</h3>
-              <p class="card-desc">Interface d'un utilitaire Windows open-source pour programmer l'arrêt d'un PC.</p>
-              <div class="card-tags">
-                <span class="tag-pill">Software Design</span>
-                <span class="tag-pill">WinUI</span>
-              </div>
-            </div>
-            <span class="card-cta">Voir l'étude de cas ↗</span>
-          </div>
-        </a>
-
-        <!-- Ovact -->
-        <a href="ovact.html" class="project-card card-compact reveal">
-          <div class="card-image-wrapper">
-            <img src="https://zupimages.net/up/25/14/a8mj.png" alt="Ovact Dashboard">
-          </div>
-          <div class="card-content">
-            <div>
-              <span class="card-kicker">AI · Product & Brand Design</span>
-              <h3 class="card-title">Ovact</h3>
-              <p class="card-desc">Plateforme IA en santé mentale, orientée design system et visualisation de données.
+        <!-- ROW 1: HERO CARD (Wide) -->
+        <div class="project-row row-full">
+          <a href="revive.html" class="project-card card-wide reveal">
+            <div class="card-content">
+              <span class="card-kicker">Mobile Product · Strategy &amp; UX</span>
+              <h3 class="card-title">Revive</h3>
+              <p class="card-desc">App mobile écoresponsable : carte de proximité pour acheter des smartphones
+                reconditionnés localement. Designée en 1 semaine avec illustrations IA.
               </p>
               <div class="card-tags">
-                <span class="tag-pill">AI Interface</span>
-                <span class="tag-pill">Dashboard</span>
+                <span class="tag-pill">Product Design</span>
+                <span class="tag-pill">Strategy</span>
+                <span class="tag-pill">Mobile App</span>
               </div>
+              <span class="card-cta">Voir l'étude de cas ↗</span>
             </div>
-            <span class="card-cta">Voir l'étude de cas ↗</span>
-          </div>
-        </a>
-      </div>
-
-      <!-- ROW 3: WIDE CARD -->
-      <div class="project-row row-full">
-        <a href="kerat.html" class="project-card card-wide reveal">
-          <div class="card-content">
-            <span class="card-kicker">Art Direction · Packaging</span>
-            <h3 class="card-title">Kerat</h3>
-            <p class="card-desc">Direction artistique et packagings pour une gamme de soins capillaires.</p>
-            <div class="card-tags">
-              <span class="tag-pill">Art Direction</span>
-              <span class="tag-pill">Packaging</span>
-              <span class="tag-pill">3D Render</span>
+            <div class="card-image-wrapper">
+              <picture>
+                <source media="(min-width: 1024px)" srcset="images/lr3c-desktop.webp">
+                <source media="(min-width: 768px)" srcset="images/lr3c-tablet.webp"><img src="images/lr3c-mobile.webp"
+                  alt="Revive App" loading="lazy">
+              </picture>
             </div>
-            <span class="card-cta">Voir l'étude de cas ↗</span>
-          </div>
-          <div class="card-image-wrapper">
-            <img src="https://zupimages.net/up/25/14/qzcz.png" alt="Kerat Branding">
-          </div>
-        </a>
-      </div>
+          </a>
+        </div>
 
-      <!-- ROW 4: SPLIT GRID -->
-      <div class="project-row row-split">
-        <!-- Fondation -->
-        <a href="fondation.html" class="project-card card-compact reveal">
-          <div class="card-image-wrapper">
-            <img src="https://zupimages.net/up/25/14/owe1.png" alt="Fondation Website">
-          </div>
-          <div class="card-content">
-            <div>
-              <span class="card-kicker">Web Design · UX</span>
-              <h3 class="card-title">Fondation C. Poncet</h3>
-              <p class="card-desc">Identité visuelle et landing page pour une fondation engagée contre Alzheimer.</p>
+        <!-- ROW 2: SPLIT GRID -->
+        <div class="project-row row-split">
+          <!-- PowerOFF -->
+          <a href="poweroff.html" class="project-card card-compact reveal">
+            <div class="card-image-wrapper">
+              <picture>
+                <source media="(min-width: 1024px)" srcset="images/emrb-desktop.webp">
+                <source media="(min-width: 768px)" srcset="images/emrb-tablet.webp"><img src="images/emrb-mobile.webp"
+                  alt="PowerOFF Interface" loading="lazy">
+              </picture>
+            </div>
+            <div class="card-content">
+              <div>
+                <span class="card-kicker">Software · UX/UI Design</span>
+                <h3 class="card-title">PowerOFF</h3>
+                <p class="card-desc">Landing page pour un utilitaire Windows open-source. Designée en 2-3 jours avec
+                  workflow IA + HTML/CSS manuel.</p>
+                <div class="card-tags">
+                  <span class="tag-pill">Software Design</span>
+                  <span class="tag-pill">WinUI</span>
+                </div>
+              </div>
+              <span class="card-cta">Voir l'étude de cas ↗</span>
+            </div>
+          </a>
+
+          <!-- Ovact -->
+          <a href="ovact.html" class="project-card card-compact reveal">
+            <div class="card-image-wrapper">
+              <picture>
+                <source media="(min-width: 1024px)" srcset="images/a8mj-desktop.webp">
+                <source media="(min-width: 768px)" srcset="images/a8mj-tablet.webp"><img src="images/a8mj-mobile.webp"
+                  alt="Ovact Dashboard" loading="lazy">
+              </picture>
+            </div>
+            <div class="card-content">
+              <div>
+                <span class="card-kicker">AI · Product &amp; Brand Design</span>
+                <h3 class="card-title">Ovact</h3>
+                <p class="card-desc">Plateforme IA en santé mentale validée par un psychologue. Porte d'entrée
+                  conversationnelle vers des spécialistes.
+                </p>
+                <div class="card-tags">
+                  <span class="tag-pill">AI Interface</span>
+                  <span class="tag-pill">Dashboard</span>
+                </div>
+              </div>
+              <span class="card-cta">Voir l'étude de cas ↗</span>
+            </div>
+          </a>
+        </div>
+
+        <!-- ROW 3: WIDE CARD -->
+        <div class="project-row row-full">
+          <a href="kerat.html" class="project-card card-wide reveal">
+            <div class="card-content">
+              <span class="card-kicker">Art Direction · Packaging</span>
+              <h3 class="card-title">Kerat</h3>
+              <p class="card-desc">Direction artistique et packagings pour une gamme de soins capillaires.</p>
               <div class="card-tags">
-                <span class="tag-pill">Web Design</span>
-                <span class="tag-pill">Accessibility</span>
+                <span class="tag-pill">Art Direction</span>
+                <span class="tag-pill">Packaging</span>
+                <span class="tag-pill">3D Render</span>
               </div>
+              <span class="card-cta">Voir l'étude de cas ↗</span>
             </div>
-            <span class="card-cta">Voir l'étude de cas ↗</span>
-          </div>
-        </a>
+            <div class="card-image-wrapper">
+              <picture>
+                <source media="(min-width: 1024px)" srcset="images/qzcz-desktop.webp">
+                <source media="(min-width: 768px)" srcset="images/qzcz-tablet.webp"><img src="images/qzcz-mobile.webp"
+                  alt="Kerat Branding">
+              </picture>
+            </div>
+          </a>
+        </div>
 
-        <!-- Slowtravel -->
-        <a href="slowtravel.html" class="project-card card-compact reveal">
-          <div class="card-image-wrapper">
-            <img src="https://zupimages.net/up/25/14/fy5u.png" alt="Slowtravel Website">
-          </div>
-          <div class="card-content">
-            <div>
-              <span class="card-kicker">Luxury · Web Design</span>
-              <h3 class="card-title">Slowtravel</h3>
-              <p class="card-desc">Expérience de conciergerie de voyage premium centrée sur la découverte lente.</p>
+        <!-- ROW 4: SPLIT GRID -->
+        <div class="project-row row-split">
+          <!-- Fondation -->
+          <a href="fondation.html" class="project-card card-compact reveal">
+            <div class="card-image-wrapper">
+              <picture>
+                <source media="(min-width: 1024px)" srcset="images/owe1-desktop.webp">
+                <source media="(min-width: 768px)" srcset="images/owe1-tablet.webp"><img src="images/owe1-mobile.webp"
+                  alt="Fondation Website">
+              </picture>
+            </div>
+            <div class="card-content">
+              <div>
+                <span class="card-kicker">Web Design · UX</span>
+                <h3 class="card-title">Fondation C. Poncet</h3>
+                <p class="card-desc">Identité visuelle et landing page pour une fondation engagée contre Alzheimer.</p>
+                <div class="card-tags">
+                  <span class="tag-pill">Web Design</span>
+                  <span class="tag-pill">Accessibility</span>
+                </div>
+              </div>
+              <span class="card-cta">Voir l'étude de cas ↗</span>
+            </div>
+          </a>
+
+          <!-- Slowtravel -->
+          <a href="slowtravel.html" class="project-card card-compact reveal">
+            <div class="card-image-wrapper">
+              <picture>
+                <source media="(min-width: 1024px)" srcset="images/fy5u-desktop.webp">
+                <source media="(min-width: 768px)" srcset="images/fy5u-tablet.webp"><img src="images/fy5u-mobile.webp"
+                  alt="Slowtravel Website">
+              </picture>
+            </div>
+            <div class="card-content">
+              <div>
+                <span class="card-kicker">Luxury · Web Design</span>
+                <h3 class="card-title">Slowtravel</h3>
+                <p class="card-desc">Expérience de conciergerie de voyage premium centrée sur la découverte lente.</p>
+                <div class="card-tags">
+                  <span class="tag-pill">Luxury</span>
+                  <span class="tag-pill">Web Design</span>
+                </div>
+              </div>
+              <span class="card-cta">Voir l'étude de cas ↗</span>
+            </div>
+          </a>
+        </div>
+
+        <!-- ROW 5: WIDE CARD -->
+        <div class="project-row row-full">
+          <a href="enfants-du-monde.html" class="project-card card-wide reveal">
+            <div class="card-content">
+              <span class="card-kicker">Mobile App · Storytelling</span>
+              <h3 class="card-title">Enfants du monde</h3>
+              <p class="card-desc">Application mobile et image de marque autour des droits de l'enfant.</p>
               <div class="card-tags">
-                <span class="tag-pill">Luxury</span>
-                <span class="tag-pill">Web Design</span>
+                <span class="tag-pill">Education</span>
+                <span class="tag-pill">Mobile App</span>
+                <span class="tag-pill">Illustration</span>
               </div>
+              <span class="card-cta">Voir l'étude de cas ↗</span>
             </div>
-            <span class="card-cta">Voir l'étude de cas ↗</span>
-          </div>
-        </a>
-      </div>
-
-      <!-- ROW 5: WIDE CARD -->
-      <div class="project-row row-full">
-        <a href="enfants-du-monde.html" class="project-card card-wide reveal">
-          <div class="card-content">
-            <span class="card-kicker">Mobile App · Storytelling</span>
-            <h3 class="card-title">Enfants du monde</h3>
-            <p class="card-desc">Application mobile et image de marque autour des droits de l'enfant.</p>
-            <div class="card-tags">
-              <span class="tag-pill">Education</span>
-              <span class="tag-pill">Mobile App</span>
-              <span class="tag-pill">Illustration</span>
+            <div class="card-image-wrapper">
+              <picture>
+                <source media="(min-width: 1024px)" srcset="images/tk82-desktop.webp">
+                <source media="(min-width: 768px)" srcset="images/tk82-tablet.webp"><img src="images/tk82-mobile.webp"
+                  alt="Enfants du monde App">
+              </picture>
             </div>
-            <span class="card-cta">Voir l'étude de cas ↗</span>
-          </div>
-          <div class="card-image-wrapper">
-            <img src="https://zupimages.net/up/25/14/tk82.png" alt="Enfants du monde App">
-          </div>
-        </a>
-      </div>
+          </a>
+        </div>
 
-    </section>
+      </section>
 
-    <!-- ABOUT & CAPABILITIES -->
-    <section class="about-section">
-      <div class="about-text reveal">
-        <h3>À propos</h3>
-        <p>
-          Je conçois des interfaces qui <strong>simplifient la complexité</strong>. Mon travail se situe à
-          l'intersection du design et de
-          la technique, où <strong>chaque décision visuelle doit servir l'utilisateur et le produit</strong>.
-        </p>
-        <p>
-          Ma méthode : comprendre le problème en profondeur, puis construire <strong>la solution la plus claire
-            possible</strong>. Pas de
-          fioritures, juste ce qui fonctionne.
-        </p>
-      </div>
-      <div class="capabilities reveal">
+      <!-- ABOUT & CAPABILITIES -->
+      <section class="about-section">
+        <div class="about-text reveal">
+          <h3>À propos</h3>
+          <p>
+            Tech Product Designer depuis 2021. J'adore <strong>sortir des projets vite et itérer</strong>. Je transforme
+            des problèmes complexes en interfaces claires, rapidement.
+          </p>
+          <p>
+            Je collabore <strong>étroitement avec les développeurs</strong>. Je comprends les contraintes techniques
+            (HTML/CSS/JS, Git, Storybook), ce qui me permet de concevoir des solutions à la fois belles et réalisables.
+          </p>
+        </div>
+        <div class="capabilities reveal">
+          <h3
+            style="font-size: var(--text-sm); text-transform: uppercase; color: var(--text-tertiary); margin-bottom: var(--space-6); letter-spacing: 0.05em;">
+            Expertise</h3>
+          <div class="skills-grid">
+            <span class="skill-tag">UI Design</span>
+            <span class="skill-tag">Product Design</span>
+            <span class="skill-tag">Design Systems</span>
+            <span class="skill-tag">UX Strategy</span>
+            <span class="skill-tag">Visual Design</span>
+            <span class="skill-tag">Branding</span>
+            <span class="skill-tag">AI-Assisted Design</span>
+            <span class="skill-tag">Motion Design</span>
+            <span class="skill-tag">Illustration</span>
+            <span class="skill-tag">Print Design</span>
+            <span class="skill-tag">Packaging</span>
+            <span class="skill-tag">Prototyping</span>
+            <span class="skill-tag">Research</span>
+            <span class="skill-tag">Accessibility</span>
+            <span class="skill-tag">SEO</span>
+            <span class="skill-tag">Analytics & Optimization</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- TOOLS -->
+      <section class="tools-section reveal">
         <h3
           style="font-size: var(--text-sm); text-transform: uppercase; color: var(--text-tertiary); margin-bottom: var(--space-6); letter-spacing: 0.05em;">
-          Expertise</h3>
-        <div class="skills-grid">
-          <span class="skill-tag">UI Design</span>
-          <span class="skill-tag">Product Design</span>
-          <span class="skill-tag">Design Systems</span>
-          <span class="skill-tag">UX Strategy</span>
-          <span class="skill-tag">Visual Design</span>
-          <span class="skill-tag">Branding</span>
-          <span class="skill-tag">Illustration</span>
-          <span class="skill-tag">Print Design</span>
-          <span class="skill-tag">Packaging</span>
-          <span class="skill-tag">Prototyping</span>
-          <span class="skill-tag">Research</span>
-          <span class="skill-tag">Accessibility</span>
+          Outils &amp; Tech</h3>
+        <div class="tools-grid">
+          <span class="tool-item">Figma</span>
+          <span class="tool-item">Photoshop</span>
+          <span class="tool-item">Illustrator</span>
+          <span class="tool-item">After Effects</span>
+          <span class="tool-item">Notion</span>
+          <span class="tool-item">Git</span>
+          <span class="tool-item">Storybook</span>
+          <span class="tool-item">HTML/CSS/JS</span>
+          <span class="tool-item">React</span>
+          <span class="tool-item">Python</span>
+          <span class="tool-item">VS Code</span>
+          <span class="tool-item">Cursor</span>
+          <span class="tool-item">Antigravity</span>
+          <span class="tool-item">Google Analytics</span>
+          <span class="tool-item">Search Console</span>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- TOOLS -->
-    <section class="tools-section reveal">
-      <h3
-        style="font-size: var(--text-sm); text-transform: uppercase; color: var(--text-tertiary); margin-bottom: var(--space-6); letter-spacing: 0.05em;">
-        Outils & Tech</h3>
-      <div class="tools-grid">
-        <span class="tool-item">Figma</span>
-        <span class="tool-item">Photoshop</span>
-        <span class="tool-item">Illustrator</span>
-        <span class="tool-item">Notion</span>
-        <span class="tool-item">Git</span>
-        <span class="tool-item">Storybook</span>
-        <span class="tool-item">HTML/CSS</span>
-      </div>
-    </section>
-
-    <!-- FINAL CTA (Trigger) -->
-    <section class="final-cta reveal">
-      <h2 class="cta-headline">Créons ensemble quelque chose de significatif.</h2>
-      <button id="openContact" class="btn-accent"
-        onclick="document.getElementById('contactModal').classList.add('is-visible')">Contactez-moi ↗</button>
-      <span class="cta-sub">Disponibilité immédiate pour freelance ou CDI</span>
-    </section>
+      <!-- FINAL CTA (Trigger) -->
+      <section class="final-cta reveal">
+        <h2 class="cta-headline">Vous avez un projet ?</h2>
+        <button id="openContact" class="btn-accent"
+          onclick="document.getElementById('contactModal').classList.add('is-visible')">Contactez-moi ↗</button>
+        <span class="cta-sub">Disponibilité immédiate pour freelance ou CDI</span>
+      </section>
+    </main>
 
     <!-- FOOTER -->
     <footer class="site-footer reveal">
@@ -344,17 +436,17 @@
         <input type="hidden" name="_template" value="table">
 
         <div class="form-group">
-          <input type="text" name="name" placeholder=" " required>
-          <label>Nom & Prénom</label>
+          <input type="text" name="name" placeholder=" " required="">
+          <label>Nom &amp; Prénom</label>
         </div>
 
         <div class="form-group">
-          <input type="email" name="email" placeholder=" " required>
+          <input type="email" name="email" placeholder=" " required="">
           <label>Email</label>
         </div>
 
         <div class="form-group">
-          <textarea name="message" placeholder=" " required></textarea>
+          <textarea name="message" placeholder=" " required=""></textarea>
           <label>Message</label>
         </div>
 
@@ -362,7 +454,7 @@
           <button type="submit" class="btn-accent">
             <span>Envoyer</span>
             <svg class="send-icon" width="20" height="20" viewBox="0 0 24 24">
-              <path fill="currentColor" d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
+              <path fill="currentColor" d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
             </svg>
           </button>
         </div>
@@ -374,16 +466,18 @@
   <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
     <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-        d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+        d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z">
+      </path>
     </svg>
     <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-        d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+        d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
     </svg>
   </button>
 
   <script src="cursor.js"></script>
   <script src="script.js"></script>
+
 </body>
 
 </html>

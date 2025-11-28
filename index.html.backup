@@ -1,0 +1,593 @@
+<!-- HEADER -->
+<header class="site-header">
+  <a href="index.html" class="profile-badge">
+    <div class="profile-avatar">
+      <picture>
+        <source media="(min-width: 1024px)" srcset="images/to9t-desktop.webp">
+        <source media="(min-width: 768px)" srcset="images/to9t-tablet.webp"><img src="images/to9t-mobile.webp"
+          alt="Guillaume Bracaval">
+      </picture>
+    </div>
+    <div class="profile-info">
+      <span class="profile-name">Guillaume Bracaval</span>
+      <span class="profile-role">Designer depuis 2021</span>
+    </div>
+  </a>
+  <nav>
+    <a href="#" id="openContact" class="btn-accent"
+      onclick="document.getElementById('contactModal').classList.add('is-visible')">Me contacter</a>
+  </nav>
+</header>
+
+<!-- HERO SECTION -->
+<main id="main-content">
+  <section class="hero-section reveal">
+    <span class="hero-kicker">Tech Product Designer</span>
+    <h1 class="hero-headline reveal">
+      Je résous des problèmes<br>
+      avec du design.
+    </h1>
+    <p class="hero-subtext reveal">
+      Je sors des projets rapidement en itérant vite : landing pages, portfolios, prototypes. J'utilise l'IA pour
+      accélérer, mais les décisions et la qualité viennent de moi. Je collabore étroitement avec les devs et je mets
+      en production sans friction.
+    </p>
+
+    <div class="hero-meta reveal">
+      <div class="meta-block">
+        <p class="meta-title">Localisation</p>
+        <p>Lille &lt;--&gt; Paris, France</p>
+      </div>
+      <div class="meta-block">
+        <p class="meta-title">Spécialités</p>
+        <p>UI, Produit, IA, Design Systems</p>
+      </div>
+      <div class="meta-block">
+        <p class="meta-title">Disponibilité</p>
+        <p>Ouvert aux projets</p>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator" id="scrollIndicator">
+      <div class="scroll-icon">
+        <div class="scroll-wheel"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS INTRO -->
+  <section class="projects-intro">
+    <h2 class="section-title reveal">Projets sélectionnés</h2>
+  </section>
+
+  <!-- PROJECT LIST (Editorial Rhythm) -->
+  <section class="project-list">
+
+    <!-- ROW 1: HERO CARD (Wide) -->
+    <div class="project-row row-full">
+      <a href="revive.html" class="project-card card-wide reveal">
+        <div class="card-content">
+          <span class="card-kicker">Mobile Product · Strategy &amp; UX</span>
+          <h3 class="card-title">Revive</h3>
+          <p class="card-desc">App mobile écoresponsable : carte de proximité pour acheter des smartphones
+            reconditionnés localement. Designée en 1 semaine avec illustrations IA.
+          </p>
+          <div class="card-tags">
+            <span class="tag-pill">Product Design</span>
+            <span class="tag-pill">Strategy</span>
+            <span class="tag-pill">Mobile App</span>
+          </div>
+          <span class="card-cta">Voir l'étude de cas ↗</span>
+        </div>
+        <div class="card-image-wrapper">
+          <picture>
+            <source media="(min-width: 1024px)" srcset="images/lr3c-desktop.webp">
+            <source media="(min-width: 768px)" srcset="images/lr3c-tablet.webp"><img src="images/lr3c-mobile.webp"
+              alt="Revive App" loading="lazy">
+          </picture>
+        </div>
+      </a>
+    </div>
+
+    <!-- ROW 2: SPLIT GRID -->
+    <div class="project-row row-split">
+      <!-- PowerOFF -->
+      <a href="poweroff.html" class="project-card card-compact reveal">
+        <div class="card-image-wrapper">
+          <picture>
+            <source media="(min-width: 1024px)" srcset="images/emrb-desktop.webp">
+            <source media="(min-width: 768px)" srcset="images/emrb-tablet.webp"><img src="images/emrb-mobile.webp"
+              alt="PowerOFF Interface" loading="lazy">
+          </picture>
+        </div>
+        <div class="card-content">
+          <div>
+            <span class="card-kicker">Software · UX/UI Design</span>
+            <h3 class="card-title">PowerOFF</h3>
+            <p class="card-desc">Landing page pour un utilitaire Windows open-source. Designée en 2-3 jours avec
+              workflow IA + HTML/CSS manuel.</p>
+            <div class="card-tags">
+              <span class="tag-pill">Software Design</span>
+              <span class="tag-pill">WinUI</span>
+            </div>
+          </div>
+          <span class="card-cta">Voir l'étude de cas ↗</span>
+        </div>
+      </a>
+
+      <!-- Ovact -->
+      <a href="ovact.html" class="project-card card-compact reveal">
+        <div class="card-image-wrapper">
+          <picture>
+            <source media="(min-width: 1024px)" srcset="images/a8mj-desktop.webp">
+            <source media="(min-width: 768px)" srcset="images/a8mj-tablet.webp"><img src="images/a8mj-mobile.webp"
+              alt="Ovact Dashboard" loading="lazy">
+          </picture>
+        </div>
+        <div class="card-content">
+          <div>
+            <span class="card-kicker">AI · Product &amp; Brand Design</span>
+            <h3 class="card-title">Ovact</h3>
+            <p class="card-desc">Plateforme IA en santé mentale validée par un psychologue. Porte d'entrée
+              conversationnelle vers des spécialistes.
+            </p>
+            <div class="card-tags">
+              <span class="tag-pill">AI Interface</span>
+              <span class="tag-pill">Dashboard</span>
+            </div>
+          </div>
+          <span class="card-cta">Voir l'étude de cas ↗</span>
+        </div>
+      </a>
+    </div>
+
+    <!-- ROW 3: WIDE CARD -->
+    <div class="project-row row-full">
+      <a href="kerat.html" class="project-card card-wide reveal">
+        <div class="card-content">
+          <span class="card-kicker">Art Direction · Packaging</span>
+          <h3 class="card-title">Kerat</h3>
+          <p class="card-desc">Direction artistique et packagings pour une gamme de soins capillaires.</p>
+          <div class="card-tags">
+            <span class="tag-pill">Art Direction</span>
+            <span class="tag-pill">Packaging</span>
+            <span class="tag-pill">3D Render</span>
+          </div>
+          <span class="card-cta">Voir l'étude de cas ↗</span>
+        </div>
+        <div class="card-image-wrapper">
+          <picture>
+            <source media="(min-width: 1024px)" srcset="images/qzcz-desktop.webp">
+            <source media="(min-width: 768px)" srcset="images/qzcz-tablet.webp"><img src="images/qzcz-mobile.webp"
+              alt="Kerat Branding">
+          </picture>
+        </div>
+      </a>
+    </div>
+
+    <!-- ROW 4: SPLIT GRID -->
+    <div class="project-row row-split">
+      <!-- Fondation -->
+      <a href="fondation.html" class="project-card card-compact reveal">
+        <div class="card-image-wrapper">
+          <picture>
+            <source media="(min-width: 1024px)" srcset="images/owe1-desktop.webp">
+            <source media="(min-width: 768px)" srcset="images/owe1-tablet.webp"><img src="images/owe1-mobile.webp"
+              alt="Fondation Website">
+          </picture>
+        </div>
+        <div class="card-content">
+          <div>
+            <span class="card-kicker">Web Design · UX</span>
+            <h3 class="card-title">Fondation C. Poncet</h3>
+            <p class="card-desc">Identité visuelle et landing page pour une fondation engagée contre Alzheimer.</p>
+            <div class="card-tags">
+              <span class="tag-pill">Web Design</span>
+              <span class="tag-pill">Accessibility</span>
+            </div>
+          </div>
+          <span class="card-cta">Voir l'étude de cas ↗</span>
+        </div>
+      </a>
+
+      <!-- Slowtravel -->
+      <a href="slowtravel.html" class="project-card card-compact reveal">
+        <div class="card-image-wrapper">
+          <picture>
+            <source media="(min-width: 1024px)" srcset="images/fy5u-desktop.webp">
+            <source media="(min-width: 768px)" srcset="images/fy5u-tablet.webp"><img src="images/fy5u-mobile.webp"
+              alt="Slowtravel Website">
+          </picture>
+        </div>
+        <div class="card-content">
+          <div>
+            <span class="card-kicker">Luxury · Web Design</span>
+            <h3 class="card-title">Slowtravel</h3>
+            <p class="card-desc">Expérience de conciergerie de voyage premium centrée sur la découverte lente.</p>
+            <div class="card-tags">
+              <span class="tag-pill">Luxury</span>
+              <span class="tag-pill">Web Design</span>
+            </div>
+          </div>
+          <span class="card-cta">Voir l'étude de cas ↗</span>
+        </div>
+      </a>
+    </div>
+
+    <!-- ROW 5: WIDE CARD -->
+    <div class="project-row row-full">
+      <a href="enfants-du-monde.html" class="project-card card-wide reveal">
+        <div class="card-content">
+          <span class="card-kicker">Mobile App · Storytelling</span>
+          <h3 class="card-title">Enfants du monde</h3>
+          <p class="card-desc">Application mobile et image de marque autour des droits de l'enfant.</p>
+          <div class="card-tags">
+            <span class="tag-pill">Education</span>
+            <span class="tag-pill">Mobile App</span>
+            <span class="tag-pill">Illustration</span>
+          </div>
+          <span class="card-cta">Voir l'étude de cas ↗</span>
+        </div>
+        <div class="card-image-wrapper">
+          <picture>
+            <source media="(min-width: 1024px)" srcset="images/tk82-desktop.webp">
+            <source media="(min-width: 768px)" srcset="images/tk82-tablet.webp"><img src="images/tk82-mobile.webp"
+              alt="Enfants du monde App">
+          </picture>
+        </div>
+      </a>
+    </div>
+
+  </section>
+
+  <!-- ABOUT & CAPABILITIES -->
+  <section class="about-section">
+    <div class="about-text reveal">
+      <h3>À propos</h3>
+      <p>
+        Tech Product Designer depuis 2021. J'adore <strong>sortir des projets vite et itérer</strong>. Je transforme
+        des problèmes complexes en interfaces claires, rapidement.
+      </p>
+      <p>
+        Je collabore <strong>étroitement avec les développeurs</strong>. Je comprends les contraintes techniques
+        (HTML/CSS/JS, Git, Storybook), ce qui me permet de concevoir des solutions à la fois belles et réalisables.
+      </p>
+    </div>
+    <div class="capabilities reveal">
+      <h3
+        style="font-size: var(--text-sm); text-transform: uppercase; color: var(--text-tertiary); margin-bottom: var(--space-6); letter-spacing: 0.05em;">
+        Expertise</h3>
+      <div class="skills-grid">
+        <span class="skill-tag">UI Design</span>
+        <span class="skill-tag">Product Design</span>
+        <span class="skill-tag">Design Systems</span>
+        <span class="skill-tag">UX Strategy</span>
+        <span class="skill-tag">Visual Design</span>
+        <span class="skill-tag">Branding</span>
+        <span class="skill-tag">AI-Assisted Design</span>
+        <span class="skill-tag">Motion Design</span>
+        <span class="skill-tag">Illustration</span>
+        <span class="skill-tag">Print Design</span>
+        <span class="skill-tag">Packaging</span>
+        <span class="skill-tag">Prototyping</span>
+        <span class="skill-tag">Research</span>
+        <span class="skill-tag">Accessibility</span>
+        <span class="skill-tag">SEO</span>
+        <span class="skill-tag">Analytics & Optimization</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOOLS -->
+  <section class="tools-section reveal">
+    <h3
+      style="font-size: var(--text-sm); text-transform: uppercase; color: var(--text-tertiary); margin-bottom: var(--space-6); letter-spacing: 0.05em;">
+      Outils &amp; Tech</h3>
+    <div class="tools-grid">
+      <span class="tool-item">Figma</span>
+      <span class="tool-item">Photoshop</span>
+      <span class="tool-item">Illustrator</span>
+      <span class="tool-item">After Effects</span>
+      <span class="tool-item">Notion</span>
+      <span class="tool-item">Git</span>
+      <span class="tool-item">Storybook</span>
+      <span class="tool-item">HTML/CSS/JS</span>
+      <span class="tool-item">React</span>
+      <span class="tool-item">Python</span>
+      <span class="tool-item">VS Code</span>
+      <span class="tool-item">Cursor</span>
+      <span class="tool-item">Antigravity</span>
+      <span class="tool-item">Google Analytics</span>
+      <span class="tool-item">Search Console</span>
+    </div>
+  </section>
+
+  <!-- FINAL CTA (Trigger) -->
+  <section class="final-cta reveal">
+    <h2 class="cta-headline">Vous avez un projet ?</h2>
+    <button id="openContact" class="btn-accent"
+      onclick="document.getElementById('contactModal').classList.add('is-visible')">Contactez-moi ↗</button>
+    <span class="cta-sub">Disponibilité immédiate pour freelance ou CDI</span>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer reveal">
+  <div>© 2025 Guillaume Bracaval</div>
+  <div>Conçu avec précision</div>
+</footer>
+
+</div>
+
+<!-- MODAL -->
+<div id="contactModal" class="modal-backdrop">
+  <div class="modal-panel">
+    <button id="closeModal" class="modal-close">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+
+    <h3 style="font-size: var(--text-xl); font-weight: 600; margin-bottom: var(--space-8); color: var(--text-primary);">
+      Contact</h3>
+
+    <form id="contactForm" action="https://formsubmit.co/contact@bracaval.fr" method="POST">
+      <input type="hidden" name="_subject" value="New message from portfolio">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://bracaval.fr/thank-you.html">
+      <input type="hidden" name="_template" value="table">
+
+      <div class="form-group">
+        <input type="text" name="name" placeholder=" " required="">
+        <label>Nom &amp; Prénom</label>
+      </div>
+
+      <div class="form-group">
+        <input type="email" name="email" placeholder=" " required="">
+        <label>Email</label>
+      </div>
+
+      <div class="form-group">
+        <textarea name="message" placeholder=" " required=""></textarea>
+        <label>Message</label>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="btn-accent">
+          <span>Envoyer</span>
+          <svg class="send-icon" width="20" height="20" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+          </svg>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- THEME TOGGLE BUTTON -->
+<button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+  <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+      d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z">
+    </path>
+  </svg>
+  <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <h3 class="card-title">Fondation C. Poncet</h3>
+    <p class="card-desc">Identité visuelle et landing page pour une fondation engagée contre Alzheimer.</p>
+    <div class="card-tags">
+      <span class="tag-pill">Web Design</span>
+      <span class="tag-pill">Accessibility</span>
+    </div>
+    </div>
+    <span class="card-cta">Voir l'étude de cas ↗</span>
+    </div>
+    </a>
+
+    <!-- Slowtravel -->
+    <a href="slowtravel.html" class="project-card card-compact reveal">
+      <div class="card-image-wrapper">
+        <picture>
+          <source media="(min-width: 1024px)" srcset="images/fy5u-desktop.webp">
+          <source media="(min-width: 768px)" srcset="images/fy5u-tablet.webp"><img src="images/fy5u-mobile.webp"
+            alt="Slowtravel Website">
+        </picture>
+      </div>
+      <div class="card-content">
+        <div>
+          <span class="card-kicker">Luxury · Web Design</span>
+          <h3 class="card-title">Slowtravel</h3>
+          <p class="card-desc">Expérience de conciergerie de voyage premium centrée sur la découverte lente.</p>
+          <div class="card-tags">
+            <span class="tag-pill">Luxury</span>
+            <span class="tag-pill">Web Design</span>
+          </div>
+        </div>
+        <span class="card-cta">Voir l'étude de cas ↗</span>
+      </div>
+    </a>
+    </div>
+
+    <!-- ROW 5: WIDE CARD -->
+    <div class="project-row row-full">
+      <a href="enfants-du-monde.html" class="project-card card-wide reveal">
+        <div class="card-content">
+          <span class="card-kicker">Mobile App · Storytelling</span>
+          <h3 class="card-title">Enfants du monde</h3>
+          <p class="card-desc">Application mobile et image de marque autour des droits de l'enfant.</p>
+          <div class="card-tags">
+            <span class="tag-pill">Education</span>
+            <span class="tag-pill">Mobile App</span>
+            <span class="tag-pill">Illustration</span>
+          </div>
+          <span class="card-cta">Voir l'étude de cas ↗</span>
+        </div>
+        <div class="card-image-wrapper">
+          <picture>
+            <source media="(min-width: 1024px)" srcset="images/tk82-desktop.webp">
+            <source media="(min-width: 768px)" srcset="images/tk82-tablet.webp"><img src="images/tk82-mobile.webp"
+              alt="Enfants du monde App">
+          </picture>
+        </div>
+      </a>
+    </div>
+
+    </section>
+
+    <!-- ABOUT & CAPABILITIES -->
+    <section class="about-section">
+      <div class="about-text reveal">
+        <h3>À propos</h3>
+        <p>
+          Tech Product Designer depuis 2021. J'adore <strong>sortir des projets vite et itérer</strong>. Je transforme
+          des problèmes complexes en interfaces claires, rapidement.
+        </p>
+        <p>
+          Je collabore <strong>étroitement avec les développeurs</strong>. Je comprends les contraintes techniques
+          (HTML/CSS/JS, Git, Storybook), ce qui me permet de concevoir des solutions à la fois belles et réalisables.
+        </p>
+      </div>
+      <div class="capabilities reveal">
+        <h3
+          style="font-size: var(--text-sm); text-transform: uppercase; color: var(--text-tertiary); margin-bottom: var(--space-6); letter-spacing: 0.05em;">
+          Expertise</h3>
+        <div class="skills-grid">
+          <span class="skill-tag">UI Design</span>
+          <span class="skill-tag">Product Design</span>
+          <span class="skill-tag">Design Systems</span>
+          <span class="skill-tag">UX Strategy</span>
+          <span class="skill-tag">Visual Design</span>
+          <span class="skill-tag">Branding</span>
+          <span class="skill-tag">AI-Assisted Design</span>
+          <span class="skill-tag">Motion Design</span>
+          <span class="skill-tag">Illustration</span>
+          <span class="skill-tag">Print Design</span>
+          <span class="skill-tag">Packaging</span>
+          <span class="skill-tag">Prototyping</span>
+          <span class="skill-tag">Research</span>
+          <span class="skill-tag">Accessibility</span>
+          <span class="skill-tag">SEO</span>
+          <span class="skill-tag">Analytics & Optimization</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOOLS -->
+    <section class="tools-section reveal">
+      <h3
+        style="font-size: var(--text-sm); text-transform: uppercase; color: var(--text-tertiary); margin-bottom: var(--space-6); letter-spacing: 0.05em;">
+        Outils &amp; Tech</h3>
+      <div class="tools-grid">
+        <span class="tool-item">Figma</span>
+        <span class="tool-item">Photoshop</span>
+        <span class="tool-item">Illustrator</span>
+        <span class="tool-item">After Effects</span>
+        <span class="tool-item">Notion</span>
+        <span class="tool-item">Git</span>
+        <span class="tool-item">Storybook</span>
+        <span class="tool-item">HTML/CSS/JS</span>
+        <span class="tool-item">React</span>
+        <span class="tool-item">Python</span>
+        <span class="tool-item">VS Code</span>
+        <span class="tool-item">Cursor</span>
+        <span class="tool-item">Antigravity</span>
+        <span class="tool-item">Google Analytics</span>
+        <span class="tool-item">Search Console</span>
+      </div>
+    </section>
+
+    <!-- FINAL CTA (Trigger) -->
+    <section class="final-cta reveal">
+      <h2 class="cta-headline">Vous avez un projet ?</h2>
+      <button id="openContact" class="btn-accent"
+        onclick="document.getElementById('contactModal').classList.add('is-visible')">Contactez-moi ↗</button>
+      <span class="cta-sub">Disponibilité immédiate pour freelance ou CDI</span>
+    </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer reveal">
+      <div>© 2025 Guillaume Bracaval</div>
+      <div>Conçu avec précision</div>
+    </footer>
+
+    </div>
+
+    <!-- MODAL -->
+    <div id="contactModal" class="modal-backdrop">
+      <div class="modal-panel">
+        <button id="closeModal" class="modal-close">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+
+        <h3
+          style="font-size: var(--text-xl); font-weight: 600; margin-bottom: var(--space-8); color: var(--text-primary);">
+          Contact</h3>
+
+        <form id="contactForm" action="https://formsubmit.co/contact@bracaval.fr" method="POST">
+          <input type="hidden" name="_subject" value="New message from portfolio">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://bracaval.fr/thank-you.html">
+          <input type="hidden" name="_template" value="table">
+
+          <div class="form-group">
+            <input type="text" name="name" placeholder=" " required="">
+            <label>Nom &amp; Prénom</label>
+          </div>
+
+          <div class="form-group">
+            <input type="email" name="email" placeholder=" " required="">
+            <label>Email</label>
+          </div>
+
+          <div class="form-group">
+            <textarea name="message" placeholder=" " required=""></textarea>
+            <label>Message</label>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn-accent">
+              <span>Envoyer</span>
+              <svg class="send-icon" width="20" height="20" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- THEME TOGGLE BUTTON -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z">
+        </path>
+      </svg>
+      <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+      </svg>
+    </button>
+
+    <script src="cursor.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Google tag (gtag.js) - Deferred for performance -->
+    <script defer src="https://www.googletagmanager.com/gtag/js?id=G-9MMGMXQ2Y2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-9MMGMXQ2Y2');
+    </script>
+
+    </body>
+
+    </html>

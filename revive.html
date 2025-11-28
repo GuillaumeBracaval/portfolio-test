@@ -2,14 +2,24 @@
 <html lang="fr">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-9MMGMXQ2Y2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-9MMGMXQ2Y2');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Primary Meta Tags -->
-    <title>Revive – Refonte UX Mobile | Guillaume Bracaval</title>
-    <meta name="title" content="Revive – Refonte UX Mobile | Guillaume Bracaval">
+    <title>Revive – App Mobile en 1 semaine | Guillaume Bracaval</title>
+    <meta name="title" content="Revive – App Mobile en 1 semaine | Guillaume Bracaval">
     <meta name="description"
-        content="Étude de cas : Refonte de l'expérience mobile pour redonner confiance dans l'achat de smartphones reconditionnés. Product Design, UX Strategy, Design System.">
+        content="App mobile complète livrée en 1 semaine. UX, UI, Design System, Illustrations IA, Prototypage Light/Dark. Reconditionné + proximité = réduction CO₂.">
     <meta name="keywords"
         content="Revive, Product Design, UX Strategy, Mobile App, Design System, Reconditionné, Guillaume Bracaval">
     <meta name="author" content="Guillaume Bracaval">
@@ -17,28 +27,29 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://bracaval.fr/revive.html">
-    <meta property="og:title" content="Revive – Refonte UX Mobile">
+    <meta property="og:title" content="Revive – App Mobile en 1 semaine">
     <meta property="og:description"
-        content="Expérience mobile pour redonner confiance dans l'achat de smartphones reconditionnés. Découvrez le processus de design complet.">
-    <meta property="og:image" content="https://zupimages.net/up/25/21/9b3h.png">
+        content="App écoresponsable complète en 1 semaine : UX, UI, Design System, Illustrations IA, Prototypage Light/Dark.">
+    <meta property="og:image" content="https://bracaval.fr/images/lr3c-desktop.webp">
     <meta property="og:locale" content="fr_FR">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://bracaval.fr/revive.html">
-    <meta property="twitter:title" content="Revive – Refonte UX Mobile">
+    <meta property="twitter:title" content="Revive – App Mobile en 1 semaine">
     <meta property="twitter:description"
-        content="Expérience mobile pour redonner confiance dans l'achat de smartphones reconditionnés.">
-    <meta property="twitter:image" content="https://zupimages.net/up/25/21/9b3h.png">
+        content="App écoresponsable complète en 1 semaine : UX, UI, Design System, Illustrations IA, Prototypage Light/Dark.">
+    <meta property="twitter:image" content="https://bracaval.fr/images/lr3c-desktop.webp">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://bracaval.fr/revive.html">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.min.css">
     <link rel="stylesheet" href="theme-toggle.css">
     <link rel="stylesheet" href="cursor.css">
 </head>
@@ -48,7 +59,11 @@
         <header class="site-header">
             <a href="index.html" class="profile-badge">
                 <div class="profile-avatar">
-                    <img src="https://zupimages.net/up/25/48/to9t.png" alt="Guillaume Bracaval">
+                    <picture>
+                        <source media="(min-width: 1024px)" srcset="images/to9t-desktop.webp">
+                        <source media="(min-width: 768px)" srcset="images/to9t-tablet.webp"><img
+                            src="images/to9t-mobile.webp" alt="Guillaume Bracaval">
+                    </picture>
                 </div>
                 <div class="profile-info">
                     <span class="profile-name">Guillaume Bracaval</span>
@@ -66,568 +81,681 @@
             <span class="breadcrumb-separator">/</span>
             <span>Revive</span>
         </nav>
-
-        <section class="project-hero-compact reveal">
-            <span class="section-subtitle">Mobile Product Design</span>
-            <h1 class="hero-title">Revive</h1>
-            <div class="project-meta-inline">
-                <div class="meta-item">
-                    <span class="meta-label">Rôle</span>
-                    <span class="meta-value">Lead Product Designer</span>
-                </div>
-                <div class="meta-item">
-                    <span class="meta-label">Contexte</span>
-                    <span class="meta-value">Refonte Expérience Achat</span>
-                </div>
-                <div class="meta-item">
-                    <span class="meta-label">Livrables</span>
-                    <span class="meta-value">Discovery, UX Strategy, UI System</span>
-                </div>
-                <div class="meta-item">
-                    <span class="meta-label">Collaborateurs</span>
-                    <span class="meta-value">Projet seul</span>
-                </div>
-            </div>
-            <div class="skill-pills">
-                <span class="skill-pill">Product Design</span>
-                <span class="skill-pill">UX Strategy</span>
-                <span class="skill-pill">Mobile App</span>
-                <span class="skill-pill">Design System</span>
-            </div>
-            <div style="margin-top: var(--space-6);">
-                <a href="https://www.figma.com/proto/zAMJm0Nz5eZU2LfeBp4cAe/UI_UX_Project-for-Mobile-App---Revive?page-id=5%3A3578&node-id=5-6656&p=f&viewport=124%2C75%2C0.06&t=SBFrqbmLSll6CWCg-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=5%3A6677&show-proto-sidebar=1"
-                    target="_blank" class="btn-accent">
-                    Explorer le prototype ↗
-                </a>
-            </div>
-        </section>
-
-        <div class="hero-frame reveal">
-            <img src="https://zupimages.net/up/25/21/9b3h.png" alt="Revive App Interface">
-        </div>
-
-        <section class="executive-summary reveal">
-            <div class="summary-content">
-                <div class="summary-card">
-                    <div class="summary-icon">⚠️</div>
-                    <span class="summary-label">Le Problème</span>
-                    <p>L’incertitude sur l’état réel des produits <strong>bloque l'acte d'achat</strong> malgré
-                        l’intention écologique.
-                    </p>
-                </div>
-
-                <div class="summary-card">
-                    <div class="summary-icon">💡</div>
-                    <span class="summary-label">L'Approche</span>
-                    <p>Faire de la <strong>transparence radicale</strong> un levier de conversion plutôt qu'un frein.
-                    </p>
-                </div>
-
-                <div class="summary-card">
-                    <div class="summary-icon">🎯</div>
-                    <span class="summary-label">L'Impact</span>
-                    <p><strong>Standardisation visuelle</strong>, traçabilité explicite, et <strong>design system
-                            scalable</strong>.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="section-intro reveal">
-            <div class="content-readable">
-                <p>
-                    Revive est une marketplace mobile pour produits électroniques reconditionnés (smartphones, casques,
-                    ordinateurs). Face à un marché saturé où le
-                    prix est le seul argument, Revive mise sur <strong>la transparence et la confiance</strong>. J'ai
-                    conçu l'expérience
-                    de bout en bout pour <strong>lever les freins psychologiques</strong> liés à l'achat de seconde main
-                    : opacité sur
-                    l'état, charge cognitive, impact invisible, et ainsi <strong>transformer la méfiance en avantage
-                        concurrentiel</strong>.
-                </p>
-            </div>
-        </section>
-
-        <section class="project-timeline reveal">
-            <div class="timeline-header">
-                <span class="section-subtitle">Processus</span>
-                <h2 class="section-title-large">Timeline du projet (7 jours)</h2>
-            </div>
-            <div class="timeline-steps">
-                <div class="timeline-step">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">Jour 1-2</span>
-                        <h4 class="timeline-title">Discovery & Research</h4>
-                        <p class="timeline-desc">Analyse concurrentielle, insights utilisateurs, identification des
-                            blocages clés.</p>
+        <main id="main-content">
+            <section class="project-hero-compact reveal">
+                <span class="section-subtitle">Mobile Product Design</span>
+                <h1 class="hero-title">J'ai designé une app écoresponsable en 1 semaine chrono</h1>
+                <div class="project-meta-inline">
+                    <div class="meta-item">
+                        <span class="meta-label">Rôle</span>
+                        <span class="meta-value">Product Designer, Motion Designer, Brand Designer, Direction
+                            Artistique</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Contexte</span>
+                        <span class="meta-value">Refonte Expérience Achat</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Livrables</span>
+                        <span class="meta-value">Logo, Illustrations IA, Prototypage Light/Dark, Design System</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Collaborateurs</span>
+                        <span class="meta-value">Projet seul</span>
                     </div>
                 </div>
-                <div class="timeline-step">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">Jour 3-4</span>
-                        <h4 class="timeline-title">UX Strategy & Wireframes</h4>
-                        <p class="timeline-desc">Architecture de l'information, flows optimisés, wireframes structurels.
+                <div class="skill-pills">
+                    <span class="skill-pill">Product Design</span>
+                    <span class="skill-pill">AI-Assisted Design</span>
+                    <span class="skill-pill">Brand Design</span>
+                    <span class="skill-pill">Motion Design</span>
+                    <span class="skill-pill">Light/Dark Mode</span>
+                </div>
+                <div style="margin-top: var(--space-6);">
+                    <a href="https://www.figma.com/proto/zAMJm0Nz5eZU2LfeBp4cAe/UI_UX_Project-for-Mobile-App---Revive?page-id=5%3A3578&amp;node-id=5-6656&amp;p=f&amp;viewport=124%2C75%2C0.06&amp;t=SBFrqbmLSll6CWCg-1&amp;scaling=scale-down&amp;content-scaling=fixed&amp;starting-point-node-id=5%3A6677&amp;show-proto-sidebar=1"
+                        target="_blank" class="btn-accent">
+                        Explorer le prototype ↗
+                    </a>
+                </div>
+            </section>
+
+            <div class="hero-frame reveal">
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="images/lr3c-desktop.webp">
+                    <source media="(min-width: 768px)" srcset="images/lr3c-tablet.webp"><img
+                        src="images/lr3c-mobile.webp" alt="Revive App Interface">
+                </picture>
+            </div>
+
+            <section class="executive-summary reveal">
+                <div class="summary-content">
+                    <div class="summary-card">
+                        <div class="summary-icon">⚠️</div>
+                        <span class="summary-label">Le Problème</span>
+                        <p>Le reconditionné souffre d'une <strong>image "low cost"</strong> et la livraison à distance
+                            annule une partie de l'impact écologique positif.
                         </p>
                     </div>
-                </div>
-                <div class="timeline-step">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">Jour 5-6</span>
-                        <h4 class="timeline-title">UI Design & Prototyping</h4>
-                        <p class="timeline-desc">Design System "Eco-Tech", composants scalables, prototype interactif.
-                        </p>
-                    </div>
-                </div>
-                <div class="timeline-step">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">Jour 7</span>
-                        <h4 class="timeline-title">Testing & Hand-off</h4>
-                        <p class="timeline-desc">Tests utilisateurs, itérations, documentation pour le développement.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <section class="case-section reveal">
-            <div class="two-col reveal">
-                <div class="content-max">
-                    <span class="section-subtitle">Le défi</span>
-                    <h2 class="section-title-large">Problématique utilisateur</h2>
+                    <div class="summary-card">
+                        <div class="summary-icon">💡</div>
+                        <span class="summary-label">L'Approche</span>
+                        <p><strong>Carte de proximité + retrait local</strong>. L'utilisateur achète un device
+                            reconditionné
+                            dans un atelier à proximité et le récupère comme un point relais. <strong>Réduction des
+                                émissions CO₂</strong>.
+                        </p>
+                    </div>
+
+                    <div class="summary-card">
+                        <div class="summary-icon">🎯</div>
+                        <span class="summary-label">L'Exécution</span>
+                        <p><strong>1 semaine, tout seul</strong> : Logo, DA complète, illustrations générées par IA puis
+                            vectorisées, prototypage Light/Dark. Sprint complet de A à Z.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-intro reveal">
+                <div class="content-readable">
                     <p>
-                        L’incertitude sur l’état des produits et l’absence de standards visuels créent une charge
-                        cognitive qui freine l’achat, même lorsque l’intention écologique est présente.
+                        Le reconditionné, c'est bien pour la planète. Mais si tu livres un iPhone reconditionné depuis
+                        Paris
+                        jusqu'à Marseille, <strong>tu annules une partie de l'impact écologique</strong>. Le vrai
+                        problème
+                        n'est pas juste le recyclage, c'est la logistique.
                     </p>
-                </div>
-                <div class="highlight-card">
-                    <h4>Opportunité business</h4>
                     <p>
-                        Transformer la méfiance en levier de conversion via la transparence radicale. Passer d'une
-                        logique "Low Cost" à "High Trust" pour se différencier durablement.
+                        J'ai eu <strong>1 semaine</strong> pour prouver qu'on pouvait faire autrement. Résultat : une
+                        app
+                        complète (Logo, DA, Illustrations IA, Prototypage Light/Dark) qui transforme le reconditionné en
+                        achat local et écoresponsable.
                     </p>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="case-section reveal">
-            <div class="content-max reveal">
-                <span class="section-subtitle">Discovery</span>
-                <h2 class="section-title-large">Research & Insights</h2>
-                <p>
-                    L'analyse concurrentielle et les entretiens utilisateurs ont révélé trois frictions majeures qui
-                    structurent la stratégie produit.
-                </p>
-            </div>
-            <div class="overview-grid reveal" style="margin-top: var(--space-12);">
-                <div class="insight-card">
-                    <h5>1. Déficit de confiance</h5>
-                    <p>L'absence de standards visuels sur l'état des produits est le premier facteur d'abandon.</p>
+            <section class="project-timeline reveal">
+                <div class="timeline-header">
+                    <span class="section-subtitle">Processus</span>
+                    <h2 class="section-title-large">Timeline du projet (7 jours)</h2>
                 </div>
-                <div class="insight-card">
-                    <h5>2. Surcharge cognitive</h5>
-                    <p>Comparer batterie, rayures, garantie et origine demande trop d'efforts. L'utilisateur abandonne.
+                <div class="timeline-steps">
+                    <div class="timeline-step">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Jour 1-2</span>
+                            <h4 class="timeline-title">Discovery &amp; Research</h4>
+                            <p class="timeline-desc">Analyse concurrentielle, insights utilisateurs, identification des
+                                blocages clés.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Jour 3-4</span>
+                            <h4 class="timeline-title">UX Strategy &amp; Wireframes</h4>
+                            <p class="timeline-desc">Architecture de l'information, flows optimisés, wireframes
+                                structurels.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Jour 5-6</span>
+                            <h4 class="timeline-title">UI Design &amp; Prototyping</h4>
+                            <p class="timeline-desc">Design System "Eco-Tech", composants scalables, prototype
+                                interactif.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Jour 7</span>
+                            <h4 class="timeline-title">Testing &amp; Hand-off</h4>
+                            <p class="timeline-desc">Tests utilisateurs, itérations, documentation pour le
+                                développement.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="case-section reveal">
+                <div class="two-col reveal">
+                    <div class="content-max">
+                        <span class="section-subtitle">Le défi</span>
+                        <h2 class="section-title-large">Le Paradoxe du Reconditionné</h2>
+                        <p>
+                            Acheter un iPhone reconditionné pour "sauver la planète", puis le faire livrer depuis
+                            l'autre
+                            bout de la France, <strong>c'est contradictoire</strong>. La logistique longue distance
+                            annule
+                            une partie de l'impact positif.
+                        </p>
+                    </div>
+                    <div class="highlight-card">
+                        <h4>La Solution : Proximité</h4>
+                        <p>
+                            <strong>Carte interactive + Retrait local.</strong> L'utilisateur voit les ateliers à côté
+                            de
+                            chez lui, achète le device, et le récupère comme un point relais. Résultat : <strong>zéro km
+                                inutile</strong>, impact écologique réel.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="case-section reveal">
+                <div class="content-max reveal">
+                    <span class="section-subtitle">Discovery</span>
+                    <h2 class="section-title-large">Research &amp; Insights</h2>
+                    <p>
+                        L'analyse concurrentielle et les entretiens utilisateurs ont révélé trois frictions majeures qui
+                        structurent la stratégie produit.
                     </p>
                 </div>
-                <div class="insight-card">
-                    <h5>3. Impact invisible</h5>
-                    <p>L'argument écologique reste abstrait. Les utilisateurs veulent voir leur impact concrètement.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="case-section reveal">
-            <div class="content-max reveal">
-                <span class="section-subtitle">Approche</span>
-                <h2 class="section-title-large">Stratégie : Transparence radicale</h2>
-                <p>
-                    Trois principes directeurs transforment les faiblesses du marché en forces différenciantes :
-                    standardisation visuelle, traçabilité explicite, et design clinique.
-                </p>
-            </div>
-            <div class="principles-card reveal">
-                <div class="principles-flow">
-                    <div class="principle-item">
-                        <div class="principle-number">01</div>
-                        <div class="principle-content">
-                            <h5>Standardisation Visuelle</h5>
-                            <p>Langage universel (Grade A/B/C) pour rendre la comparaison instantanée.</p>
-                        </div>
+                <div class="overview-grid reveal" style="margin-top: var(--space-12);">
+                    <div class="insight-card">
+                        <h5>1. Logistique Contradictoire</h5>
+                        <p>Livrer un produit "vert" depuis 500 km annule 30% de l'impact positif. Les utilisateurs le
+                            savent.</p>
                     </div>
-                    <div class="principle-item">
-                        <div class="principle-number">02</div>
-                        <div class="principle-content">
-                            <h5>Traçabilité "Front-Center"</h5>
-                            <p>Afficher défauts et historique comme preuves de qualité, pas comme freins.</p>
-                        </div>
+                    <div class="insight-card">
+                        <h5>2. Besoin de Proximité</h5>
+                        <p>Les gens préfèrent acheter local. C'est plus rapide, plus sûr, et ça soutient l'économie
+                            locale.
+                        </p>
                     </div>
-                    <div class="principle-item">
-                        <div class="principle-number">03</div>
-                        <div class="principle-content">
-                            <h5>Design "Clinique & Organique"</h5>
-                            <p>Précision technique (confiance) + chaleur écologique (désirabilité).</p>
-                        </div>
+                    <div class="insight-card">
+                        <h5>3. Confiance par le Contact</h5>
+                        <p>Voir l'atelier sur une carte, connaître la distance, récupérer en main propre = confiance
+                            maximale.</p>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="case-section reveal">
-            <div class="content-max reveal">
-                <span class="section-subtitle">Architecture du site</span>
-                <h2 class="section-title-large">User Flow & Navigation</h2>
-                <p>
-                    Le parcours a été restructuré pour réduire le temps de décision et guider l'utilisateur étape par
-                    étape. La phase de personnalisation a été repensée pour être plus pédagogique et moins technique.
-                </p>
-            </div>
-            <div class="flow-frame-container reveal">
-                <img src="https://zupimages.net/up/25/21/m074.png" alt="User Flow Revive">
-                <p class="flow-caption">Site Map : structure du parcours utilisateur.</p>
-            </div>
-        </section>
-
-        <section class="case-section reveal">
-            <div class="content-max reveal">
-                <span class="section-subtitle">Interface utilisateur</span>
-                <h2 class="section-title-large">Design System</h2>
-                <p>
-                    Le design system assure scalabilité, cohérence et rapidité d'exécution. Le vert (Forest
-                    Green) ancre la durabilité, les gris froids garantissent la lisibilité technique.
-                </p>
-            </div>
-
-            <!-- Text Styles Table (Full Width) -->
-            <div class="reveal" style="margin-top: var(--space-16);">
-                <h3 class="section-subtitle-small element-spacing">Typographie</h3>
-                <div class="typo-table">
-                    <div class="typo-table-header">
-                        <div class="typo-col-style">Style</div>
-                        <div class="typo-col-usage">Usage</div>
-                        <div class="typo-col-specs">Specs</div>
-                        <div class="typo-col-preview">Preview</div>
-                    </div>
-
-                    <div class="typo-table-row">
-                        <div class="typo-col-style">
-                            <span class="typo-name">H1</span>
-                            <span class="typo-label">Titre page</span>
+            <section class="case-section reveal">
+                <div class="content-max reveal">
+                    <span class="section-subtitle">Approche</span>
+                    <h2 class="section-title-large">Stratégie : Confiance par la preuve</h2>
+                    <p>
+                        Trois principes directeurs transforment les faiblesses du marché en forces différenciantes :
+                        standardisation visuelle, traçabilité explicite, et design précis.
+                    </p>
+                </div>
+                <div class="principles-card reveal">
+                    <div class="principles-flow">
+                        <div class="principle-item">
+                            <div class="principle-content">
+                                <h5>Standardisation Visuelle</h5>
+                                <p>Langage universel (Grade A/B/C) pour rendre la comparaison instantanée.</p>
+                            </div>
                         </div>
-                        <div class="typo-col-usage">Titres de pages principales</div>
-                        <div class="typo-col-specs">
-                            <span>32 / 40</span>
-                            <span>Bold Display</span>
+                        <div class="principle-item">
+                            <div class="principle-content">
+                                <h5>Traçabilité "Front-Center"</h5>
+                                <p>Afficher défauts et historique comme preuves de qualité, pas comme freins.</p>
+                            </div>
                         </div>
-                        <div class="typo-col-preview" style="font-size: 32px; font-weight: 700; line-height: 1.25;">
-                            Titre de page
-                        </div>
-                    </div>
-
-                    <div class="typo-table-row">
-                        <div class="typo-col-style">
-                            <span class="typo-name">H2</span>
-                            <span class="typo-label">Section</span>
-                        </div>
-                        <div class="typo-col-usage">Titres de sections</div>
-                        <div class="typo-col-specs">
-                            <span>24 / 32</span>
-                            <span>Regular Small</span>
-                        </div>
-                        <div class="typo-col-preview" style="font-size: 24px; font-weight: 400; line-height: 1.33;">
-                            Titre de section
-                        </div>
-                    </div>
-
-                    <div class="typo-table-row">
-                        <div class="typo-col-style">
-                            <span class="typo-name">H3</span>
-                            <span class="typo-label">Sous-section</span>
-                        </div>
-                        <div class="typo-col-usage">Sous-titres</div>
-                        <div class="typo-col-specs">
-                            <span>20 / 28</span>
-                            <span>Weight 500</span>
-                        </div>
-                        <div class="typo-col-preview" style="font-size: 20px; font-weight: 500; line-height: 1.4;">
-                            Sous section
-                        </div>
-                    </div>
-
-                    <div class="typo-table-row">
-                        <div class="typo-col-style">
-                            <span class="typo-name">Body</span>
-                            <span class="typo-label">Texte normal</span>
-                        </div>
-                        <div class="typo-col-usage">Texte principal</div>
-                        <div class="typo-col-specs">
-                            <span>16 / 24</span>
-                            <span>Regular</span>
-                        </div>
-                        <div class="typo-col-preview" style="font-size: 16px; font-weight: 400; line-height: 1.5;">
-                            Le texte principal utilisé dans l'interface
-                        </div>
-                    </div>
-
-                    <div class="typo-table-row">
-                        <div class="typo-col-style">
-                            <span class="typo-name">Label</span>
-                            <span class="typo-label">Champ formulaire</span>
-                        </div>
-                        <div class="typo-col-usage">Labels de champs</div>
-                        <div class="typo-col-specs">
-                            <span>14 / 20</span>
-                            <span>Weight 500</span>
-                        </div>
-                        <div class="typo-col-preview" style="font-size: 14px; font-weight: 500; line-height: 1.43;">
-                            Label de champ
-                        </div>
-                    </div>
-
-                    <div class="typo-table-row">
-                        <div class="typo-col-style">
-                            <span class="typo-name">Badge</span>
-                            <span class="typo-label">Étiquette</span>
-                        </div>
-                        <div class="typo-col-usage">Tags et badges</div>
-                        <div class="typo-col-specs">
-                            <span>12 / 16</span>
-                            <span>Weight 500</span>
-                        </div>
-                        <div class="typo-col-preview" style="font-size: 12px; font-weight: 600; line-height: 1.33;">
-                            Nouveau
-                        </div>
-                    </div>
-
-                    <div class="typo-table-row">
-                        <div class="typo-col-style">
-                            <span class="typo-name">CTA</span>
-                            <span class="typo-label">Appel à l'action</span>
-                        </div>
-                        <div class="typo-col-usage">Boutons principaux</div>
-                        <div class="typo-col-specs">
-                            <span>16 / 24</span>
-                            <span>Weight 700</span>
-                        </div>
-                        <div class="typo-col-preview" style="font-size: 16px; font-weight: 700; line-height: 1.5;">
-                            Appeler l'action
+                        <div class="principle-item">
+                            <div class="principle-content">
+                                <h5>Design "Précis &amp; Humain"</h5>
+                                <p>Précision technique (confiance) + chaleur écologique (désirabilité).</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <!-- 2-Column Grid: Palette | Components -->
-            <div class="two-col reveal" style="margin-top: var(--space-16);">
-                <!-- Column 1: Palette Eco-Tech -->
-                <div>
-                    <h3 class="section-subtitle-small element-spacing">Palette de couleurs</h3>
-                    <div class="color-palette">
-                        <div class="color-swatch">
-                            <div class="swatch-color" style="background: #0A0F0D;"></div>
-                            <div class="swatch-info">
-                                <div class="swatch-header">
-                                    <span class="swatch-name">Black</span>
-                                    <span class="swatch-hex">#0A0F0D</span>
-                                </div>
-                                <span class="swatch-usage">Text / Surfaces sombres</span>
+            <section class="case-section reveal">
+                <div class="content-max reveal">
+                    <span class="section-subtitle">Architecture du site</span>
+                    <h2 class="section-title-large">User Flow &amp; Navigation</h2>
+                    <p>
+                        Le parcours a été restructuré pour réduire le temps de décision et guider l'utilisateur étape
+                        par
+                        étape. La phase de personnalisation a été repensée pour être plus pédagogique et moins
+                        technique.
+                    </p>
+                </div>
+                <div class="flow-frame-container reveal">
+                    <picture>
+                        <source media="(min-width: 1024px)" srcset="images/m074-desktop.webp">
+                        <source media="(min-width: 768px)" srcset="images/m074-tablet.webp"><img
+                            src="images/m074-mobile.webp" alt="User Flow Revive">
+                    </picture>
+                    <p class="flow-caption">Site Map : structure du parcours utilisateur.</p>
+                </div>
+            </section>
+
+            <section class="case-section reveal">
+                <div class="content-max reveal">
+                    <span class="section-subtitle">Interface utilisateur</span>
+                    <h2 class="section-title-large">Direction Artistique</h2>
+                    <p>
+                        Le design system assure scalabilité, cohérence et rapidité d'exécution. Le vert (Forest
+                        Green) ancre la durabilité, les gris froids garantissent la lisibilité technique.
+                    </p>
+                </div>
+
+                <!-- Text Styles Table (Full Width) -->
+                <div class="reveal" style="margin-top: var(--space-16);">
+                    <h3 class="section-subtitle-small element-spacing">Typographie</h3>
+                    <div class="typo-table">
+                        <div class="typo-table-header">
+                            <div class="typo-col-style">Style</div>
+                            <div class="typo-col-usage">Usage</div>
+                            <div class="typo-col-specs">Specs</div>
+                            <div class="typo-col-preview">Preview</div>
+                        </div>
+
+                        <div class="typo-table-row">
+                            <div class="typo-col-style">
+                                <span class="typo-name">H1</span>
+                                <span class="typo-label">Titre page</span>
+                            </div>
+                            <div class="typo-col-usage">Titres de pages principales</div>
+                            <div class="typo-col-specs">
+                                <span>32 / 40</span>
+                                <span>Bold Display</span>
+                            </div>
+                            <div class="typo-col-preview" style="font-size: 32px; font-weight: 700; line-height: 1.25;">
+                                Titre de page
                             </div>
                         </div>
 
-                        <div class="color-swatch">
-                            <div class="swatch-color" style="background: #E8F3EE;"></div>
-                            <div class="swatch-info">
-                                <div class="swatch-header">
-                                    <span class="swatch-name">Mint Cream</span>
-                                    <span class="swatch-hex">#E8F3EE</span>
-                                </div>
-                                <span class="swatch-usage">Background clair / Surfaces</span>
+                        <div class="typo-table-row">
+                            <div class="typo-col-style">
+                                <span class="typo-name">H2</span>
+                                <span class="typo-label">Section</span>
+                            </div>
+                            <div class="typo-col-usage">Titres de sections</div>
+                            <div class="typo-col-specs">
+                                <span>24 / 32</span>
+                                <span>Regular Small</span>
+                            </div>
+                            <div class="typo-col-preview" style="font-size: 24px; font-weight: 400; line-height: 1.33;">
+                                Titre de section
                             </div>
                         </div>
 
-                        <div class="color-swatch">
-                            <div class="swatch-color" style="background: #255F45;"></div>
-                            <div class="swatch-info">
-                                <div class="swatch-header">
-                                    <span class="swatch-name">Forest Green</span>
-                                    <span class="swatch-hex">#255F45</span>
-                                </div>
-                                <span class="swatch-usage">Primary / CTA / Branding</span>
+                        <div class="typo-table-row">
+                            <div class="typo-col-style">
+                                <span class="typo-name">H3</span>
+                                <span class="typo-label">Sous-section</span>
+                            </div>
+                            <div class="typo-col-usage">Sous-titres</div>
+                            <div class="typo-col-specs">
+                                <span>20 / 28</span>
+                                <span>Weight 500</span>
+                            </div>
+                            <div class="typo-col-preview" style="font-size: 20px; font-weight: 500; line-height: 1.4;">
+                                Sous section
                             </div>
                         </div>
 
-                        <div class="color-swatch">
-                            <div class="swatch-color" style="background: #7FDCB1;"></div>
-                            <div class="swatch-info">
-                                <div class="swatch-header">
-                                    <span class="swatch-name">Aquamarine</span>
-                                    <span class="swatch-hex">#7FDCB1</span>
-                                </div>
-                                <span class="swatch-usage">Accent / Highlights / Success</span>
+                        <div class="typo-table-row">
+                            <div class="typo-col-style">
+                                <span class="typo-name">Body</span>
+                                <span class="typo-label">Texte normal</span>
+                            </div>
+                            <div class="typo-col-usage">Texte principal</div>
+                            <div class="typo-col-specs">
+                                <span>16 / 24</span>
+                                <span>Regular</span>
+                            </div>
+                            <div class="typo-col-preview" style="font-size: 16px; font-weight: 400; line-height: 1.5;">
+                                Le texte principal utilisé dans l'interface
                             </div>
                         </div>
 
-                        <div class="color-swatch">
-                            <div class="swatch-color" style="background: #20B16D;"></div>
-                            <div class="swatch-info">
-                                <div class="swatch-header">
-                                    <span class="swatch-name">Emerald</span>
-                                    <span class="swatch-hex">#20B16D</span>
-                                </div>
-                                <span class="swatch-usage">Secondary / Active states</span>
+                        <div class="typo-table-row">
+                            <div class="typo-col-style">
+                                <span class="typo-name">Label</span>
+                                <span class="typo-label">Champ formulaire</span>
+                            </div>
+                            <div class="typo-col-usage">Labels de champs</div>
+                            <div class="typo-col-specs">
+                                <span>14 / 20</span>
+                                <span>Weight 500</span>
+                            </div>
+                            <div class="typo-col-preview" style="font-size: 14px; font-weight: 500; line-height: 1.43;">
+                                Label de champ
+                            </div>
+                        </div>
+
+                        <div class="typo-table-row">
+                            <div class="typo-col-style">
+                                <span class="typo-name">Badge</span>
+                                <span class="typo-label">Étiquette</span>
+                            </div>
+                            <div class="typo-col-usage">Tags et badges</div>
+                            <div class="typo-col-specs">
+                                <span>12 / 16</span>
+                                <span>Weight 500</span>
+                            </div>
+                            <div class="typo-col-preview" style="font-size: 12px; font-weight: 600; line-height: 1.33;">
+                                Nouveau
+                            </div>
+                        </div>
+
+                        <div class="typo-table-row">
+                            <div class="typo-col-style">
+                                <span class="typo-name">CTA</span>
+                                <span class="typo-label">Appel à l'action</span>
+                            </div>
+                            <div class="typo-col-usage">Boutons principaux</div>
+                            <div class="typo-col-specs">
+                                <span>16 / 24</span>
+                                <span>Weight 700</span>
+                            </div>
+                            <div class="typo-col-preview" style="font-size: 16px; font-weight: 700; line-height: 1.5;">
+                                Appeler l'action
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Column 2: UI Kit -->
-                <div>
-                    <h3 class="section-subtitle-small element-spacing">Composants</h3>
+                <!-- 2-Column Grid: Palette | Components -->
+                <div class="two-col reveal" style="margin-top: var(--space-16);">
+                    <!-- Column 1: Palette Eco-Tech -->
+                    <div>
+                        <h3 class="section-subtitle-small element-spacing">Palette de couleurs</h3>
+                        <div class="color-palette">
+                            <div class="color-swatch">
+                                <div class="swatch-color" style="background: #0A0F0D;"></div>
+                                <div class="swatch-info">
+                                    <div class="swatch-header">
+                                        <span class="swatch-name">Black</span>
+                                        <span class="swatch-hex">#0A0F0D</span>
+                                    </div>
+                                    <span class="swatch-usage">Text / Surfaces sombres</span>
+                                </div>
+                            </div>
+
+                            <div class="color-swatch">
+                                <div class="swatch-color" style="background: #E8F3EE;"></div>
+                                <div class="swatch-info">
+                                    <div class="swatch-header">
+                                        <span class="swatch-name">Mint Cream</span>
+                                        <span class="swatch-hex">#E8F3EE</span>
+                                    </div>
+                                    <span class="swatch-usage">Background clair / Surfaces</span>
+                                </div>
+                            </div>
+
+                            <div class="color-swatch">
+                                <div class="swatch-color" style="background: #255F45;"></div>
+                                <div class="swatch-info">
+                                    <div class="swatch-header">
+                                        <span class="swatch-name">Forest Green</span>
+                                        <span class="swatch-hex">#255F45</span>
+                                    </div>
+                                    <span class="swatch-usage">Primary / CTA / Branding</span>
+                                </div>
+                            </div>
+
+                            <div class="color-swatch">
+                                <div class="swatch-color" style="background: #7FDCB1;"></div>
+                                <div class="swatch-info">
+                                    <div class="swatch-header">
+                                        <span class="swatch-name">Aquamarine</span>
+                                        <span class="swatch-hex">#7FDCB1</span>
+                                    </div>
+                                    <span class="swatch-usage">Accent / Highlights / Success</span>
+                                </div>
+                            </div>
+
+                            <div class="color-swatch">
+                                <div class="swatch-color" style="background: #20B16D;"></div>
+                                <div class="swatch-info">
+                                    <div class="swatch-header">
+                                        <span class="swatch-name">Emerald</span>
+                                        <span class="swatch-hex">#20B16D</span>
+                                    </div>
+                                    <span class="swatch-usage">Secondary / Active states</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: UI Kit -->
+                    <div>
+                        <h3 class="section-subtitle-small element-spacing">Composants</h3>
+                        <div class="flow-frame">
+                            <picture>
+                                <source media="(min-width: 1024px)" srcset="images/rkj4-desktop.webp">
+                                <source media="(min-width: 768px)" srcset="images/rkj4-tablet.webp"><img
+                                    src="images/rkj4-mobile.webp" alt="UI Kit">
+                            </picture>
+                            <p class="flow-caption">Composants atomiques pour une scalabilité rapide</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="case-section reveal">
+                <div class="content-max reveal">
+                    <span class="section-subtitle">Workflow IA</span>
+                    <h2 class="section-title-large">Illustrations AI-assistées</h2>
+                    <p>
+                        Les illustrations ont été créées avec <strong>Ideogram</strong> (génération IA), puis
+                        vectorisées
+                        dans <strong>Illustrator</strong> pour garantir une compatibilité parfaite avec les modes light
+                        et
+                        dark. L'IA accélère l'exploration visuelle, la vectorisation assure la qualité et la
+                        flexibilité.
+                    </p>
+                </div>
+                <div class="reveal illustrations-grid">
                     <div class="flow-frame">
-                        <img src="https://zupimages.net/up/25/47/rkj4.png" alt="UI Kit">
-                        <p class="flow-caption">Composants atomiques pour une scalabilité rapide</p>
+                        <picture>
+                            <source media="(min-width: 1024px)" srcset="images/lis9-desktop.webp">
+                            <source media="(min-width: 768px)" srcset="images/lis9-tablet.webp"><img
+                                src="images/lis9-mobile.webp" alt="Illustration 1"
+                                style="width: 100%; aspect-ratio: 1; border-radius: var(--radius-lg); object-fit: cover;">
+                        </picture>
+                        <p class="flow-caption">Onboarding et authentification : créer une première impression
+                            rassurante.
+                        </p>
+                    </div>
+                    <div class="flow-frame">
+                        <picture>
+                            <source media="(min-width: 1024px)" srcset="images/i865-desktop.webp">
+                            <source media="(min-width: 768px)" srcset="images/i865-tablet.webp"><img
+                                src="images/i865-mobile.webp" alt="Illustration 2"
+                                style="width: 100%; aspect-ratio: 1; border-radius: var(--radius-lg); object-fit: cover;">
+                        </picture>
+                        <p class="flow-caption">Concept "Bring Tech Back" : redonner vie aux appareils usés.</p>
+                    </div>
+                    <div class="flow-frame">
+                        <picture>
+                            <source media="(min-width: 1024px)" srcset="images/h2h8-desktop.webp">
+                            <source media="(min-width: 768px)" srcset="images/h2h8-tablet.webp"><img
+                                src="images/h2h8-mobile.webp" alt="Illustration 3"
+                                style="width: 100%; aspect-ratio: 1; border-radius: var(--radius-lg); object-fit: cover;">
+                        </picture>
+                        <p class="flow-caption">Impact global : traçabilité et écoresponsabilité au cœur du produit.</p>
+                    </div>
+                    <div class="flow-frame">
+                        <picture>
+                            <source media="(min-width: 1024px)" srcset="images/q62h-desktop.webp">
+                            <source media="(min-width: 768px)" srcset="images/q62h-tablet.webp"><img
+                                src="images/q62h-mobile.webp" alt="Illustration 4"
+                                style="width: 100%; aspect-ratio: 1; border-radius: var(--radius-lg); object-fit: cover;">
+                        </picture>
+                        <p class="flow-caption">Carte de proximité : trouver et réserver un atelier local en un clic.
+                        </p>
+                    </div>
+                    <div class="flow-frame">
+                        <picture>
+                            <source media="(min-width: 1024px)" srcset="images/quhj-desktop.webp">
+                            <source media="(min-width: 768px)" srcset="images/quhj-tablet.webp"><img
+                                src="images/quhj-mobile.webp" alt="Illustration 5"
+                                style="width: 100%; aspect-ratio: 1; border-radius: var(--radius-lg); object-fit: cover;">
+                        </picture>
+                        <p class="flow-caption">Dashboard d'impact : visualiser les ressources économisées (CO₂, eau,
+                            déchets).</p>
+                    </div>
+                    <div class="flow-frame">
+                        <picture>
+                            <source media="(min-width: 1024px)" srcset="images/pza8-desktop.webp">
+                            <source media="(min-width: 768px)" srcset="images/pza8-tablet.webp"><img
+                                src="images/pza8-mobile.webp" alt="Illustration 6"
+                                style="width: 100%; aspect-ratio: 1; border-radius: var(--radius-lg); object-fit: cover;">
+                        </picture>
+                        <p class="flow-caption">Livraison locale : zéro km inutile, impact écologique réel.</p>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="case-section reveal">
-            <div class="content-max reveal">
-                <span class="section-subtitle">Implémentation</span>
-                <h2 class="section-title-large">Solution & justification UX</h2>
-                <p>
-                    Chaque écran maximise la clarté et rassure à chaque micro-interaction. La hiérarchie visuelle guide
-                    naturellement vers la conversion.
-                </p>
-            </div>
+            <section class="case-section reveal">
+                <div class="content-max reveal">
+                    <span class="section-subtitle">Implémentation</span>
+                    <h2 class="section-title-large">Solution &amp; justification UX</h2>
+                    <p>
+                        Chaque écran maximise la clarté et rassure à chaque micro-interaction. La hiérarchie visuelle
+                        guide
+                        naturellement vers la conversion.
+                    </p>
+                </div>
 
-            <!-- Alternating layout blocks -->
-            <div class="solution-block reveal">
-                <div class="solution-image">
-                    <div class="ui-card-image carousel">
-                        <img src="https://zupimages.net/up/25/47/8k0g.png" alt="Onboarding 1">
-                        <img src="https://zupimages.net/up/25/47/9w2h.png" alt="Onboarding 2">
-                        <img src="https://zupimages.net/up/25/47/ccds.png" alt="Onboarding 3">
-                        <img src="https://zupimages.net/up/25/47/35fv.png" alt="Onboarding 4">
-                        <img src="https://zupimages.net/up/25/47/zlul.png" alt="Onboarding 5">
-                        <img src="https://zupimages.net/up/25/47/zwxg.png" alt="Onboarding 6">
-                        <img src="https://zupimages.net/up/25/47/qsse.png" alt="Onboarding 7">
+                <!-- Alternating layout blocks -->
+                <div class="solution-block reveal">
+                    <div class="solution-image">
+                        <div class="ui-card-image carousel">
+                            <img src="images/8k0g-desktop.webp" alt="Onboarding 1">
+                            <img src="images/9w2h-desktop.webp" alt="Onboarding 2">
+                            <img src="images/ccds-desktop.webp" alt="Onboarding 3">
+                            <img src="images/35fv-desktop.webp" alt="Onboarding 4">
+                            <img src="images/zlul-desktop.webp" alt="Onboarding 5">
+                            <img src="images/zwxg-desktop.webp" alt="Onboarding 6">
+                            <img src="images/qsse-desktop.webp" alt="Onboarding 7">
+                        </div>
+                    </div>
+                    <div class="solution-content">
+                        <h5>Onboarding &amp; Inscription</h5>
+                        <p>Proposition de valeur immédiate (Économie + Écologie) pour réduire le rebond. Bénéfices
+                            concrets
+                            du reconditionné dès le premier lancement.</p>
                     </div>
                 </div>
-                <div class="solution-content">
-                    <h5>Onboarding & Inscription</h5>
-                    <p>Proposition de valeur immédiate (Économie + Écologie) pour réduire le rebond. Bénéfices concrets
-                        du reconditionné dès le premier lancement.</p>
-                </div>
-            </div>
 
-            <div class="solution-block solution-block-right reveal">
-                <div class="solution-image">
-                    <div class="ui-card-image carousel">
-                        <img src="https://zupimages.net/up/25/47/ao7d.png" alt="Map with Results">
-                        <img src="https://zupimages.net/up/25/47/vvh4.png" alt="List Results">
-                        <img src="https://zupimages.net/up/25/47/6im2.png" alt="Workshop Page (EcoTech Repair)">
-                        <img src="https://zupimages.net/up/25/47/7nfs.png" alt="Product Page (open)">
-                        <img src="https://zupimages.net/up/25/47/h39w.png" alt="Configuration Device">
+                <div class="solution-block solution-block-right reveal">
+                    <div class="solution-image">
+                        <div class="ui-card-image carousel">
+                            <img src="images/ao7d-desktop.webp" alt="Map with Results">
+                            <img src="images/vvh4-desktop.webp" alt="List Results">
+                            <img src="images/6im2-desktop.webp" alt="Workshop Page (EcoTech Repair)">
+                            <img src="images/7nfs-desktop.webp" alt="Workshop Page (Refurb Station)">
+                            <img src="images/h39w-desktop.webp" alt="Configuration Device">
+                        </div>
+                    </div>
+                    <div class="solution-content">
+                        <h5>Recherche &amp; Fiche Produit</h5>
+                        <p>Carte interactive des ateliers, filtres intelligents, fiches produit détaillées. Transparence
+                            sur
+                            l'état et l'historique pour rassurer.</p>
                     </div>
                 </div>
-                <div class="solution-content">
-                    <h5>Recherche & Fiche Produit</h5>
-                    <p>Carte interactive des ateliers, filtres intelligents, fiches produit détaillées. Transparence sur
-                        l'état et l'historique pour rassurer.</p>
-                </div>
-            </div>
 
-            <div class="solution-block reveal">
-                <div class="solution-image">
-                    <div class="ui-card-image carousel">
-                        <img src="https://zupimages.net/up/25/47/4kjs.png" alt="Cart Page (full)">
-                        <img src="https://zupimages.net/up/25/47/7y9q.png" alt="Checkout (overview)">
-                        <img src="https://zupimages.net/up/25/47/xajy.png" alt="Payment Method">
-                        <img src="https://zupimages.net/up/25/47/ugzq.png" alt="Order Confirmation Page">
+                <div class="solution-block reveal">
+                    <div class="solution-image">
+                        <div class="ui-card-image carousel">
+                            <img src="images/4kjs-desktop.webp" alt="Cart Page (full)">
+                            <img src="images/7y9q-desktop.webp" alt="Checkout (overview)">
+                            <img src="images/xajy-desktop.webp" alt="Payment Method">
+                            <img src="images/ugzq-desktop.webp" alt="Order Confirmation Page">
+                        </div>
+                    </div>
+                    <div class="solution-content">
+                        <h5>Tunnel d'Achat &amp; Confirmation</h5>
+                        <p>Panier optimisé, livraison claire, paiement sécurisé, impact écologique visualisé. Chaque
+                            étape
+                            renforce la confiance.</p>
                     </div>
                 </div>
-                <div class="solution-content">
-                    <h5>Tunnel d'Achat & Confirmation</h5>
-                    <p>Panier optimisé, livraison claire, paiement sécurisé, impact écologique visualisé. Chaque étape
-                        renforce la confiance.</p>
+            </section>
+
+            <section class="case-section reveal">
+                <div class="content-max reveal">
+                    <span class="section-subtitle">Résultats</span>
+                    <h2 class="section-title-large">Impact &amp; apprentissages</h2>
                 </div>
-            </div>
-        </section>
-
-        <section class="case-section reveal">
-            <div class="content-max reveal">
-                <span class="section-subtitle">Résultats</span>
-                <h2 class="section-title-large">Impact & apprentissages</h2>
-            </div>
-            <div class="results-bento reveal">
-                <div class="bento-card bento-large">
-                    <div class="bento-accent"></div>
-                    <span class="bento-tag">Impact Principal</span>
-                    <h3>Confiance accrue</h3>
-                    <p>Afficher les défauts explicitement augmente l'intention d'achat : les utilisateurs se sentent
-                        respectés.</p>
-                    <div class="bento-stat">+92%</div>
+                <div class="results-bento reveal">
+                    <div class="bento-card bento-large">
+                        <div class="bento-accent"></div>
+                        <span class="bento-tag">Impact Principal</span>
+                        <h3>Sprint 1 Semaine</h3>
+                        <p>App complète livrée seul en 7 jours (Logo, DA, Illustrations IA, Proto). Preuve de vélocité
+                            extrême.</p>
+                        <div class="bento-stat">7 Jours</div>
+                    </div>
+                    <div class="bento-card bento-medium">
+                        <div class="bento-accent"></div>
+                        <span class="bento-tag">UX</span>
+                        <h3>Clarté perçue</h3>
+                        <p>Standardisation des fiches produit = temps de décision réduit drastiquement.</p>
+                    </div>
+                    <div class="bento-card bento-medium">
+                        <div class="bento-accent"></div>
+                        <span class="bento-tag">Technique</span>
+                        <h3>Scalabilité</h3>
+                        <p>Design System atomique = nouvelles catégories déployées rapidement.</p>
+                    </div>
                 </div>
-                <div class="bento-card bento-medium">
-                    <div class="bento-accent"></div>
-                    <span class="bento-tag">UX</span>
-                    <h3>Clarté perçue</h3>
-                    <p>Standardisation des fiches produit = temps de décision réduit drastiquement.</p>
+            </section>
+
+            <section class="case-section reveal">
+                <div class="content-max reveal">
+                    <blockquote style="margin-bottom: 0;">
+                        "1 semaine pour designer une app complète de A à Z, tout seul. Preuve qu'avec les bons outils
+                        (IA
+                        pour les illustrations) et une vision claire (proximité = impact réel), on peut livrer vite sans
+                        sacrifier la qualité."
+                    </blockquote>
                 </div>
-                <div class="bento-card bento-medium">
-                    <div class="bento-accent"></div>
-                    <span class="bento-tag">Technique</span>
-                    <h3>Scalabilité</h3>
-                    <p>Design System atomique = nouvelles catégories déployées rapidement.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="case-section reveal">
-            <div class="content-max reveal">
-                <blockquote style="margin-bottom: 0;">
-                    "Dans un marché de méfiance, la transparence radicale devient la meilleure stratégie de conversion."
-                </blockquote>
-            </div>
-        </section>
+            </section>
 
 
 
-        <nav class="project-navigation reveal">
-            <a href="poweroff.html" class="nav-prev">
-                <span class="nav-label">← Projet précédent</span>
-                <span class="nav-title">PowerOFF</span>
-            </a>
-
-            <a href="index.html#projects" class="nav-home">
-                Tous les projets
-            </a>
-
-            <a href="ovact.html" class="nav-next">
-                <span class="nav-label">Projet suivant →</span>
-                <span class="nav-title">Ovact</span>
-            </a>
-        </nav>
-
-        <section class="case-cta reveal">
-            <h3 style="margin-bottom: var(--space-8);">Intéressé pour travailler ensemble ?</h3>
-            <div class="case-cta-buttons">
-                <a href="index.html" class="btn-secondary">
-                    ← Retour aux projets
+            <nav class="project-navigation reveal">
+                <a href="poweroff.html" class="nav-prev">
+                    <span class="nav-label">← Projet précédent</span>
+                    <span class="nav-title">PowerOFF</span>
                 </a>
-                <a href="javascript:void(0)" id="openContact" class="btn-accent"
-                    onclick="document.getElementById('contactModal').classList.add('is-visible')">
-                    Me contacter ↗
+
+                <a href="index.html#projects" class="nav-home">
+                    Tous les projets
                 </a>
-            </div>
-        </section>
 
-        <footer class="site-footer reveal">
-            <div>© 2025 Guillaume Bracaval</div>
-            <div>Conçu avec précision</div>
-        </footer>
+                <a href="ovact.html" class="nav-next">
+                    <span class="nav-label">Projet suivant →</span>
+                    <span class="nav-title">Ovact</span>
+                </a>
+            </nav>
 
+            <section class="case-cta reveal">
+                <h3 style="margin-bottom: var(--space-8);">Intéressé pour travailler ensemble ?</h3>
+                <div class="case-cta-buttons">
+                    <a href="index.html" class="btn-secondary">
+                        ← Retour aux projets
+                    </a>
+                    <a href="javascript:void(0)" id="openContact" class="btn-accent"
+                        onclick="document.getElementById('contactModal').classList.add('is-visible')">
+                        Me contacter ↗
+                    </a>
+                </div>
+            </section>
+
+            <footer class="site-footer reveal">
+                <div>© 2025 Guillaume Bracaval</div>
+                <div>Conçu avec précision</div>
+            </footer>
+
+        </main>
     </div>
 
     <div id="contactModal" class="modal-backdrop">
@@ -648,22 +776,22 @@
                 <input type="hidden" name="_next" value="https://bracaval.fr/thank-you.html">
                 <input type="hidden" name="_template" value="table">
                 <div class="form-group">
-                    <input type="text" name="name" placeholder=" " required>
-                    <label>Nom & Prénom</label>
+                    <input type="text" name="name" placeholder=" " required="">
+                    <label>Nom &amp; Prénom</label>
                 </div>
                 <div class="form-group">
-                    <input type="email" name="email" placeholder=" " required>
+                    <input type="email" name="email" placeholder=" " required="">
                     <label>Email</label>
                 </div>
                 <div class="form-group">
-                    <textarea name="message" placeholder=" " required></textarea>
+                    <textarea name="message" placeholder=" " required=""></textarea>
                     <label>Message</label>
                 </div>
                 <div class="form-actions">
                     <button type="submit" class="btn-accent">
                         <span>Envoyer</span>
                         <svg class="send-icon" width="20" height="20" viewBox="0 0 24 24">
-                            <path fill="currentColor" d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
+                            <path fill="currentColor" d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
                         </svg>
                     </button>
                 </div>
@@ -675,17 +803,20 @@
     <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
         <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z">
+            </path>
         </svg>
         <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
         </svg>
     </button>
 
     <script src="cursor.js"></script>
     <script src="script.js"></script>
     <script src="carousel.js"></script>
+
+
 </body>
 
 </html>

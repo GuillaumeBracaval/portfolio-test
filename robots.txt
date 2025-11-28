@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://bracaval.fr/sitemap.xml
+
+# Disallow backup files
+Disallow: /*.backup$
+Disallow: /*.backup_original$

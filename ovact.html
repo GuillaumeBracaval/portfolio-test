@@ -2,14 +2,24 @@
 <html lang="fr">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-9MMGMXQ2Y2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-9MMGMXQ2Y2');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Primary Meta Tags -->
-    <title>Ovact – Plateforme IA Santé Mentale | Guillaume Bracaval</title>
-    <meta name="title" content="Ovact – Plateforme IA Santé Mentale | Guillaume Bracaval">
+    <title>Ovact – Plateforme IA validée par un psychologue | Guillaume Bracaval</title>
+    <meta name="title" content="Ovact – Plateforme IA validée par un psychologue | Guillaume Bracaval">
     <meta name="description"
-        content="Étude de cas : Design d'une plateforme IA de santé mentale. Interface chat, dashboard, data visualization et brand identity. Product Design & AI Strategy.">
+        content="Porte d'entrée vers la santé mentale. Interface IA conversationnelle validée par un psychologue. Chat, dashboard, data viz, brand identity. Motion Design + AI Strategy.">
     <meta name="keywords"
         content="Ovact, AI Design, Product Design, Santé Mentale, Dashboard, Data Visualization, Brand Identity, Guillaume Bracaval">
     <meta name="author" content="Guillaume Bracaval">
@@ -17,30 +27,36 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://bracaval.fr/ovact.html">
-    <meta property="og:title" content="Ovact – Plateforme IA Santé Mentale">
+    <meta property="og:title" content="Ovact – Plateforme IA validée par un psychologue">
     <meta property="og:description"
-        content="Plateforme IA en santé mentale, orientée design system et visualisation de données. Découvrez le processus de design complet.">
-    <meta property="og:image" content="https://zupimages.net/up/25/14/a8mj.png">
+        content="Porte d'entrée vers la santé mentale. Interface IA conversationnelle validée par un psychologue. Chat, dashboard, data viz.">
+    <meta property="og:image" content="https://bracaval.fr/images/a8mj-desktop.webp">
     <meta property="og:locale" content="fr_FR">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://bracaval.fr/ovact.html">
-    <meta property="twitter:title" content="Ovact – Plateforme IA Santé Mentale">
+    <meta property="twitter:title" content="Ovact – Plateforme IA validée par un psychologue">
     <meta property="twitter:description"
-        content="Plateforme IA en santé mentale, orientée design system et visualisation de données.">
-    <meta property="twitter:image" content="https://zupimages.net/up/25/14/a8mj.png">
+        content="Porte d'entrée vers la santé mentale. Interface IA conversationnelle validée par un psychologue.">
+    <meta property="twitter:image" content="https://bracaval.fr/images/a8mj-desktop.webp">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://bracaval.fr/ovact.html">
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/240.png">
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;family=Source+Sans+3:ital,wght@0,200..900;1,200..900&amp;display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.min.css">
     <link rel="stylesheet" href="theme-toggle.css">
     <link rel="stylesheet" href="cursor.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -51,7 +67,11 @@
         <header class="site-header">
             <a href="index.html" class="profile-badge">
                 <div class="profile-avatar">
-                    <img src="https://zupimages.net/up/25/48/to9t.png" alt="Guillaume Bracaval">
+                    <picture>
+                        <source media="(min-width: 1024px)" srcset="images/to9t-desktop.webp">
+                        <source media="(min-width: 768px)" srcset="images/to9t-tablet.webp"><img
+                            src="images/to9t-mobile.webp" alt="Guillaume Bracaval">
+                    </picture>
                 </div>
                 <div class="profile-info">
                     <span class="profile-name">Guillaume Bracaval</span>
@@ -69,577 +89,612 @@
             <span class="breadcrumb-separator">/</span>
             <span>Ovact</span>
         </nav>
-
-        <section class="project-hero-compact reveal">
-            <span class="section-subtitle">AI • Product & Brand Design</span>
-            <h1 class="hero-title">Ovact</h1>
-            <div class="project-meta-inline">
-                <div class="meta-item">
-                    <span class="meta-label">Rôle</span>
-                    <span class="meta-value">Product Designer</span>
-                </div>
-                <div class="meta-item">
-                    <span class="meta-label">Contexte</span>
-                    <span class="meta-value">Plateforme IA de santé mentale</span>
-                </div>
-                <div class="meta-item">
-                    <span class="meta-label">Livrables</span>
-                    <span class="meta-value">Wireframes & Prototypes, Interface Chat & Dashboard, Data Visualization,
-                        Brand Identity</span>
-                </div>
-                <div class="meta-item">
-                    <span class="meta-label">Collaborateurs</span>
-                    <span class="meta-value">Thomas .P (Développeur)</span>
-                </div>
-            </div>
-            <div class="skill-pills">
-                <span class="skill-pill">AI Strategy</span>
-                <span class="skill-pill">UX Research</span>
-                <span class="skill-pill">Brand Design</span>
-                <span class="skill-pill">Data Visualisation</span>
-            </div>
-        </section>
-
-        <div class="hero-frame reveal">
-            <img src="https://zupimages.net/up/25/14/a8mj.png" alt="Ovact Interface">
-        </div>
-
-        <section class="executive-summary reveal">
-            <div class="summary-content">
-                <div class="summary-card">
-                    <div class="summary-icon">⚠️</div>
-                    <span class="summary-label">Le Problème</span>
-                    <p>Les utilisateurs exigent confiance et clarté dans les réponses de l'IA. La confidentialité des
-                        données impose des contraintes strictes.</p>
-                </div>
-
-                <div class="summary-card">
-                    <div class="summary-icon">💡</div>
-                    <span class="summary-label">L'Approche</span>
-                    <p>Créer une interface qui inspire la précision technique (confiance) tout en restant chaleureuse et
-                        accessible (désirabilité).</p>
-                </div>
-
-                <div class="summary-card">
-                    <div class="summary-icon">🎯</div>
-                    <span class="summary-label">L'Impact</span>
-                    <p>Conception de l'expérience complète, du chatbot au dashboard, avec focus sur la clarté des
-                        données.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="section-intro reveal">
-            <div class="content-readable">
-                <p>
-                    Ovact est une plateforme IA qui soutient la santé mentale en offrant un chatbot empathique, des
-                    visualisations psychométriques claires et un suivi personnalisé. <strong>Le défi était de créer une
-                        IA
-                        rassurante, transparente et dotée d'une identité visuelle forte</strong> qui inspire confiance
-                    tout
-                    en
-                    respectant les contraintes strictes du RGPD.
-                </p>
-            </div>
-        </section>
-
-        <section class="project-timeline reveal">
-            <div class="timeline-header">
-                <span class="section-subtitle">Processus</span>
-                <h2 class="section-title-large">Timeline du projet (3 mois)</h2>
-            </div>
-            <div class="timeline-steps">
-                <div class="timeline-step">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">Mois 1</span>
-                        <h4 class="timeline-title">Discovery & Strategy</h4>
-                        <p class="timeline-desc">Recherche utilisateur, analyse concurrentielle, définition de la
-                            stratégie UX.</p>
+        <main id="main-content">
+            <section class="project-hero-compact reveal">
+                <span class="section-subtitle">AI • Product, Motion &amp; Brand Design</span>
+                <h1 class="hero-title">J'ai designé une porte d'entrée vers la santé mentale validée par un psychologue
+                </h1>
+                <div class="project-meta-inline">
+                    <div class="meta-item">
+                        <span class="meta-label">Rôle</span>
+                        <span class="meta-value">Product Designer, Motion Designer, Brand Designer, Direction
+                            Artistique</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Contexte</span>
+                        <span class="meta-value">Plateforme IA de santé mentale</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Livrables</span>
+                        <span class="meta-value">Wireframes &amp; Prototypes, Interface Chat &amp; Dashboard, Data
+                            Visualization,
+                            Brand Identity</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Collaborateurs</span>
+                        <span class="meta-value">Thomas .P (Développeur)</span>
                     </div>
                 </div>
-                <div class="timeline-step">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">Mois 2</span>
-                        <h4 class="timeline-title">UX Design & Prototyping</h4>
-                        <p class="timeline-desc">Wireframes, architecture de l'information, tests utilisateurs
-                            préliminaires.</p>
-                    </div>
+                <div class="skill-pills">
+                    <span class="skill-pill">Product Strategy</span>
+                    <span class="skill-pill">Motion Design</span>
+                    <span class="skill-pill">Brand Design</span>
+                    <span class="skill-pill">Art Direction</span>
+                    <span class="skill-pill">Data Viz</span>
                 </div>
-                <div class="timeline-step">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">Mois 3</span>
-                        <h4 class="timeline-title">UI Design & System</h4>
-                        <p class="timeline-desc">Design haute-fidélité, création du Design System, documentation et
-                            hand-off.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="case-section reveal">
-            <div class="two-col reveal">
-                <div class="content-max">
-                    <span class="section-subtitle">Le défi</span>
-                    <h2 class="section-title-large">Problématique Utilisateur</h2>
+            <div class="hero-frame reveal">
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="images/a8mj-desktop.webp">
+                    <source media="(min-width: 768px)" srcset="images/a8mj-tablet.webp"><img
+                        src="images/a8mj-mobile.webp" alt="Ovact Interface">
+                </picture>
+            </div>
+
+            <section class="executive-summary reveal">
+                <div class="summary-content">
+                    <div class="summary-card">
+                        <div class="summary-icon">⚠️</div>
+                        <span class="summary-label">Le Problème</span>
+                        <p><strong>Friction psychologique pour consulter un psy</strong>. Stigmatisation sociale, peur
+                            du
+                            jugement. Les gens ont besoin d'aide mais ne franchissent pas le pas.</p>
+                    </div>
+
+                    <div class="summary-card">
+                        <div class="summary-icon">💡</div>
+                        <span class="summary-label">La Solution</span>
+                        <p><strong>Ovact comme porte d'entrée conversationnelle</strong>. L'utilisateur discute avec
+                            l'IA.
+                            Si tout va bien, parfait. Si Ovact détecte des signes, redirection vers un psy spécialisé
+                            (couple, anxiété, etc.).</p>
+                    </div>
+
+                    <div class="summary-card">
+                        <div class="summary-icon">🎯</div>
+                        <span class="summary-label">La Validation</span>
+                        <p>Un <strong>psychologue réel a validé le concept et veut l'adopter</strong> pour sa pratique.
+                            Business model : % par consultation + dashboard avec données précises pour les psys.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-intro reveal">
+                <div class="content-readable">
                     <p>
-                        Les professionnels de santé mentale ont besoin d'outils fiables pour suivre l'évolution de leurs
-                        patients. L'opacité des algorithmes IA et la complexité des visualisations créent une charge
-                        cognitive trop forte.
+                        Ovact est une <strong>porte d'entrée vers la santé mentale</strong>. Le vrai problème n'est pas
+                        technique, c'est la friction psychologique : la peur du jugement.
+                    </p>
+                    <p>
+                        Pour briser cette barrière, j'ai utilisé le <strong>motion design</strong> comme levier de
+                        confiance. En donnant "vie" à l'IA (elle écoute, réfléchit, parle), on transforme une machine
+                        froide
+                        en un interlocuteur rassurant. C'est cette approche "Human First" qui a convaincu un psychologue
+                        d'adopter l'outil.
                     </p>
                 </div>
-                <div class="highlight-card">
-                    <h4>Opportunité Business</h4>
+            </section>
+
+            <section class="project-timeline reveal">
+                <div class="timeline-header">
+                    <span class="section-subtitle">Processus</span>
+                    <h2 class="section-title-large">Timeline du projet (3 mois)</h2>
+                </div>
+                <div class="timeline-steps">
+                    <div class="timeline-step">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Mois 1</span>
+                            <h4 class="timeline-title">Discovery &amp; Strategy</h4>
+                            <p class="timeline-desc">Recherche utilisateur, analyse concurrentielle, définition de la
+                                stratégie UX.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Mois 2</span>
+                            <h4 class="timeline-title">UX Design &amp; Prototyping</h4>
+                            <p class="timeline-desc">Wireframes, architecture de l'information, tests utilisateurs
+                                préliminaires.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Mois 3</span>
+                            <h4 class="timeline-title">UI Design &amp; System</h4>
+                            <p class="timeline-desc">Design haute-fidélité, création du Design System, documentation et
+                                hand-off.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="case-section reveal">
+                <div class="two-col reveal">
+                    <div class="content-max">
+                        <span class="section-subtitle">Le défi</span>
+                        <h2 class="section-title-large">Le vrai problème</h2>
+                        <p>
+                            <strong>Les gens ont besoin d'aide mais ne consultent pas.</strong> Stigmatisation sociale,
+                            peur
+                            du jugement, friction psychologique. Le problème n'est pas technique, il est humain. Comment
+                            créer
+                            une porte d'entrée accessible qui réduit cette friction ?
+                        </p>
+                    </div>
+                    <div class="highlight-card">
+                        <h4>Le Modèle Stratégique</h4>
+                        <p>
+                            <strong>1. Le Flow :</strong> Conversation naturelle → Détection de signaux (détresse,
+                            anxiété)
+                            → Redirection vers un spécialiste.
+                        </p>
+                        <p style="margin-top: var(--space-4);">
+                            <strong>2. Le Business :</strong> Ovact apporte des patients qualifiés (% par consultation)
+                            et
+                            fournit au psy un <strong>dashboard clinique</strong> (humeur, mots-clés) pour un suivi
+                            précis.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="case-section reveal">
+                <div class="content-max reveal">
+                    <span class="section-subtitle">Discovery</span>
+                    <h2 class="section-title-large">Research &amp; Insights</h2>
                     <p>
-                        Transformer cette complexité en simplicité en créant l'interface la plus claire du marché.
-                        Passer
-                        d'une logique de "Tech Complex" à une logique de "Human First".
+                        L'analyse du marché et des entretiens utilisateurs ont permis d'isoler trois frictions majeures.
                     </p>
                 </div>
-            </div>
-        </section>
+                <div class="overview-grid reveal" style="margin-top: var(--space-12);">
+                    <div class="insight-card">
+                        <h5>1. Le Tabou du "Psy"</h5>
+                        <p>70% des personnes en détresse n'osent pas consulter. La peur d'être étiqueté "malade" est le
+                            frein n°1.</p>
+                    </div>
+                    <div class="insight-card">
+                        <h5>2. L'Attente de Neutralité</h5>
+                        <p>Les utilisateurs se confient plus vite à une IA car elle ne juge pas. Ils cherchent une
+                            écoute
+                            sans filtre.</p>
+                    </div>
+                    <div class="insight-card">
+                        <h5>3. Le Besoin de Données</h5>
+                        <p>Les psychologues manquent d'infos objectives entre les séances. Ils veulent du contexte
+                            (humeur,
+                            sommeil) avant le RDV.</p>
+                    </div>
+                </div>
+            </section>
 
-        <section class="case-section reveal">
-            <div class="content-max reveal">
-                <span class="section-subtitle">Discovery</span>
-                <h2 class="section-title-large">Research & Insights</h2>
-                <p>
-                    L'analyse du marché et des entretiens utilisateurs ont permis d'isoler trois frictions majeures.
-                </p>
-            </div>
-            <div class="overview-grid reveal" style="margin-top: var(--space-12);">
-                <div class="insight-card">
-                    <h5>1. Difficulté à synthétiser</h5>
-                    <p>Les professionnels ont du mal à synthétiser les séances et à identifier les signaux faibles.</p>
+            <section class="case-section reveal">
+                <div class="content-max reveal">
+                    <span class="section-subtitle">Approche</span>
+                    <h2 class="section-title-large">Stratégie : Transparence &amp; Clarté</h2>
                 </div>
-                <div class="insight-card">
-                    <h5>2. Besoin de repères visuels</h5>
-                    <p>L'absence de visualisations claires rend difficile la comparaison des semaines.</p>
+                <div class="principles-card reveal">
+                    <div class="principles-flow">
+                        <div class="principle-item">
+                            <div class="principle-content">
+                                <h5>Porte d'Entrée Douce</h5>
+                                <p>Pas de jargon médical, pas de formulaire clinique. Juste une conversation naturelle
+                                    pour
+                                    briser la glace.</p>
+                            </div>
+                        </div>
+                        <div class="principle-item">
+                            <div class="principle-content">
+                                <h5>Redirection Intelligente</h5>
+                                <p>Détection active des signaux de détresse. Si le score dépasse un seuil, proposition
+                                    immédiate d'un spécialiste adapté.</p>
+                            </div>
+                        </div>
+                        <div class="principle-item">
+                            <div class="principle-content">
+                                <h5>Valeur pour le Praticien</h5>
+                                <p>Le psy ne reçoit pas juste un patient, il reçoit un contexte : humeur, mots-clés,
+                                    historique. Gain de temps énorme.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="insight-card">
-                    <h5>3. Méfiance envers l'IA</h5>
-                    <p>Les algorithmes opaques créent une méfiance. Les utilisateurs veulent comprendre le raisonnement.
+            </section>
+
+            <section class="case-section reveal">
+                <div class="content-max reveal">
+                    <span class="section-subtitle">Exploration</span>
+                    <h2 class="section-title-large">Wireframes</h2>
+                    <p>
+                        L'étape de wireframing a permis de tester rapidement différentes architectures d'information
+                        pour
+                        garantir que la complexité des données cliniques reste accessible et digeste.
                     </p>
                 </div>
-            </div>
-        </section>
 
-        <section class="case-section reveal">
-            <div class="content-max reveal">
-                <span class="section-subtitle">Approche</span>
-                <h2 class="section-title-large">Stratégie : Transparence & Clarté</h2>
-            </div>
-            <div class="principles-card reveal">
-                <div class="principles-flow">
-                    <div class="principle-item">
-                        <div class="principle-number">01</div>
-                        <div class="principle-content">
-                            <h5>IA Interprétable</h5>
-                            <p>Rendre les algorithmes compréhensibles en affichant les sources.</p>
+                <!-- Wireframes Carousel Block -->
+                <!-- Wireframes Block 1 -->
+                <div class="solution-block reveal">
+                    <div class="solution-image">
+                        <div class="ui-card-image carousel">
+                            <img src="images/71a4-desktop.webp" alt="Wireframe Inscription">
+                            <img src="images/zimp-desktop.webp" alt="Wireframe code base">
+                            <img src="images/x273-desktop.webp" alt="Wireframe code erreur">
+                            <img src="images/nxno-desktop.webp" alt="Wireframe code validation">
                         </div>
                     </div>
-                    <div class="principle-item">
-                        <div class="principle-number">02</div>
-                        <div class="principle-content">
-                            <h5>Visualisations Cliniques</h5>
-                            <p>Créer des graphiques simples et neutres qui facilitent la lecture.</p>
-                        </div>
-                    </div>
-                    <div class="principle-item">
-                        <div class="principle-number">03</div>
-                        <div class="principle-content">
-                            <h5>Design "Calme & Fiable"</h5>
-                            <p>Une UI qui inspire la confiance tout en restant accessible.</p>
-                        </div>
+                    <div class="solution-content">
+                        <h5>Flow d'inscription : Confiance Immédiate</h5>
+                        <p>
+                            L'inscription n'est pas juste un formulaire, c'est le premier pas vers l'aide. Chaque écran
+                            est
+                            conçu pour rassurer : code d'accès sécurisé, validation claire, zéro friction. On ne demande
+                            pas
+                            de données médicales à l'entrée, on ouvre juste la porte.</p>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <section class="case-section reveal">
-            <div class="content-max reveal">
-                <span class="section-subtitle">Exploration</span>
-                <h2 class="section-title-large">Wireframes</h2>
-                <p>
-                    L'étape de wireframing a permis de tester rapidement différentes architectures d'information pour
-                    garantir que la complexité des données cliniques reste accessible et digeste.
-                </p>
-            </div>
-
-            <!-- Wireframes Carousel Block -->
-            <!-- Wireframes Block 1 -->
-            <div class="solution-block reveal">
-                <div class="solution-image">
-                    <div class="ui-card-image carousel">
-                        <img src="https://zupimages.net/up/25/48/71a4.png" alt="Wireframe Inscription">
-                        <img src="https://zupimages.net/up/25/48/zimp.png" alt="Wireframe code base">
-                        <img src="https://zupimages.net/up/25/48/x273.png" alt="Wireframe code erreur">
-                        <img src="https://zupimages.net/up/25/48/nxno.png" alt="Wireframe code validation">
+                <!-- Wireframes Block 2 (Right) -->
+                <div class="solution-block solution-block-right reveal">
+                    <div class="solution-image">
+                        <div class="ui-card-image carousel">
+                            <img src="images/w9e9-desktop.webp" alt="Wireframe chat">
+                            <img src="images/wsps-desktop.webp" alt="Wireframe chat expand">
+                            <img src="images/f9pk-desktop.webp" alt="Wireframe chat fill">
+                        </div>
+                    </div>
+                    <div class="solution-content">
+                        <h5>Le Chat comme Porte d'Entrée</h5>
+                        <p>L'interface conversationnelle est le cœur du produit. Elle doit être invisible pour laisser
+                            place
+                            à la parole. Gestion des silences, zones de réponse claires, et transitions douces pour
+                            encourager la confidence sans intimider.</p>
                     </div>
                 </div>
-                <div class="solution-content">
-                    <h5>Flow d'inscription</h5>
+
+                <!-- Wireframes Block 3 -->
+                <div class="solution-block reveal">
+                    <div class="solution-image">
+                        <div class="ui-card-image carousel">
+                            <img src="images/8zj7-desktop.webp" alt="Wireframe Listening">
+                            <img src="images/mvxy-desktop.webp" alt="Wireframe Thinking">
+                            <img src="images/ir3d-desktop.webp" alt="Wireframe AI Speaking">
+                        </div>
+                    </div>
+                    <div class="solution-content">
+                        <h5>Humaniser la Machine : Listening, Thinking, Speaking</h5>
+                        <p>Pour qu'une IA soit acceptée comme confidente, elle doit "vivre". J'ai conçu des états
+                            distincts
+                            : elle écoute (pulsation), elle réfléchit (orbite), elle parle (onde). Ce feedback visuel
+                            crée
+                            une présence rassurante, pas juste un algorithme froid.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="case-section reveal">
+                <div class="content-max reveal">
+                    <span class="section-subtitle">Interface utilisateur</span>
+                    <h2 class="section-title-large">Design System : Inspirer la Confiance</h2>
                     <p>
-                        Définition et itération du parcours d’accès, incluant la saisie du code, les états d’erreur et
-                        la validation.
-                        L’objectif : construire un flux clair, rapide et sans friction pour sécuriser l’entrée dans le
-                        produit.</p>
+                        L'identité "Deep Space" n'est pas un choix esthétique, c'est un choix psychologique. Le fond
+                        sombre
+                        apaise, le bleu néon guide sans agresser. La typographie <strong>Source Sans 3</strong> assure
+                        une
+                        clarté absolue, car dans la santé mentale, l'ambiguïté n'a pas sa place.
+                    </p>
                 </div>
-            </div>
 
-            <!-- Wireframes Block 2 (Right) -->
-            <div class="solution-block solution-block-right reveal">
-                <div class="solution-image">
-                    <div class="ui-card-image carousel">
-                        <img src="https://zupimages.net/up/25/48/w9e9.png" alt="Wireframe chat">
-                        <img src="https://zupimages.net/up/25/48/wsps.png" alt="Wireframe chat expand">
-                        <img src="https://zupimages.net/up/25/48/f9pk.png" alt="Wireframe chat fill">
-                    </div>
-                </div>
-                <div class="solution-content">
-                    <h5>Architecture de l’interface conversationnelle</h5>
-                    <p>Définition de la structure du chat : gestion des messages, zones d’action, transitions et niveaux
-                        d’information.
-                        Objectif : garantir une interface lisible, expressive et adaptable avant d'aborder l’esthétique
-                        finale.</p>
-                </div>
-            </div>
+                <!-- 2-Column Grid: Typography | Spacing -->
+                <div class="two-col reveal" style="margin-top: var(--space-16);">
+                    <!-- Column 1: Typography -->
+                    <div>
+                        <h3 class="section-subtitle-small element-spacing">Typographie</h3>
+                        <div class="typo-table">
+                            <div class="typo-table-header">
+                                <div class="typo-col-style">Style</div>
+                                <div class="typo-col-usage">Usage</div>
+                                <div class="typo-col-specs">Specs</div>
+                                <div class="typo-col-preview">Preview</div>
+                            </div>
 
-            <!-- Wireframes Block 3 -->
-            <div class="solution-block reveal">
-                <div class="solution-image">
-                    <div class="ui-card-image carousel">
-                        <img src="https://zupimages.net/up/25/48/8zj7.png" alt="Wireframe Listening">
-                        <img src="https://zupimages.net/up/25/48/mvxy.png" alt="Wireframe Thinking">
-                        <img src="https://zupimages.net/up/25/48/ir3d.png" alt="Wireframe AI Speaking">
-                    </div>
-                </div>
-                <div class="solution-content">
-                    <h5>États de l’IA : listening, thinking, speaking</h5>
-                    <p>Conception des différents états de l’assistant — écoute, réflexion, réponse — pour donner un
-                        rythme clair aux interactions
-                        et rendre l’expérience plus transparente et prévisible pour l’utilisateur.</p>
-                </div>
-            </div>
-        </section>
+                            <div class="typo-table-row">
+                                <div class="typo-col-style">
+                                    <span class="typo-name">H1-H3</span>
+                                    <span class="typo-label">Headings</span>
+                                </div>
+                                <div class="typo-col-usage">Titres de page et sections</div>
+                                <div class="typo-col-specs">
+                                    <span>Poppins</span>
+                                    <span>Weight 600</span>
+                                </div>
+                                <div class="typo-col-preview"
+                                    style="font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 20px; color: var(--ovact-title);">
+                                    Ovact AI
+                                </div>
+                            </div>
 
-        <section class="case-section reveal">
-            <div class="content-max reveal">
-                <span class="section-subtitle">Interface utilisateur</span>
-                <h2 class="section-title-large">Design System & Branding</h2>
-                <p>
-                    L'identité visuelle d'Ovact repose sur un thème sombre immersif (Deep Space) ponctué d'accents
-                    lumineux (Neon Blue) pour guider l'utilisateur. La typographie <strong>Source Sans 3</strong>
-                    assure une
-                    lisibilité optimale, tandis que <strong>Poppins</strong> apporte structure et hiérarchie aux titres.
-                </p>
-            </div>
+                            <div class="typo-table-row">
+                                <div class="typo-col-style">
+                                    <span class="typo-name">Body</span>
+                                    <span class="typo-label">Texte principal</span>
+                                </div>
+                                <div class="typo-col-usage">Messages &amp; contenu</div>
+                                <div class="typo-col-specs">
+                                    <span>18 / 25</span>
+                                    <span>Source Sans 3</span>
+                                </div>
+                                <div class="typo-col-preview"
+                                    style="font-family: 'Source Sans 3', sans-serif; font-size: 16px; font-weight: 400; color: var(--ovact-text);">
+                                    Bonjour, comment puis-je vous aider ?
+                                </div>
+                            </div>
 
-            <!-- 2-Column Grid: Typography | Spacing -->
-            <div class="two-col reveal" style="margin-top: var(--space-16);">
-                <!-- Column 1: Typography -->
-                <div>
-                    <h3 class="section-subtitle-small element-spacing">Typographie</h3>
-                    <div class="typo-table">
-                        <div class="typo-table-header">
-                            <div class="typo-col-style">Style</div>
-                            <div class="typo-col-usage">Usage</div>
-                            <div class="typo-col-specs">Specs</div>
-                            <div class="typo-col-preview">Preview</div>
-                        </div>
+                            <div class="typo-table-row">
+                                <div class="typo-col-style">
+                                    <span class="typo-name">CTA</span>
+                                    <span class="typo-label">Boutons</span>
+                                </div>
+                                <div class="typo-col-usage">Actions principales</div>
+                                <div class="typo-col-specs">
+                                    <span>16 / 24</span>
+                                    <span>Weight 700</span>
+                                </div>
+                                <div class="typo-col-preview"
+                                    style="font-family: 'Source Sans 3', sans-serif; font-size: 16px; font-weight: 700; color: var(--ovact-cta-text); background: var(--ovact-cta-bg); padding: 8px 48px; border-radius: 14px; box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.1), 0 1px 2px #09325d; display: inline-block; min-width: 160px; text-align: center;">
+                                    Commencer
+                                </div>
+                            </div>
 
-                        <div class="typo-table-row">
-                            <div class="typo-col-style">
-                                <span class="typo-name">H1-H3</span>
-                                <span class="typo-label">Headings</span>
-                            </div>
-                            <div class="typo-col-usage">Titres de page et sections</div>
-                            <div class="typo-col-specs">
-                                <span>Poppins</span>
-                                <span>Weight 600</span>
-                            </div>
-                            <div class="typo-col-preview"
-                                style="font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 20px; color: var(--ovact-title);">
-                                Ovact AI
-                            </div>
-                        </div>
-
-                        <div class="typo-table-row">
-                            <div class="typo-col-style">
-                                <span class="typo-name">Body</span>
-                                <span class="typo-label">Texte principal</span>
-                            </div>
-                            <div class="typo-col-usage">Messages & contenu</div>
-                            <div class="typo-col-specs">
-                                <span>18 / 25</span>
-                                <span>Source Sans 3</span>
-                            </div>
-                            <div class="typo-col-preview"
-                                style="font-family: 'Source Sans 3', sans-serif; font-size: 16px; font-weight: 400; color: var(--ovact-text);">
-                                Bonjour, comment puis-je vous aider ?
-                            </div>
-                        </div>
-
-                        <div class="typo-table-row">
-                            <div class="typo-col-style">
-                                <span class="typo-name">CTA</span>
-                                <span class="typo-label">Boutons</span>
-                            </div>
-                            <div class="typo-col-usage">Actions principales</div>
-                            <div class="typo-col-specs">
-                                <span>16 / 24</span>
-                                <span>Weight 700</span>
-                            </div>
-                            <div class="typo-col-preview"
-                                style="font-family: 'Source Sans 3', sans-serif; font-size: 16px; font-weight: 700; color: var(--ovact-cta-text); background: var(--ovact-cta-bg); padding: 8px 48px; border-radius: 14px; box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.1), 0 1px 2px #09325d; display: inline-block; min-width: 160px; text-align: center;">
-                                Commencer
-                            </div>
-                        </div>
-
-                        <div class="typo-table-row">
-                            <div class="typo-col-style">
-                                <span class="typo-name">Mobile</span>
-                                <span class="typo-label">≤768px</span>
-                            </div>
-                            <div class="typo-col-usage">Body mobile</div>
-                            <div class="typo-col-specs">
-                                <span>14 / 20</span>
-                                <span>Source Sans 3</span>
-                            </div>
-                            <div class="typo-col-preview"
-                                style="font-family: 'Source Sans 3', sans-serif; font-size: 14px; font-weight: 400; color: var(--ovact-text);">
-                                Texte mobile
+                            <div class="typo-table-row">
+                                <div class="typo-col-style">
+                                    <span class="typo-name">Mobile</span>
+                                    <span class="typo-label">≤768px</span>
+                                </div>
+                                <div class="typo-col-usage">Body mobile</div>
+                                <div class="typo-col-specs">
+                                    <span>14 / 20</span>
+                                    <span>Source Sans 3</span>
+                                </div>
+                                <div class="typo-col-preview"
+                                    style="font-family: 'Source Sans 3', sans-serif; font-size: 14px; font-weight: 400; color: var(--ovact-text);">
+                                    Texte mobile
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Column 2: Spacing -->
-                <div>
-                    <h3 class="section-subtitle-small element-spacing">Espacements</h3>
-                    <div class="typo-table">
-                        <div class="typo-table-header">
-                            <div class="typo-col-style">Taille</div>
-                            <div class="typo-col-usage">Usage</div>
-                            <div class="typo-col-specs">Valeur</div>
-                            <div class="typo-col-preview">Exemple</div>
-                        </div>
+                    <!-- Column 2: Spacing -->
+                    <div>
+                        <h3 class="section-subtitle-small element-spacing">Espacements</h3>
+                        <div class="typo-table">
+                            <div class="typo-table-header">
+                                <div class="typo-col-style">Taille</div>
+                                <div class="typo-col-usage">Usage</div>
+                                <div class="typo-col-specs">Valeur</div>
+                                <div class="typo-col-preview">Exemple</div>
+                            </div>
 
-                        <div class="typo-table-row">
-                            <div class="typo-col-style">
-                                <span class="typo-name">XXS</span>
-                                <span class="typo-label">Extra Small</span>
-                            </div>
-                            <div class="typo-col-usage">Espacement minimal, padding interne</div>
-                            <div class="typo-col-specs">
-                                <span>8px</span>
-                            </div>
-                            <div class="typo-col-preview">
-                                <div
-                                    style="width: 8px; height: 8px; background: var(--ovact-cta-bg); border-radius: 2px;">
+                            <div class="typo-table-row">
+                                <div class="typo-col-style">
+                                    <span class="typo-name">XXS</span>
+                                    <span class="typo-label">Extra Small</span>
+                                </div>
+                                <div class="typo-col-usage">Espacement minimal, padding interne</div>
+                                <div class="typo-col-specs">
+                                    <span>8px</span>
+                                </div>
+                                <div class="typo-col-preview">
+                                    <div
+                                        style="width: 8px; height: 8px; background: var(--ovact-cta-bg); border-radius: 2px;">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="typo-table-row">
-                            <div class="typo-col-style">
-                                <span class="typo-name">XS</span>
-                                <span class="typo-label">Small</span>
-                            </div>
-                            <div class="typo-col-usage">Espacement entre éléments proches</div>
-                            <div class="typo-col-specs">
-                                <span>16px</span>
-                            </div>
-                            <div class="typo-col-preview">
-                                <div
-                                    style="width: 16px; height: 16px; background: var(--ovact-cta-bg); border-radius: 2px;">
+                            <div class="typo-table-row">
+                                <div class="typo-col-style">
+                                    <span class="typo-name">XS</span>
+                                    <span class="typo-label">Small</span>
+                                </div>
+                                <div class="typo-col-usage">Espacement entre éléments proches</div>
+                                <div class="typo-col-specs">
+                                    <span>16px</span>
+                                </div>
+                                <div class="typo-col-preview">
+                                    <div
+                                        style="width: 16px; height: 16px; background: var(--ovact-cta-bg); border-radius: 2px;">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="typo-table-row">
-                            <div class="typo-col-style">
-                                <span class="typo-name">S</span>
-                                <span class="typo-label">Medium Small</span>
-                            </div>
-                            <div class="typo-col-usage">Espacement entre composants</div>
-                            <div class="typo-col-specs">
-                                <span>24px</span>
-                            </div>
-                            <div class="typo-col-preview">
-                                <div
-                                    style="width: 24px; height: 24px; background: var(--ovact-cta-bg); border-radius: 2px;">
+                            <div class="typo-table-row">
+                                <div class="typo-col-style">
+                                    <span class="typo-name">S</span>
+                                    <span class="typo-label">Medium Small</span>
+                                </div>
+                                <div class="typo-col-usage">Espacement entre composants</div>
+                                <div class="typo-col-specs">
+                                    <span>24px</span>
+                                </div>
+                                <div class="typo-col-preview">
+                                    <div
+                                        style="width: 24px; height: 24px; background: var(--ovact-cta-bg); border-radius: 2px;">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="typo-table-row">
-                            <div class="typo-col-style">
-                                <span class="typo-name">M</span>
-                                <span class="typo-label">Medium</span>
-                            </div>
-                            <div class="typo-col-usage">Espacement entre sections</div>
-                            <div class="typo-col-specs">
-                                <span>32px</span>
-                            </div>
-                            <div class="typo-col-preview">
-                                <div
-                                    style="width: 32px; height: 32px; background: var(--ovact-cta-bg); border-radius: 2px;">
+                            <div class="typo-table-row">
+                                <div class="typo-col-style">
+                                    <span class="typo-name">M</span>
+                                    <span class="typo-label">Medium</span>
+                                </div>
+                                <div class="typo-col-usage">Espacement entre sections</div>
+                                <div class="typo-col-specs">
+                                    <span>32px</span>
+                                </div>
+                                <div class="typo-col-preview">
+                                    <div
+                                        style="width: 32px; height: 32px; background: var(--ovact-cta-bg); border-radius: 2px;">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="typo-table-row">
-                            <div class="typo-col-style">
-                                <span class="typo-name">L</span>
-                                <span class="typo-label">Large</span>
-                            </div>
-                            <div class="typo-col-usage">Espacement entre blocs majeurs</div>
-                            <div class="typo-col-specs">
-                                <span>40px</span>
-                            </div>
-                            <div class="typo-col-preview">
-                                <div
-                                    style="width: 40px; height: 40px; background: var(--ovact-cta-bg); border-radius: 2px;">
+                            <div class="typo-table-row">
+                                <div class="typo-col-style">
+                                    <span class="typo-name">L</span>
+                                    <span class="typo-label">Large</span>
+                                </div>
+                                <div class="typo-col-usage">Espacement entre blocs majeurs</div>
+                                <div class="typo-col-specs">
+                                    <span>40px</span>
+                                </div>
+                                <div class="typo-col-preview">
+                                    <div
+                                        style="width: 40px; height: 40px; background: var(--ovact-cta-bg); border-radius: 2px;">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="typo-table-row">
-                            <div class="typo-col-style">
-                                <span class="typo-name">XL</span>
-                                <span class="typo-label">Extra Large</span>
-                            </div>
-                            <div class="typo-col-usage">Espacement entre pages/vues</div>
-                            <div class="typo-col-specs">
-                                <span>60px</span>
-                            </div>
-                            <div class="typo-col-preview">
-                                <div
-                                    style="width: 60px; height: 60px; background: var(--ovact-cta-bg); border-radius: 2px;">
+                            <div class="typo-table-row">
+                                <div class="typo-col-style">
+                                    <span class="typo-name">XL</span>
+                                    <span class="typo-label">Extra Large</span>
+                                </div>
+                                <div class="typo-col-usage">Espacement entre pages/vues</div>
+                                <div class="typo-col-specs">
+                                    <span>60px</span>
+                                </div>
+                                <div class="typo-col-preview">
+                                    <div
+                                        style="width: 60px; height: 60px; background: var(--ovact-cta-bg); border-radius: 2px;">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- 2-Column Grid: Palette (Full Width for now, Interaction moved below) -->
-            <div class="reveal" style="margin-top: var(--space-16);">
-                <h3 class="section-subtitle-small element-spacing">Palette "Deep Space"</h3>
-                <div class="color-palette">
-                    <div class="color-swatch">
-                        <div class="swatch-color" style="background: #081522;"></div>
-                        <div class="swatch-info">
-                            <div class="swatch-header">
-                                <span class="swatch-name">Background</span>
-                                <span class="swatch-hex">#081522</span>
+                <!-- 2-Column Grid: Palette (Full Width for now, Interaction moved below) -->
+                <div class="reveal" style="margin-top: var(--space-16);">
+                    <h3 class="section-subtitle-small element-spacing">Palette "Deep Space"</h3>
+                    <div class="color-palette">
+                        <div class="color-swatch">
+                            <div class="swatch-color" style="background: #081522;"></div>
+                            <div class="swatch-info">
+                                <div class="swatch-header">
+                                    <span class="swatch-name">Background</span>
+                                    <span class="swatch-hex">#081522</span>
+                                </div>
+                                <span class="swatch-usage">Main Background</span>
                             </div>
-                            <span class="swatch-usage">Main Background</span>
                         </div>
-                    </div>
-                    <div class="color-swatch">
-                        <div class="swatch-color" style="background: #0a1929;"></div>
-                        <div class="swatch-info">
-                            <div class="swatch-header">
-                                <span class="swatch-name">Surface</span>
-                                <span class="swatch-hex">#0a1929</span>
+                        <div class="color-swatch">
+                            <div class="swatch-color" style="background: #0a1929;"></div>
+                            <div class="swatch-info">
+                                <div class="swatch-header">
+                                    <span class="swatch-name">Surface</span>
+                                    <span class="swatch-hex">#0a1929</span>
+                                </div>
+                                <span class="swatch-usage">Cards / Secondary BG</span>
                             </div>
-                            <span class="swatch-usage">Cards / Secondary BG</span>
                         </div>
-                    </div>
-                    <div class="color-swatch">
-                        <div class="swatch-color" style="background: #5ca3f0;"></div>
-                        <div class="swatch-info">
-                            <div class="swatch-header">
-                                <span class="swatch-name">Primary Blue</span>
-                                <span class="swatch-hex">#5ca3f0</span>
+                        <div class="color-swatch">
+                            <div class="swatch-color" style="background: #5ca3f0;"></div>
+                            <div class="swatch-info">
+                                <div class="swatch-header">
+                                    <span class="swatch-name">Primary Blue</span>
+                                    <span class="swatch-hex">#5ca3f0</span>
+                                </div>
+                                <span class="swatch-usage">Accents &amp; CTA</span>
                             </div>
-                            <span class="swatch-usage">Accents & CTA</span>
                         </div>
-                    </div>
-                    <div class="color-swatch">
-                        <div class="swatch-color" style="background: #1a5f9e;"></div>
-                        <div class="swatch-info">
-                            <div class="swatch-header">
-                                <span class="swatch-name">Dark Blue</span>
-                                <span class="swatch-hex">#1a5f9e</span>
+                        <div class="color-swatch">
+                            <div class="swatch-color" style="background: #1a5f9e;"></div>
+                            <div class="swatch-info">
+                                <div class="swatch-header">
+                                    <span class="swatch-name">Dark Blue</span>
+                                    <span class="swatch-hex">#1a5f9e</span>
+                                </div>
+                                <span class="swatch-usage">Interactive Elements</span>
                             </div>
-                            <span class="swatch-usage">Interactive Elements</span>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Interaction Design (Full Width) -->
-            <div class="reveal" style="margin-top: var(--space-16);">
-                <h3 class="section-subtitle-small element-spacing">Interaction Design</h3>
-                <div class="flow-frame">
-                    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: var(--space-4);">
-                        <!-- User Feedback -->
-                        <div
-                            style="background: #081522; height: 300px; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: var(--radius-md); position: relative; overflow: hidden;">
-                            <div class="loader user-loader"
-                                style="display: block; mix-blend-mode: plus-lighter; pointer-events: none; position: relative; width: 100%; height: 100%;">
-                                <img alt="start" src="https://ovact.com/loader/user/start.gif"
-                                    style="opacity: 0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain;">
-                                <img alt="loop" src="https://ovact.com/loader/user/loop.gif"
-                                    style="opacity: 1; position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain;">
-                                <img alt="end" src="https://ovact.com/loader/user/end.gif"
-                                    style="opacity: 0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain;">
+                <!-- Interaction Design (Full Width) -->
+                <div class="reveal" style="margin-top: var(--space-16);">
+                    <h3 class="section-subtitle-small element-spacing">Interaction Design</h3>
+                    <div class="flow-frame">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: var(--space-4);">
+                            <!-- User Feedback -->
+                            <div
+                                style="background: #081522; height: 300px; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: var(--radius-md); position: relative; overflow: hidden;">
+                                <div class="loader user-loader"
+                                    style="display: block; mix-blend-mode: plus-lighter; pointer-events: none; position: relative; width: 100%; height: 100%;">
+                                    <img alt="start" src="https://ovact.com/loader/user/start.gif"
+                                        style="opacity: 0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain;">
+                                    <img alt="loop" src="https://ovact.com/loader/user/loop.gif"
+                                        style="opacity: 1; position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain;">
+                                    <img alt="end" src="https://ovact.com/loader/user/end.gif"
+                                        style="opacity: 0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain;">
+                                </div>
+                                <p class="flow-caption" style="margin-top: -40px; z-index: 10;">User Speaking</p>
                             </div>
-                            <p class="flow-caption" style="margin-top: -40px; z-index: 10;">User Speaking</p>
-                        </div>
 
-                        <!-- AI Thinking -->
-                        <div
-                            style="background: #081522; height: 300px; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: var(--radius-md); position: relative; overflow: hidden;">
-                            <div class="loader ai-thinking-loader"
-                                style="display: block; mix-blend-mode: plus-lighter; pointer-events: none; position: relative; width: 100%; height: 100%;">
-                                <img alt="start" src="https://ovact.com/loader/other/start.gif"
-                                    style="opacity: 0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain;">
-                                <img alt="loop" src="https://ovact.com/loader/other/loop.gif"
-                                    style="opacity: 1; position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain;">
-                                <img alt="end" src="https://ovact.com/loader/other/end.gif"
-                                    style="opacity: 0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain;">
+                            <!-- AI Thinking -->
+                            <div
+                                style="background: #081522; height: 300px; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: var(--radius-md); position: relative; overflow: hidden;">
+                                <div class="loader ai-thinking-loader"
+                                    style="display: block; mix-blend-mode: plus-lighter; pointer-events: none; position: relative; width: 100%; height: 100%;">
+                                    <img alt="start" src="https://ovact.com/loader/other/start.gif"
+                                        style="opacity: 0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain;">
+                                    <img alt="loop" src="https://ovact.com/loader/other/loop.gif"
+                                        style="opacity: 1; position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain;">
+                                    <img alt="end" src="https://ovact.com/loader/other/end.gif"
+                                        style="opacity: 0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain;">
+                                </div>
+                                <p class="flow-caption" style="margin-top: -40px; z-index: 10;">AI Thinking</p>
                             </div>
-                            <p class="flow-caption" style="margin-top: -40px; z-index: 10;">AI Thinking</p>
-                        </div>
 
-                        <!-- AI Speaking -->
-                        <div
-                            style="background: #081522; height: 300px; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: var(--radius-md); position: relative; overflow: hidden;">
-                            <div class="loader ai-speaking-loader"
-                                style="display: block; mix-blend-mode: plus-lighter; pointer-events: none; position: relative; width: 100%; height: 100%;">
-                                <img alt="start" src="https://ovact.com/loader/ai/start.gif"
-                                    style="opacity: 0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain;">
-                                <img alt="loop" src="https://ovact.com/loader/ai/loop.gif"
-                                    style="opacity: 1; position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain;">
-                                <img alt="end" src="https://ovact.com/loader/ai/end.gif"
-                                    style="opacity: 0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain;">
+                            <!-- AI Speaking -->
+                            <div
+                                style="background: #081522; height: 300px; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: var(--radius-md); position: relative; overflow: hidden;">
+                                <div class="loader ai-speaking-loader"
+                                    style="display: block; mix-blend-mode: plus-lighter; pointer-events: none; position: relative; width: 100%; height: 100%;">
+                                    <img alt="start" src="https://ovact.com/loader/ai/start.gif"
+                                        style="opacity: 0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain;">
+                                    <img alt="loop" src="https://ovact.com/loader/ai/loop.gif"
+                                        style="opacity: 1; position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain;">
+                                    <img alt="end" src="https://ovact.com/loader/ai/end.gif"
+                                        style="opacity: 0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain;">
+                                </div>
+                                <p class="flow-caption" style="margin-top: -40px; z-index: 10;">AI Speaking</p>
                             </div>
-                            <p class="flow-caption" style="margin-top: -40px; z-index: 10;">AI Speaking</p>
                         </div>
+                        <p class="flow-caption" style="margin-top: var(--space-4);">Feedback visuel complet : User
+                            Speaking,
+                            AI Thinking, et AI Speaking.</p>
                     </div>
-                    <p class="flow-caption" style="margin-top: var(--space-4);">Feedback visuel complet : User Speaking,
-                        AI Thinking, et AI Speaking.</p>
                 </div>
-            </div>
 
-            <!-- Logo Section -->
-            <div class="reveal" style="margin-top: var(--space-16);">
-                <h3 class="section-subtitle-small element-spacing">Logotype</h3>
-                <div class="flow-frame">
-                    <div class="logo-frame">
-                        <img src="https://zupimages.net/up/25/14/sff3.png" alt="Logo Ovact" class="logo-image">
+                <!-- Logo Section -->
+                <div class="reveal" style="margin-top: var(--space-16);">
+                    <h3 class="section-subtitle-small element-spacing">Logotype</h3>
+                    <div class="flow-frame">
+                        <picture>
+                            <source media="(min-width: 1024px)" srcset="images/sff3-desktop.webp">
+                            <source media="(min-width: 768px)" srcset="images/sff3-tablet.webp"><img
+                                src="images/sff3-mobile.webp" alt="Logo Ovact" class="logo-image">
+                        </picture>
+                        <p class="flow-caption">Le logotype Ovact incarne la fusion entre l'humain et l'intelligence
+                            artificielle.</p>
                     </div>
-                    <p class="flow-caption">Le logotype Ovact incarne la fusion entre l'humain et l'intelligence
-                        artificielle.</p>
                 </div>
-            </div>
-        </section>
+            </section>
+        </main>
 
         <!-- Implementation / Interface Finale Section -->
         <section class="case-section reveal">
@@ -660,12 +715,12 @@
                     <!-- Card 1: Interaction Chat -->
                     <div class="interface-card">
                         <div class="interface-card-media">
-                            <video autoplay loop muted playsinline class="interface-video">
+                            <video autoplay="" loop="" muted="" playsinline="" class="interface-video">
                                 <source src="https://files.catbox.moe/jbk0ct.mp4" type="video/mp4">
                             </video>
                         </div>
                         <div class="interface-card-content">
-                            <h3 class="interface-card-title">Page d'accueil & Onboarding</h3>
+                            <h3 class="interface-card-title">Page d'accueil &amp; Onboarding</h3>
                             <p class="interface-card-desc">Un point d'entrée rassurant qui guide l'utilisateur dès les
                                 premiers instants</p>
                         </div>
@@ -674,7 +729,7 @@
                     <!-- Card 2: Dashboard -->
                     <div class="interface-card">
                         <div class="interface-card-media">
-                            <video autoplay loop muted playsinline class="interface-video">
+                            <video autoplay="" loop="" muted="" playsinline="" class="interface-video">
                                 <source src="https://files.catbox.moe/bv70in.mp4" type="video/mp4">
                             </video>
                         </div>
@@ -688,7 +743,7 @@
                     <!-- Card 3: Analyse -->
                     <div class="interface-card">
                         <div class="interface-card-media">
-                            <video autoplay loop muted playsinline class="interface-video">
+                            <video autoplay="" loop="" muted="" playsinline="" class="interface-video">
                                 <source src="https://files.catbox.moe/2d8dto.mp4" type="video/mp4">
                             </video>
                         </div>
@@ -705,28 +760,28 @@
         <section class="case-section reveal">
             <div class="content-max reveal">
                 <span class="section-subtitle">Résultats</span>
-                <h2 class="section-title-large">Impact & apprentissages</h2>
+                <h2 class="section-title-large">Impact &amp; apprentissages</h2>
             </div>
             <div class="results-bento reveal">
                 <div class="bento-card bento-large">
                     <div class="bento-accent"></div>
-                    <span class="bento-tag">Impact Principal</span>
-                    <h3>Transparence & confiance</h3>
-                    <p>Une IA qui explique son raisonnement inspire plus de confiance qu'une IA opaque. La transparence
-                        devient un levier de différenciation.</p>
-                    <div class="bento-stat">+85%</div>
+                    <span class="bento-tag">Validation Marché</span>
+                    <h3>Adopté par un Psychologue</h3>
+                    <p>Un praticien a validé le concept et souhaite l'intégrer à sa pratique. La preuve que l'outil
+                        répond à un vrai besoin clinique et business.</p>
+                    <div class="bento-stat">Validé</div>
                 </div>
                 <div class="bento-card bento-medium">
                     <div class="bento-accent"></div>
-                    <span class="bento-tag">UX</span>
-                    <h3>Clarté perçue</h3>
-                    <p>Visualisations cliniques et feedback clair = réduction drastique de la charge cognitive.</p>
+                    <span class="bento-tag">Business Model</span>
+                    <h3>Gagnant-Gagnant</h3>
+                    <p>Apport de clients qualifiés pour les psys + revenus récurrents pour la plateforme.</p>
                 </div>
                 <div class="bento-card bento-medium">
                     <div class="bento-accent"></div>
-                    <span class="bento-tag">Technique</span>
-                    <h3>Scalabilité</h3>
-                    <p>Design System cohérent = nouvelles fonctionnalités déployées rapidement et efficacement.</p>
+                    <span class="bento-tag">UX Impact</span>
+                    <h3>Conversion par la Confiance</h3>
+                    <p>Le design rassurant transforme la friction ("j'ai peur") en action ("je prends RDV").</p>
                 </div>
             </div>
         </section>
@@ -734,8 +789,8 @@
         <section class="case-section reveal">
             <div class="content-max reveal">
                 <blockquote style="margin-bottom: 0;">
-                    "Avec ces fondations, Ovact dispose désormais d'un langage visuel cohérent prêt à accueillir les
-                    prochaines fonctionnalités du produit."
+                    "Quand un psychologue valide ton concept et veut l'adopter pour sa pratique, tu sais que tu as créé
+                    plus qu'une belle interface, tu as résolu un vrai problème."
                 </blockquote>
             </div>
         </section>
@@ -794,22 +849,22 @@
                 <input type="hidden" name="_next" value="https://bracaval.fr/thank-you.html">
                 <input type="hidden" name="_template" value="table">
                 <div class="form-group">
-                    <input type="text" name="name" placeholder=" " required>
-                    <label>Nom & Prénom</label>
+                    <input type="text" name="name" placeholder=" " required="">
+                    <label>Nom &amp; Prénom</label>
                 </div>
                 <div class="form-group">
-                    <input type="email" name="email" placeholder=" " required>
+                    <input type="email" name="email" placeholder=" " required="">
                     <label>Email</label>
                 </div>
                 <div class="form-group">
-                    <textarea name="message" placeholder=" " required></textarea>
+                    <textarea name="message" placeholder=" " required=""></textarea>
                     <label>Message</label>
                 </div>
                 <div class="form-actions">
                     <button type="submit" class="btn-accent">
                         <span>Envoyer</span>
                         <svg class="send-icon" width="20" height="20" viewBox="0 0 24 24">
-                            <path fill="currentColor" d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
+                            <path fill="currentColor" d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
                         </svg>
                     </button>
                 </div>
@@ -821,11 +876,12 @@
     <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
         <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z">
+            </path>
         </svg>
         <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
         </svg>
     </button>
 
@@ -904,6 +960,8 @@
             });
         });
     </script>
+
+
 </body>
 
 </html>

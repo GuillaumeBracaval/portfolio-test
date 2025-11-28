@@ -1,84 +1,235 @@
-<!DOCTYPE html>
-<html lang="fr">
+<!DOCTYPE html><html lang="fr"><head>
+    <!-- Google tag (gtag.js) -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-9MMGMXQ2Y2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-<head>
+        gtag('config', 'G-9MMGMXQ2Y2');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enfants du monde – Guillaume Bracaval</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/240.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.min.css">
     <link rel="stylesheet" href="theme-toggle.css">
+    <link rel="stylesheet" href="cursor.css">
 </head>
 
 <body>
-
-    <header class="site-header">
-        <div class="container header-inner">
-            <div class="logo"><a href="index.html">GUILLAUME BRACAVAL</a></div>
-            <nav class="nav-links">
-                <a href="index.html">Retour aux projets</a>
-            </nav>
-        </div>
-    </header>
-
-    <main class="container">
-        <header class="project-header reveal">
-            <span class="project-subtitle reveal">Application mobile - UX/UI & Brand Design</span>
-            <h1 class="project-title reveal">Enfants du monde</h1>
-
-            <div class="project-meta reveal">
-                <div class="meta-item">
-                    <strong>Services</strong>
-                    Art Direction, UX Research, UI Design, Storytelling
+    <div class="wrapper">
+        <header class="site-header">
+            <a href="index.html" class="profile-badge">
+                <div class="profile-avatar">
+                    <picture><source media="(min-width: 1024px)" srcset="images/to9t-desktop.webp"><source media="(min-width: 768px)" srcset="images/to9t-tablet.webp"><img src="images/to9t-mobile.webp" alt="Guillaume Bracaval"></picture>
                 </div>
-            </div>
-
-            <img class="project-hero-image reveal" src="https://zupimages.net/up/25/14/tk82.png"
-                alt="Enfants du monde Hero">
+                <div class="profile-info">
+                    <span class="profile-name">Guillaume Bracaval</span>
+                    <span class="profile-role">Designer depuis 2021</span>
+                </div>
+            </a>
+            <nav>
+                <a href="#" id="openContact" class="btn-accent" onclick="document.getElementById('contactModal').classList.add('is-visible')">Me contacter</a>
+            </nav>
         </header>
 
-        <section class="content-section reveal">
-            <h2>À propos du projet</h2>
-            <p>Humanitarian platform connecting donors to life-changing projects for vulnerable communities, offering
-                transparent impact tracking and personalized stories to drive global support.</p>
-        </section>
+        <nav class="breadcrumb">
+            <a href="index.html">Projets</a>
+            <span class="breadcrumb-separator">/</span>
+            <span>Enfants du monde</span>
+        </nav>
 
-        <section class="content-section reveal">
-            <h2>Galerie</h2>
-            <div class="grid-3 reveal">
-                <img class="reveal" src="https://zupimages.net/up/25/14/fk0s.png" alt="Screen 1">
-                <img class="reveal" src="https://zupimages.net/up/25/14/hmxh.png" alt="Screen 2">
-                <img class="reveal" src="https://zupimages.net/up/25/14/3trc.png" alt="Screen 3">
-                <img class="reveal" src="https://zupimages.net/up/25/14/ipyp.png" alt="Screen 4">
-                <img class="reveal" src="https://zupimages.net/up/25/14/kx56.png" alt="Screen 5">
-                <img class="reveal" src="https://zupimages.net/up/25/14/wyg3.png" alt="Screen 6">
+        <section class="construction-hero reveal">
+            <div class="construction-icon">🚧</div>
+            <span class="section-subtitle">Application mobile - UX/UI &amp; Brand Design</span>
+            <h1 class="hero-title">Case study Enfants du monde en cours de construction</h1>
+            <div class="skill-pills">
+                <span class="skill-pill">Art Direction</span>
+                <span class="skill-pill">UX Research</span>
+                <span class="skill-pill">UI Design</span>
+                <span class="skill-pill">Storytelling</span>
             </div>
         </section>
 
-    </main>
-
-    <footer class="site-footer reveal">
-        <div class="container">
-            <p>© 2025 Guillaume Bracaval</p>
+        <div class="hero-frame reveal">
+            <picture><source media="(min-width: 1024px)" srcset="images/tk82-desktop.webp"><source media="(min-width: 768px)" srcset="images/tk82-tablet.webp"><img src="images/tk82-mobile.webp" alt="Enfants du monde Preview"></picture>
         </div>
-    </footer>
+
+
+
+        <nav class="project-navigation reveal">
+            <a href="slowtravel.html" class="nav-prev">
+                <span class="nav-label">← Projet précédent</span>
+                <span class="nav-title">Slowtravel</span>
+            </a>
+
+            <a href="index.html#projects" class="nav-home">
+                Tous les projets
+            </a>
+
+            <a href="poweroff.html" class="nav-next">
+                <span class="nav-label">Projet suivant →</span>
+                <span class="nav-title">PowerOFF</span>
+            </a>
+        </nav>
+
+        <section class="case-cta reveal">
+            <h3 style="margin-bottom: var(--space-8);">Intéressé pour travailler ensemble ?</h3>
+            <div class="case-cta-buttons">
+                <a href="index.html" class="btn-secondary">
+                    ← Retour aux projets
+                </a>
+                <a href="javascript:void(0)" id="openContact" class="btn-accent" onclick="document.getElementById('contactModal').classList.add('is-visible')">
+                    Me contacter ↗
+                </a>
+            </div>
+        </section>
+
+        <footer class="site-footer reveal">
+            <div>© 2025 Guillaume Bracaval</div>
+            <div>Conçu avec précision</div>
+        </footer>
+
+    </div>
+
+    <div id="contactModal" class="modal-backdrop">
+        <div class="modal-panel">
+            <button id="closeModal" class="modal-close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <h3 style="font-size: var(--text-xl); font-weight: 600; margin-bottom: var(--space-8); color: var(--text-primary);">
+                Contact</h3>
+            <form id="contactForm" action="https://formsubmit.co/contact@bracaval.fr" method="POST">
+                <input type="hidden" name="_subject" value="New message from portfolio">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://bracaval.fr/thank-you.html">
+                <input type="hidden" name="_template" value="table">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder=" " required="">
+                    <label>Nom &amp; Prénom</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder=" " required="">
+                    <label>Email</label>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder=" " required=""></textarea>
+                    <label>Message</label>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn-accent">
+                        <span>Envoyer</span>
+                        <svg class="send-icon" width="20" height="20" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <main id="main-content">
+        <div class="wrapper">
+            <header class="site-header">
+                <a href="index.html" class="profile-badge">
+                    <div class="profile-avatar">
+                        <picture><source media="(min-width: 1024px)" srcset="images/to9t-desktop.webp"><source media="(min-width: 768px)" srcset="images/to9t-tablet.webp"><img src="images/to9t-mobile.webp" alt="Guillaume Bracaval"></picture>
+                    </div>
+                    <div class="profile-info">
+                        <span class="profile-name">Guillaume Bracaval</span>
+                        <span class="profile-role">Designer depuis 2021</span>
+                    </div>
+                </a>
+                <nav>
+                    <a href="#" id="openContact" class="btn-accent" onclick="document.getElementById('contactModal').classList.add('is-visible')">Me contacter</a>
+                </nav>
+            </header>
+
+            <nav class="breadcrumb">
+                <a href="index.html">Projets</a>
+                <span class="breadcrumb-separator">/</span>
+                <span>Enfants du monde</span>
+            </nav>
+
+            <section class="construction-hero reveal">
+                <div class="construction-icon">🚧</div>
+                <span class="section-subtitle">Application mobile - UX/UI &amp; Brand Design</span>
+                <h1 class="hero-title">Case study Enfants du monde en cours de construction</h1>
+                <div class="skill-pills">
+                    <span class="skill-pill">Art Direction</span>
+                    <span class="skill-pill">UX Research</span>
+                    <span class="skill-pill">UI Design</span>
+                    <span class="skill-pill">Storytelling</span>
+                </div>
+            </section>
+
+            <div class="hero-frame reveal">
+                <picture><source media="(min-width: 1024px)" srcset="images/tk82-desktop.webp"><source media="(min-width: 768px)" srcset="images/tk82-tablet.webp"><img src="images/tk82-mobile.webp" alt="Enfants du monde Preview"></picture>
+            </div>
+
+
+
+            <nav class="project-navigation reveal">
+                <a href="slowtravel.html" class="nav-prev">
+                    <span class="nav-label">← Projet précédent</span>
+                    <span class="nav-title">Slowtravel</span>
+                </a>
+
+                <a href="index.html#projects" class="nav-home">
+                    Tous les projets
+                </a>
+
+                <a href="poweroff.html" class="nav-next">
+                    <span class="nav-label">Projet suivant →</span>
+                    <span class="nav-title">PowerOFF</span>
+                </a>
+            </nav>
+
+            <section class="case-cta reveal">
+                <h3 style="margin-bottom: var(--space-8);">Intéressé pour travailler ensemble ?</h3>
+                <div class="case-cta-buttons">
+                    <a href="index.html" class="btn-secondary">
+                        ← Retour aux projets
+                    </a>
+                    <a href="javascript:void(0)" id="openContact" class="btn-accent" onclick="document.getElementById('contactModal').classList.add('is-visible')">
+                        Me contacter ↗
+                    </a>
+                </div>
+            </section>
+
+            <footer class="site-footer reveal">
+                <div>© 2025 Guillaume Bracaval</div>
+                <div>Conçu avec précision</div>
+            </footer>
+
+        </div>
+    </main>
 
     <!-- THEME TOGGLE BUTTON -->
     <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
         <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
         </svg>
         <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
         </svg>
     </button>
 
+    <script src="cursor.js"></script>
     <script src="script.js"></script>
-</body>
 
-</html>
+
+</body></html>
