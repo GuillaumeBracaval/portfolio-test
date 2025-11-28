@@ -571,6 +571,7 @@ body {
   letter-spacing: -0.03em;
   color: var(--text-primary);
   margin-bottom: var(--space-3);
+  line-height: var(--lh-snug);
 }
 
 .card-desc {
