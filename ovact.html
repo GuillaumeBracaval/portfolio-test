@@ -26,7 +26,7 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://bracaval.fr/ovact.html">
+    <meta property="og:url" content="https://bracaval.fr/ovact">
     <meta property="og:title" content="Ovact – Plateforme IA validée par un psychologue">
     <meta property="og:description"
         content="Porte d'entrée vers la santé mentale. Interface IA conversationnelle validée par un psychologue. Chat, dashboard, data viz.">
@@ -35,14 +35,14 @@
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://bracaval.fr/ovact.html">
+    <meta property="twitter:url" content="https://bracaval.fr/ovact">
     <meta property="twitter:title" content="Ovact – Plateforme IA validée par un psychologue">
     <meta property="twitter:description"
         content="Porte d'entrée vers la santé mentale. Interface IA conversationnelle validée par un psychologue.">
     <meta property="twitter:image" content="https://bracaval.fr/images/a8mj-desktop.webp">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://bracaval.fr/ovact.html">
+    <link rel="canonical" href="https://bracaval.fr/ovact">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="16x16" href="/16.png">
@@ -56,7 +56,7 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;family=Source+Sans+3:ital,wght@0,200..900;1,200..900&amp;display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="styles.min.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="theme-toggle.css">
     <link rel="stylesheet" href="cursor.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -65,7 +65,7 @@
 <body>
     <div class="wrapper">
         <header class="site-header">
-            <a href="index.html" class="profile-badge">
+            <a href="/" class="profile-badge">
                 <div class="profile-avatar">
                     <picture>
                         <source media="(min-width: 1024px)" srcset="images/to9t-desktop.webp">
@@ -85,7 +85,7 @@
         </header>
 
         <nav class="breadcrumb">
-            <a href="index.html">Projets</a>
+            <a href="/">Projets</a>
             <span class="breadcrumb-separator">/</span>
             <span>Ovact</span>
         </nav>
@@ -628,7 +628,7 @@
                 <div class="reveal" style="margin-top: var(--space-16);">
                     <h3 class="section-subtitle-small element-spacing">Interaction Design</h3>
                     <div class="flow-frame">
-                        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: var(--space-4);">
+                        <div class="interaction-grid">
                             <!-- User Feedback -->
                             <div
                                 style="background: #081522; height: 300px; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: var(--radius-md); position: relative; overflow: hidden;">
@@ -796,16 +796,16 @@
         </section>
 
         <nav class="project-navigation reveal">
-            <a href="poweroff.html" class="nav-prev">
+            <a href="poweroff" class="nav-prev">
                 <span class="nav-label">← Projet précédent</span>
                 <span class="nav-title">PowerOFF</span>
             </a>
 
-            <a href="index.html#projects" class="nav-home">
+            <a href="/#projects" class="nav-home">
                 Tous les projets
             </a>
 
-            <a href="kerat.html" class="nav-next">
+            <a href="kerat" class="nav-next">
                 <span class="nav-label">Projet suivant →</span>
                 <span class="nav-title">Kerat</span>
             </a>
@@ -814,7 +814,7 @@
         <section class="case-cta reveal">
             <h3 style="margin-bottom: var(--space-8);">Intéressé pour travailler ensemble ?</h3>
             <div class="case-cta-buttons">
-                <a href="index.html" class="btn-secondary">
+                <a href="/" class="btn-secondary">
                     ← Retour aux projets
                 </a>
                 <a href="javascript:void(0)" id="openContact" class="btn-accent"
@@ -846,7 +846,7 @@
             <form id="contactForm" action="https://formsubmit.co/contact@bracaval.fr" method="POST">
                 <input type="hidden" name="_subject" value="New message from portfolio">
                 <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_next" value="https://bracaval.fr/thank-you.html">
+                <input type="hidden" name="_next" value="https://bracaval.fr/thank-you">
                 <input type="hidden" name="_template" value="table">
                 <div class="form-group">
                     <input type="text" name="name" placeholder=" " required="">

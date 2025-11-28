@@ -1,4 +1,7 @@
-<!DOCTYPE html><html lang="fr"><head>
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
     <!-- Google tag (gtag.js) -->
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-9MMGMXQ2Y2"></script>
     <script>
@@ -20,9 +23,10 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="styles.min.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="theme-toggle.css">
     <link rel="stylesheet" href="cursor.css">
 </head>
@@ -30,9 +34,13 @@
 <body>
     <div class="wrapper">
         <header class="site-header">
-            <a href="index.html" class="profile-badge">
+            <a href="/" class="profile-badge">
                 <div class="profile-avatar">
-                    <picture><source media="(min-width: 1024px)" srcset="images/to9t-desktop.webp"><source media="(min-width: 768px)" srcset="images/to9t-tablet.webp"><img src="images/to9t-mobile.webp" alt="Guillaume Bracaval"></picture>
+                    <picture>
+                        <source media="(min-width: 1024px)" srcset="images/to9t-desktop.webp">
+                        <source media="(min-width: 768px)" srcset="images/to9t-tablet.webp"><img
+                            src="images/to9t-mobile.webp" alt="Guillaume Bracaval">
+                    </picture>
                 </div>
                 <div class="profile-info">
                     <span class="profile-name">Guillaume Bracaval</span>
@@ -40,12 +48,13 @@
                 </div>
             </a>
             <nav>
-                <a href="#" id="openContact" class="btn-accent" onclick="document.getElementById('contactModal').classList.add('is-visible')">Me contacter</a>
+                <a href="#" id="openContact" class="btn-accent"
+                    onclick="document.getElementById('contactModal').classList.add('is-visible')">Me contacter</a>
             </nav>
         </header>
 
         <nav class="breadcrumb">
-            <a href="index.html">Projets</a>
+            <a href="/">Projets</a>
             <span class="breadcrumb-separator">/</span>
             <span>Kerat</span>
         </nav>
@@ -64,21 +73,25 @@
             </section>
 
             <div class="hero-frame reveal">
-                <picture><source media="(min-width: 1024px)" srcset="images/qzcz-desktop.webp"><source media="(min-width: 768px)" srcset="images/qzcz-tablet.webp"><img src="images/qzcz-mobile.webp" alt="Kerat Preview"></picture>
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="images/qzcz-desktop.webp">
+                    <source media="(min-width: 768px)" srcset="images/qzcz-tablet.webp"><img
+                        src="images/qzcz-mobile.webp" alt="Kerat Preview">
+                </picture>
             </div>
 
 
             <nav class="project-navigation reveal">
-                <a href="ovact.html" class="nav-prev">
+                <a href="ovact" class="nav-prev">
                     <span class="nav-label">← Projet précédent</span>
                     <span class="nav-title">Ovact</span>
                 </a>
 
-                <a href="index.html#projects" class="nav-home">
+                <a href="/#projects" class="nav-home">
                     Tous les projets
                 </a>
 
-                <a href="fondation.html" class="nav-next">
+                <a href="fondation" class="nav-next">
                     <span class="nav-label">Projet suivant →</span>
                     <span class="nav-title">Fondation</span>
                 </a>
@@ -87,10 +100,11 @@
             <section class="case-cta reveal">
                 <h3 style="margin-bottom: var(--space-8);">Intéressé pour travailler ensemble ?</h3>
                 <div class="case-cta-buttons">
-                    <a href="index.html" class="btn-secondary">
+                    <a href="/" class="btn-secondary">
                         ← Retour aux projets
                     </a>
-                    <a href="javascript:void(0)" id="openContact" class="btn-accent" onclick="document.getElementById('contactModal').classList.add('is-visible')">
+                    <a href="javascript:void(0)" id="openContact" class="btn-accent"
+                        onclick="document.getElementById('contactModal').classList.add('is-visible')">
                         Me contacter ↗
                     </a>
                 </div>
@@ -108,17 +122,19 @@
     <div id="contactModal" class="modal-backdrop">
         <div class="modal-panel">
             <button id="closeModal" class="modal-close">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
                     <line x1="18" y1="6" x2="6" y2="18"></line>
                     <line x1="6" y1="6" x2="18" y2="18"></line>
                 </svg>
             </button>
-            <h3 style="font-size: var(--text-xl); font-weight: 600; margin-bottom: var(--space-8); color: var(--text-primary);">
+            <h3
+                style="font-size: var(--text-xl); font-weight: 600; margin-bottom: var(--space-8); color: var(--text-primary);">
                 Contact</h3>
             <form id="contactForm" action="https://formsubmit.co/contact@bracaval.fr" method="POST">
                 <input type="hidden" name="_subject" value="New message from portfolio">
                 <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_next" value="https://bracaval.fr/thank-you.html">
+                <input type="hidden" name="_next" value="https://bracaval.fr/thank-you">
                 <input type="hidden" name="_template" value="table">
                 <div class="form-group">
                     <input type="text" name="name" placeholder=" " required="">
@@ -147,10 +163,13 @@
     <!-- THEME TOGGLE BUTTON -->
     <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
         <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z">
+            </path>
         </svg>
         <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
         </svg>
     </button>
 
@@ -158,4 +177,6 @@
     <script src="script.js"></script>
 
 
-</body></html>
+</body>
+
+</html>

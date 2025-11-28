@@ -1,6 +1,28 @@
-# Apache Cache Configuration
-# Add this to your .htaccess file or Apache configuration
+RewriteEngine On
+RewriteBase /
 
+##############################################
+# 1) Redirection propre de /index.html → /
+##############################################
+RewriteRule ^index\.html$ / [R=301,L]
+
+##############################################
+# 2) Redirection /page.html → /page
+##############################################
+RewriteCond %{THE_REQUEST} "\s/([^.?\s]+)\.html"
+RewriteRule ^ %1 [R=301,L]
+
+##############################################
+# 3) Servir /page si /page.html existe
+##############################################
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+)$ $1.html [L]
+
+
+###############################################
+# Cache (Expires)
+###############################################
 <IfModule mod_expires.c>
   ExpiresActive On
   
@@ -12,7 +34,7 @@
   ExpiresByType image/svg+xml "access plus 1 year"
   ExpiresByType image/x-icon "access plus 1 year"
   
-  # CSS and JavaScript
+  # CSS et JS
   ExpiresByType text/css "access plus 1 month"
   ExpiresByType application/javascript "access plus 1 month"
   ExpiresByType text/javascript "access plus 1 month"
@@ -27,8 +49,11 @@
   ExpiresByType text/html "access plus 0 seconds"
 </IfModule>
 
+
+###############################################
+# Cache-Control Headers
+###############################################
 <IfModule mod_headers.c>
-  # Cache-Control headers
   <FilesMatch "\.(jpg|jpeg|png|gif|webp|svg|ico)$">
     Header set Cache-Control "public, max-age=31536000, immutable"
   </FilesMatch>
@@ -46,7 +71,10 @@
   </FilesMatch>
 </IfModule>
 
-# Compression
+
+###############################################
+# Compression GZIP
+###############################################
 <IfModule mod_deflate.c>
   AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
 </IfModule>

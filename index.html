@@ -83,7 +83,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="styles.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="landing-lille.css">
   <link rel="stylesheet" href="theme-toggle.css">
   <link rel="stylesheet" href="cursor.css">
 </head>
@@ -94,7 +95,7 @@
 
     <!-- HEADER -->
     <header class="site-header">
-      <a href="index.html" class="profile-badge">
+      <a href="/" class="profile-badge">
         <div class="profile-avatar">
           <picture>
             <source media="(min-width: 1024px)" srcset="images/to9t-desktop.webp">
@@ -151,16 +152,16 @@
       </section>
 
       <!-- PROJECTS INTRO -->
-      <section class="projects-intro">
+      <section class="projects-intro reveal">
         <h2 class="section-title reveal">Projets sélectionnés</h2>
       </section>
 
       <!-- PROJECT LIST (Editorial Rhythm) -->
-      <section class="project-list">
+      <section class="project-list reveal">
 
         <!-- ROW 1: HERO CARD (Wide) -->
         <div class="project-row row-full">
-          <a href="revive.html" class="project-card card-wide reveal">
+          <a href="revive" class="project-card card-wide reveal">
             <div class="card-content">
               <span class="card-kicker">Mobile Product · Strategy &amp; UX</span>
               <h3 class="card-title">Revive</h3>
@@ -187,7 +188,7 @@
         <!-- ROW 2: SPLIT GRID -->
         <div class="project-row row-split">
           <!-- PowerOFF -->
-          <a href="poweroff.html" class="project-card card-compact reveal">
+          <a href="poweroff" class="project-card card-compact reveal">
             <div class="card-image-wrapper">
               <picture>
                 <source media="(min-width: 1024px)" srcset="images/emrb-desktop.webp">
@@ -211,7 +212,7 @@
           </a>
 
           <!-- Ovact -->
-          <a href="ovact.html" class="project-card card-compact reveal">
+          <a href="ovact" class="project-card card-compact reveal">
             <div class="card-image-wrapper">
               <picture>
                 <source media="(min-width: 1024px)" srcset="images/a8mj-desktop.webp">
@@ -238,7 +239,7 @@
 
         <!-- ROW 3: WIDE CARD -->
         <div class="project-row row-full">
-          <a href="kerat.html" class="project-card card-wide reveal">
+          <a href="kerat" class="project-card card-wide reveal">
             <div class="card-content">
               <span class="card-kicker">Art Direction · Packaging</span>
               <h3 class="card-title">Kerat</h3>
@@ -263,7 +264,7 @@
         <!-- ROW 4: SPLIT GRID -->
         <div class="project-row row-split">
           <!-- Fondation -->
-          <a href="fondation.html" class="project-card card-compact reveal">
+          <a href="fondation" class="project-card card-compact reveal">
             <div class="card-image-wrapper">
               <picture>
                 <source media="(min-width: 1024px)" srcset="images/owe1-desktop.webp">
@@ -286,7 +287,7 @@
           </a>
 
           <!-- Slowtravel -->
-          <a href="slowtravel.html" class="project-card card-compact reveal">
+          <a href="slowtravel" class="project-card card-compact reveal">
             <div class="card-image-wrapper">
               <picture>
                 <source media="(min-width: 1024px)" srcset="images/fy5u-desktop.webp">
@@ -311,7 +312,7 @@
 
         <!-- ROW 5: WIDE CARD -->
         <div class="project-row row-full">
-          <a href="enfants-du-monde.html" class="project-card card-wide reveal">
+          <a href="enfants-du-monde" class="project-card card-wide reveal">
             <div class="card-content">
               <span class="card-kicker">Mobile App · Storytelling</span>
               <h3 class="card-title">Enfants du monde</h3>
@@ -336,7 +337,7 @@
       </section>
 
       <!-- ABOUT & CAPABILITIES -->
-      <section class="about-section">
+      <section class="about-section reveal">
         <div class="about-text reveal">
           <h3>À propos</h3>
           <p>
@@ -404,14 +405,13 @@
           onclick="document.getElementById('contactModal').classList.add('is-visible')">Contactez-moi ↗</button>
         <span class="cta-sub">Disponibilité immédiate pour freelance ou CDI</span>
       </section>
+
+      <!-- FOOTER -->
+      <footer class="site-footer reveal">
+        <div>© 2025 Guillaume Bracaval</div>
+        <div>Conçu avec précision</div>
+      </footer>
     </main>
-
-    <!-- FOOTER -->
-    <footer class="site-footer reveal">
-      <div>© 2025 Guillaume Bracaval</div>
-      <div>Conçu avec précision</div>
-    </footer>
-
   </div>
 
   <!-- MODAL -->
@@ -425,39 +425,42 @@
         </svg>
       </button>
 
-      <h3
-        style="font-size: var(--text-xl); font-weight: 600; margin-bottom: var(--space-8); color: var(--text-primary);">
-        Contact</h3>
-
-      <form id="contactForm" action="https://formsubmit.co/contact@bracaval.fr" method="POST">
+      <form class="landing-form" id="contactForm" action="https://formspree.io/f/xnqywvpw" method="POST">
         <input type="hidden" name="_subject" value="New message from portfolio">
         <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="https://bracaval.fr/thank-you.html">
+        <input type="hidden" name="_next" value="https://bracaval.fr/thank-you">
         <input type="hidden" name="_template" value="table">
 
-        <div class="form-group">
-          <input type="text" name="name" placeholder=" " required="">
-          <label>Nom &amp; Prénom</label>
+        <div class="form-header">
+          <h3>Envoyez un message</h3>
+          <p>Réponse sous 24h</p>
         </div>
 
         <div class="form-group">
-          <input type="email" name="email" placeholder=" " required="">
-          <label>Email</label>
+          <label for="modal-name">Nom complet</label>
+          <input type="text" id="modal-name" name="name" required>
         </div>
 
         <div class="form-group">
-          <textarea name="message" placeholder=" " required=""></textarea>
-          <label>Message</label>
+          <label for="modal-email">Email professionnel</label>
+          <input type="email" id="modal-email" name="email" required>
         </div>
 
-        <div class="form-actions">
-          <button type="submit" class="btn-accent">
-            <span>Envoyer</span>
-            <svg class="send-icon" width="20" height="20" viewBox="0 0 24 24">
-              <path fill="currentColor" d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
-            </svg>
-          </button>
+        <div class="form-group">
+          <label for="modal-project">Type de projet</label>
+          <select id="modal-project" name="project">
+            <option value="landing">Landing Page</option>
+            <option value="vitrine">Site Vitrine</option>
+            <option value="autre">Autre demande</option>
+          </select>
         </div>
+
+        <div class="form-group">
+          <label for="modal-message">Détails du projet</label>
+          <textarea id="modal-message" name="message" rows="4" required></textarea>
+        </div>
+
+        <button type="submit" class="btn-accent btn-full">Envoyer la demande</button>
       </form>
     </div>
   </div>
